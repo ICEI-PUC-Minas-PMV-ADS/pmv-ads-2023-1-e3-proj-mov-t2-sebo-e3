@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+# Sebo Digital
 
-`CURSO`
+Análise e Desenvolvimento de Sistemas - ADS
 
-`DISCIPLINA`
+Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio
 
-`SEMESTRE`
+Eixo 3 / 2023.1
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+Herbert Nordson
+Ramon Bicalho
+Fabiana Alkmim
+Rafael Penido
+Letícia Rosolem
 
 ## Orientador
 
-* Nome completo do professor 1
+Mateus Curcino De Lima
 
 ## Instruções de utilização
 
