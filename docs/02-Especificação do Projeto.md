@@ -106,18 +106,13 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|ID|	Descrição|
+|-------|----------------------------------------------------------------------------------------------|
+|RE-01|	O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 05/06/2023.| 
+|RE-02|	O aplicativo deve se restringir a utilização do FrameWork React Native no seu desenvolvimento. |
+|RE-03|	A equipe não pode subcontratar o desenvolvimento do trabalho.|
 
 ## Diagrama de Casos de Uso
 
