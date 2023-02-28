@@ -1,15 +1,20 @@
 # Introdução
 
 Com a ascensão da era digital na sociedade contemporânea, cresceu exponencialmente o acesso à informação. Com alguns cliques tornou-se possível buscar soluções para as mais variadas necessidades diárias de quaisquer pessoas, desde que as mesmas sejam capazes de possuir e acessar tais dispositivos modernos para uso.
+
 Nesse sentido, questões cotidianas foram cada vez mais facilitadas por meio da tecnologia, principalmente no que diz respeito a conectar pessoas que, de um lado, oferecem produtos/serviços, com pessoas que, do outro, demandam-nos.
+
 Antigamente para termos acesso aos livros era necessário um espaço físico como uma livraria, uma biblioteca ou um sebo, para realizarem pesquisas de quais obras literárias o(a) leitor(a) deseja usufruir para meios pessoais ou didatas. Sendo algo bem manual na época e até mesmo tendo um custo, estes que algumas pessoas não tinham tal valor financeiro do exemplar praticado pelo mercado.
+
 A temática dos sebos on-line, especificamente, a tecnologia possui um grande potencial para solucionar problemas recorrentes do dia a dia destes leitores, a qual pessoas desapegam de livros em desuso das estantes ou afins e passam adquirir com um preço bem acessível outros exemplares publicados no aplicativo, caso tenham interesse. Com o desenvolvimento de uma aplicação móvel, o usuário é capaz de divulgar os livros disponíveis para doações ou compras/vendas, para que os demais possam adquiri-los e vice-versa, através de um simples acesso a esta ferramenta.
+
 Portanto, uma vez que a tecnologia encontra-se em constante avanço e que a otimização para encontrar livros, percebe-se a oportunidade de desenvolvimento de uma solução que resolva de forma eficaz a acessibilidade de maneira prática, rápida, barata e menos burocrática aos leitores.
 
 
 ## Problema
 
 Dessa forma, este projeto desenvolverá uma aplicação móvel que possibilite aos leitores encontrarem uma gama de opções literárias separada pelos respectivos gêneros, em uma plataforma de formato ágil e dinâmico, dando acessibilidade a todos interessados ao tema, pois o foco é o baixo custo para que todos possam usufruir deste serviço. Além disso, essa plataforma proporcionará a criação de bancos de dados com informações precisas dos livros e dos usuários e tendo como desenvolvimento o React Native.
+
 É possível ilustrar a situação-problema com um simples exemplo: Uma pessoa está com vários livros guardados em casa, em desuso, por ter feito a leitura deles em um determinado momento da vida. Portanto, a mesma conhece o aplicativo do sebo on-line, acessa e deseja doar parte de seus exemplares e os demais vender com um valor acessível e simbólico. Logo feito, a mesma continua no aplicativo como usuária, por ser ainda estudante encontra dificuldades financeiras em comprar alguns exemplares em livrarias ou sebos, então através da busca virtual no aplicativo, encontra o livro e decide comprar ou adquiri-lo de forma gratuita.    
 
 > **Links Úteis**:
