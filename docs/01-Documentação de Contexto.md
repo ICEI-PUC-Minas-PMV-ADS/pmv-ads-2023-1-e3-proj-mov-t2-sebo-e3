@@ -24,21 +24,23 @@ Dessa forma, este projeto desenvolverá uma aplicação móvel que possibilite a
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Criar uma aplicação móvel que permita que leitores comprem ou doem livros (novos ou usados) sem que precisem comparecer pessoalmente ao sebo, pela indisponibilidade de tempo ou proximidade.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos do projeto, podemos ressaltar:
+- Permitir que o leitor realize a compra e/ou a doação de livros (novos ou usados).
+- Permitir a busca individualizada dos livros de interesse do leitor por título, autor ou categoria.
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Os sebos são importantes porque não se importam em sair do círculo hegemônico da indústria cultural de que bom é o novo. Eles se oferecem como ou opção de desdobramento de registro do conhecimento, sendo referências desse desvínculo que o dono do sebo dá ao livro, dando ao livro não o mero efeito de mercadoria, mas sobretudo de uma obra clássica que registra um conhecimento e que esse conhecimento deve ser resguardado,  preservando a distribuição e o compartilhamento de informações.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Muitos sebos têm em seu acervo exemplares de obras não mais publicadas, especiais e raras. Há também exemplares que não têm nada de incrível, mas estão esgotados nas livrarias ou bancas.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Outra importância que deve ser levada em consideração nos sebos é o seu baixo custo, é possível encontrar obras antigas ou recentes com preços bastante atraentes, valendo à pena levar aquele exemplar de segunda mão.
+
+Apesar da experiência única da ida a um sebo a fins de exploração do ambiente e os itens em exposição, nem todo mundo possui um sebo perto de casa, ou não tem tempo para ir e procurar um item específico em meio a tantos outros, portanto, para fins de democratização ao acesso desses itens, este projeto prevê a criação de uma aplicação móvel, na qual o leitor poderá ter acesso a compra de livros sem que haja a necessidade do deslocamento até o sebo, bem como realizar a doação dos seus.
+
 
 ## Público-Alvo
 
