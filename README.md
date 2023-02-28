@@ -10,11 +10,11 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-Herbert Nordson
-Ramon Bicalho
-Fabiana Alkmim
-Rafael Penido
-Letícia Rosolem
+Herbert Nordson,
+Ramon Bicalho,
+Fabiana Alkmim,
+Rafael Penido,
+Letícia Rosolem.
 
 ## Orientador
 
