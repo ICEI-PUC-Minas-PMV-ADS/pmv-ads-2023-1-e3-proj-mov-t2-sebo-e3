@@ -80,12 +80,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Cadastro de livros, autores, editoras e clientes | ALTA | 
-|RF-002| Autenticação no sistema | Alta |
+|RF-002| Autenticação no sistema | ALTA |
 |RF-001| Cadastro de clientes com nome, CPF, endereço, e-mail, senha | ALTA | 
 |RF-002| Entrega do produto e confirmação da compra | ALTA | 
 |RF-003| Controle de estoque e vendas de livros | MÉDIA | 
-|RF-004| Geração de relatórios de vendas, estoque e clientes | ALTA | 
-|RF-005| Pesquisa de livros por título, autor ou categoria | MÉDIA | 
+|RF-004| Geração de relatórios de vendas, estoque e clientes | MÉDIA | 
+|RF-005| Pesquisa de livros por título, autor ou categoria | ALTA | 
 |RF-006| Controle de pagamentos | ALTA | 
 
 
