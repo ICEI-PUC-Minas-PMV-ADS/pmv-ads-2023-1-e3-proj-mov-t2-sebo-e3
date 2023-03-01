@@ -13,6 +13,7 @@ Nem todo mundo possui um sebo perto de casa, ou não tem tempo para ir e procura
 * Letícia Rosolem
 * Rafael Penido
 * Ramon Bicalho
+* Sarah Ellem
 
 ## Orientador
 
