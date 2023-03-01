@@ -79,30 +79,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Cadastro de livros, autores, editoras e clientes | ALTA | 
+|RF-002| Autenticação no sistema | Alta |
+|RF-001| Cadastro de clientes com nome, CPF, endereço, e-mail, senha | ALTA | 
+|RF-002| Entrega do produto e confirmação da compra | ALTA | 
+|RF-003| Controle de estoque e vendas de livros | MÉDIA | 
+|RF-004| Geração de relatórios de vendas, estoque e clientes | ALTA | 
+|RF-005| Pesquisa de livros por título, autor ou categoria | MÉDIA | 
+|RF-006| Controle de pagamentos | ALTA | 
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-002| O sistema deve garantir a segurança dos dados dos clientes e transações financeiras |  ALTA | 
+|RNF-003| O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo |  BAIXA | 
+|RNF-004| O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas |  BAIXA | 
+|RNF-005| O sistema deve estar disponível 24 horas por dia, 7 dias por semana, para que o sebo possa realizar vendas a qualquer momento |  BAIXA | 
+|RNF-006| O sistema deve ser confiável, sem apresentar falhas ou erros frequentes |  BAIXA | 
+|RNF-007| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |  BAIXA | 
 
 ## Restrições
 
