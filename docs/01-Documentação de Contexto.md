@@ -17,11 +17,6 @@ Dessa forma, este projeto desenvolverá uma aplicação móvel que possibilite a
 
 É possível ilustrar a situação-problema com um simples exemplo: Uma pessoa está com vários livros guardados em casa, em desuso, por ter feito a leitura deles em um determinado momento da vida. Portanto, a mesma conhece o aplicativo do sebo on-line, acessa e deseja doar parte de seus exemplares e os demais vender com um valor acessível e simbólico. Logo feito, a mesma continua no aplicativo como usuária, por ser ainda estudante encontra dificuldades financeiras em comprar alguns exemplares em livrarias ou sebos, então através da busca virtual no aplicativo, encontra o livro e decide comprar ou adquiri-lo de forma gratuita.    
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
 ## Objetivos
 
 Criar uma aplicação móvel que permita que leitores comprem ou doem livros (novos ou usados) sem que precisem comparecer pessoalmente ao sebo, pela indisponibilidade de tempo ou proximidade.
