@@ -116,7 +116,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-![UseCase DiagramV2](img/UseCase DiagramV2.png)
+![UseCaseDiagramV2.pngUseCase DiagramV2](img/UseCaseDiagramV2.png)
 
 # Matriz de Rastreabilidade
 
