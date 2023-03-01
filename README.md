@@ -1,7 +1,5 @@
 # Sebo Digital
 
-Análise e Desenvolvimento de Sistemas - ADS
-
 Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio
 
 Eixo 3 - Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 02 - 2023/1
