@@ -100,6 +100,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| O sistema deve estar disponível 24 horas por dia, 7 dias por semana, para que o sebo possa realizar vendas a qualquer momento |  BAIXA | 
 |RNF-006| O sistema deve ser confiável, sem apresentar falhas ou erros frequentes |  BAIXA | 
 |RNF-007| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |  BAIXA | 
+|RNF-008| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet |  BAIXA | 
 
 ## Restrições
 
