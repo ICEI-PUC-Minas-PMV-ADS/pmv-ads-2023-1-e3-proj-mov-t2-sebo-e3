@@ -146,7 +146,7 @@ Figura 2 – Gráfico acompanhamento tempo (Gantt).
 
 Para a organização dos trabalhos a equipe utilizou a metodologia do Ágil Kanban com o uso de quadro de tarefas da funcionalidade “Projects” existente na plataforma do Github. Foi efetuado no Github a criação de issues (tarefas / problemas), estes itens são atribuídos a pessoas, ao projeto e a qual milestone (neste caso entrega) pertencem. Com isso, é possível a elaboração da visualização do acompanhamento por meio de lista de problemas, board Kanban de tarefas e o acompanhamento de status por meio de taxa de finalização das milestones.
 
-<img width="802" alt="image" src="https://user-images.githubusercontent.com/103540696/222498206-6f282371-29ab-48cc-aba3-0349e915553d.png">
+<img width="1238" alt="image" src="https://user-images.githubusercontent.com/103540696/222498641-d3f841d6-b9bd-4581-980c-622ec6996b8b.png">
 
 Figura 2 – Acompanhamento e definição de issues
 
@@ -154,7 +154,7 @@ Figura 2 – Acompanhamento e definição de issues
 
 Figura 3 – Board tipo Kanban
 
-<img width="802" alt="image" src="https://user-images.githubusercontent.com/103540696/222498315-41208f46-098e-44c4-a30e-a4ade7c3a69b.png">
+<img width="1243" alt="image" src="https://user-images.githubusercontent.com/103540696/222498531-1bd9fe4b-e8df-438f-8242-be5f8abdddcc.png">
 
 Figura 4 – Definição de milestones
 
@@ -163,7 +163,7 @@ A elaboração do backlog se dará como atividade a ser realizada após cada ent
 
 Para acompanhamento do desenvolvimento do projeto e gerenciamento da equipe iremos utilizar as visões de gráficos do github, como os dashboard de capacidade. Essa visão tem como objetivo apresentar a capacidade da esteira de projetos e possíveis alocações nas sprints.
 
-<img width="802" alt="image" src="https://user-images.githubusercontent.com/103540696/222497883-911ff39d-403f-4b19-9bd9-770905127ea7.png">
+<img width="979" alt="image" src="https://user-images.githubusercontent.com/103540696/222498778-4436e920-499b-4863-b283-1dd2dbb35b78.png">
 <img width="802" alt="image" src="https://user-images.githubusercontent.com/103540696/222498036-76b74b9b-9b6b-4280-9a9a-b255f99d214c.png">
 <img width="995" alt="image" src="https://user-images.githubusercontent.com/103540696/222497553-a2a150dd-e10d-4817-96d1-3ce5997368e9.png">
 
