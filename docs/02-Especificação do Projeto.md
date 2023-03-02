@@ -138,7 +138,8 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 Para realização do acompanhamento do gerenciamento de tempo, utilizaremos a visão de Roadmap do Github. Essa visão apresenta o projeto como em um gráfico de Gantt considerando as datas de início e fim planejadas do projeto. Através dessa visão é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/103540696/221998620-0e339207-63d2-4960-a376-72a13fb06a88.png">
+<img width="1365" alt="image" src="https://user-images.githubusercontent.com/103540696/222495978-9d55127f-015e-4a66-9fdf-8b580e1da9cb.png">
+
 Figura 2 – Gráfico acompanhamento tempo (Gantt).
 
 ## Gerenciamento de Equipe
