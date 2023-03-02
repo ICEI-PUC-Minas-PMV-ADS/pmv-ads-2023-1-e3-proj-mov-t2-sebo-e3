@@ -8,7 +8,37 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Persona 1 → Arthur Valentim
+Idade: 23 anos
+Ocupação: Estudante e estagiário de psicologia 
+Faixa salarial: 1,5 salários mínimos
+
+-**Interesses e estilo de vida**: Durante a semana, se dedica à sua graduação e ao seu estágio em psicologia. No tempo livre, gosta de ler livros de suspense, ficção científica e livros relacionados a psicologia humana.
+-**Motivações**: Se esforça muito nos estudos pois sonha em ajudar pessoas através da psicoterapia, e também em dar uma vida melhor para sua família.
+-**Pontos de dor ou Frustrações**: Os livros acadêmicos são muito caros, por isso ele não consegue comprá-los na maioria das vezes, e teme que isso o prejudique nos estudos.
+**Necessidades**: Precisa encontrar lojas que vendam livros acadêmicos a um preço mais acessível ou livros usados de ex alunos.
+---    
+   
+Persona 2 → Júlia Teixeira  
+Idade: 15 anos
+Ocupação: Estudante do ensino médio
+Faixa salarial: 0 salários mínimos 
+
+-**Interesses e estilo de vida**: Durante a semana, divide seu tempo entre os estudos e em ajudar sua mãe nas tarefas de casa. No seu tempo livre gosta de ler livros de romance e fantasia, ver filmes e cuidar de seus animais de estimação.
+-**Motivações**: Sonha em ser médica veterinária, por isso faz o máximo para se dedicar nos estudos.
+-**Pontos de dor ou Frustrações**: Se sente frustrada por não conseguir ler todos os livros que gostaria, pois seus pais nem sempre tem condições financeiras para comprar livros, que geralmente são caros.
+-**Necessidades**: Gostaria de encontrar livrarias com livros a preços acessíveis, para que consiga ler os livros de sua lista de desejos.
+---    
+   
+Persona 3 → Alice Ferreira
+Idade: 18 anos
+Ocupação: Jovem aprendiz em uma Editora de livros
+Faixa salarial: Meio salário mínimo  
+   
+-**Interesses e estilo de vida**: Atualmente trabalha em meio período como Jovem Aprendiz em uma editora de livros. No seu tempo livre, gosta de ler todos os tipos de livros e participa de um clube de leitura.
+-**Motivações**: Se esforça e dedica muito no seu trabalho, pois tem como meta ser efetivada na editora em que trabalha.
+-**Pontos de dor ou Frustrações**: Como está sempre comprando livros, Alice sempre tem uma pilha de livros para doar, mas nunca sabe para quem e como fazer essa doação.
+-**Necessidades**: Alice precisa encontrar um meio de doar ou vender seus livros que não são mais usados, além de querer comprar livros com preços mais baratos.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -120,9 +150,11 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+Em "X" estão os requisitos funcionais e não funcionais que se adequam as queixas que os usuários aprensentam.
+O colorido mostra a relação vertical para trás ou frente e horizontal.
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+![image](https://user-images.githubusercontent.com/103009155/222579836-45cbba30-8360-403e-b881-cbf056119252.png)
+
 
 > **Links Úteis**:
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
