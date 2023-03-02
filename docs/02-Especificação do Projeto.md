@@ -146,20 +146,27 @@ Figura 2 – Gráfico acompanhamento tempo (Gantt).
 
 Para a organização dos trabalhos a equipe utilizou a metodologia do Ágil Kanban com o uso de quadro de tarefas da funcionalidade “Projects” existente na plataforma do Github. Foi efetuado no Github a criação de issues (tarefas / problemas), estes itens são atribuídos a pessoas, ao projeto e a qual milestone (neste caso entrega) pertencem. Com isso, é possível a elaboração da visualização do acompanhamento por meio de lista de problemas, board Kanban de tarefas e o acompanhamento de status por meio de taxa de finalização das milestones.
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/103540696/221998798-9316d88a-b054-4595-80b5-518a2b0bcf38.png">
+<img width="1087" alt="image" src="https://user-images.githubusercontent.com/103540696/222496649-5ebf6dfe-246e-4eea-be11-ff85e4beabd5.png">
+
 Figura 2 – Acompanhamento e definição de issues
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/103540696/221998909-c377daf0-ac7b-471e-b60a-d884345d0b98.png">
+<img width="1087" alt="image" src="https://user-images.githubusercontent.com/103540696/222496345-695187de-a8b1-4be2-8d24-527038b7ea21.png">
 
- 
 Figura 3 – Board tipo Kanban
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/103540696/221998948-9a1cbd58-e972-44c4-98a8-9a2bbf35d603.png">
+<img width="1087" alt="image" src="https://user-images.githubusercontent.com/103540696/222496758-9a5f5349-cd08-4ff5-9b4f-6bac245fdf4f.png">
 
 Figura 4 – Definição de milestones
 
 Como metodologia de trabalho foi optado pelo uso de métodos ágeis, sendo selecionado o Scrum para a organização do time. Devido à disponibilidade da equipe, foi definido o uso de reuniões semanais (weeklies), ao invés de diárias (dailies). 
 A elaboração do backlog se dará como atividade a ser realizada após cada entrega por sprint. Ou seja, após a finalização da primeira sprint, a equipe irá se reunir para tratar quais são as novas prioridades e quem será responsável por sua execução.
+
+Para acompanhamento do desenvolvimento do projeto e gerenciamento da equipe iremos utilizar as visões de gráficos do github, como os dashboard de capacidade. Essa visão tem como objetivo apresentar a capacidade da esteira de projetos e possíveis alocações nas sprints.
+
+<img width="1087" alt="image" src="https://user-images.githubusercontent.com/103540696/222497311-281dd1e0-e0f1-47c3-91e9-e7a50cc123fe.png">
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/103540696/222497553-a2a150dd-e10d-4817-96d1-3ce5997368e9.png">
+
+Figura 5 - Dashboard para acompanhamento das atividades nas sprints
 
 ## Equipe de Projeto
 
