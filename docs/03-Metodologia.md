@@ -50,11 +50,10 @@ Apresente a divisão de papéis entre os membros do grupo.
 Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 - Scrum Master: Fabiana Alkmim;
 - Product Owner: Ramon Bicalho;
-- Equipe de Desenvolvimento: 
-- Letícia Alves;
-- Herbert Nordson; 
-- Rafael Penido;
-- Sarah Ellem;
+- Equipe de Desenvolvimento: - Letícia Alves;
+                             - Herbert Nordson; 
+                             - Rafael Penido;
+                             - Sarah Ellem;
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
