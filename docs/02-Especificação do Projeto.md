@@ -8,15 +8,15 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-. Persona 1 → Arthur Valentim
-. Idade: 23 anos
-. Ocupação: Estudante e estagiário de psicologia 
-. Faixa salarial: 1,5 salários mínimos
+- Persona 1 → Arthur Valentim
+- Idade: 23 anos
+- Ocupação: Estudante e estagiário de psicologia 
+- Faixa salarial: 1,5 salários mínimos
 
-- **Interesses e estilo de vida**: Durante a semana, se dedica à sua graduação e ao seu estágio em psicologia. No tempo livre, gosta de ler livros de suspense, ficção científica e livros relacionados a psicologia humana.
-- **Motivações**: Se esforça muito nos estudos pois sonha em ajudar pessoas através da psicoterapia, e também em dar uma vida melhor para sua família.
-- **Pontos de dor ou Frustrações**: Os livros acadêmicos são muito caros, por isso ele não consegue comprá-los na maioria das vezes, e teme que isso o prejudique nos estudos.
-- **Necessidades**: Precisa encontrar lojas que vendam livros acadêmicos a um preço mais acessível ou livros usados de ex alunos.
+**Interesses e estilo de vida**: Durante a semana, se dedica à sua graduação e ao seu estágio em psicologia. No tempo livre, gosta de ler livros de suspense, ficção científica e livros relacionados a psicologia humana.
+**Motivações**: Se esforça muito nos estudos pois sonha em ajudar pessoas através da psicoterapia, e também em dar uma vida melhor para sua família.
+**Pontos de dor ou Frustrações**: Os livros acadêmicos são muito caros, por isso ele não consegue comprá-los na maioria das vezes, e teme que isso o prejudique nos estudos.
+**Necessidades**: Precisa encontrar lojas que vendam livros acadêmicos a um preço mais acessível ou livros usados de ex alunos.
 ---    
    
 . Persona 2 → Júlia Teixeira  
