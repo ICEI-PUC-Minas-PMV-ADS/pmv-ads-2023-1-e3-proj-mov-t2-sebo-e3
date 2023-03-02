@@ -8,10 +8,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-- Persona 1 → Arthur Valentim
-- Idade: 23 anos
-- Ocupação: Estudante e estagiário de psicologia 
-- Faixa salarial: 1,5 salários mínimos
+Persona 1 → Arthur Valentim
+
+Idade: 23 anos
+
+Ocupação: Estudante e estagiário de psicologia 
+
+Faixa salarial: 1,5 salários mínimos
 
 - **Interesses e estilo de vida**: Durante a semana, se dedica à sua graduação e ao seu estágio em psicologia. No tempo livre, gosta de ler livros de suspense, ficção científica e livros relacionados a psicologia humana.
 - **Motivações**: Se esforça muito nos estudos pois sonha em ajudar pessoas através da psicoterapia, e também em dar uma vida melhor para sua família.
@@ -19,10 +22,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 - **Necessidades**: Precisa encontrar lojas que vendam livros acadêmicos a um preço mais acessível ou livros usados de ex alunos.
 ---    
    
-- Persona 2 → Júlia Teixeira  
-- Idade: 15 anos
-- Ocupação: Estudante do ensino médio
-- Faixa salarial: 0 salários mínimos 
+Persona 2 → Júlia Teixeira  
+
+Idade: 15 anos
+
+Ocupação: Estudante do ensino médio
+
+Faixa salarial: 0 salários mínimos 
 
 - **Interesses e estilo de vida**: Durante a semana, divide seu tempo entre os estudos e em ajudar sua mãe nas tarefas de casa. No seu tempo livre gosta de ler livros de romance e fantasia, ver filmes e cuidar de seus animais de estimação.
 - **Motivações**: Sonha em ser médica veterinária, por isso faz o máximo para se dedicar nos estudos.
@@ -30,10 +36,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 - **Necessidades**: Gostaria de encontrar livrarias com livros a preços acessíveis, para que consiga ler os livros de sua lista de desejos.
 ---    
    
-- Persona 3 → Alice Ferreira
-- Idade: 18 anos
-- Ocupação: Jovem aprendiz em uma Editora de livros
-- Faixa salarial: Meio salário mínimo  
+Persona 3 → Alice Ferreira
+
+Idade: 18 anos
+
+Ocupação: Jovem aprendiz em uma Editora de livros
+
+Faixa salarial: Meio salário mínimo  
    
 - **Interesses e estilo de vida**: Atualmente trabalha em meio período como Jovem Aprendiz em uma editora de livros. No seu tempo livre, gosta de ler todos os tipos de livros e participa de um clube de leitura.
 - **Motivações**: Se esforça e dedica muito no seu trabalho, pois tem como meta ser efetivada na editora em que trabalha.
@@ -151,8 +160,8 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
-Em "X" estão os requisitos funcionais e não funcionais que se adequam as queixas que os usuários aprensentam.
-O colorido mostra a relação vertical para trás ou frente e horizontal.
+- Em "X" estão os requisitos funcionais e não funcionais que se adequam as queixas que os usuários aprensentam.
+- O colorido mostra a relação vertical para trás ou frente e horizontal.
 
 ![image](https://user-images.githubusercontent.com/103009155/222579836-45cbba30-8360-403e-b881-cbf056119252.png)
 
