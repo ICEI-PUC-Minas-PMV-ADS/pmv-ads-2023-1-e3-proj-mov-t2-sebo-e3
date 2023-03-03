@@ -115,7 +115,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| Geração de relatórios de vendas, estoque e clientes | MÉDIA | 
 |RF-005| Pesquisa de livros por título, autor ou categoria | ALTA | 
 |RF-006| O administrador do sistema poderá visualizar, alterar, excluir  e cadastrar os itens do estoque| ALTA | 
-
+|RF-007| O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido | MÉDIA | 
+|RF-008| O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido | MÉDIA | 
 
 ### Requisitos não Funcionais
 
@@ -153,12 +154,6 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 - O colorido mostra a relação vertical para trás ou frente e horizontal.
 
 ![image](https://user-images.githubusercontent.com/103009155/222579836-45cbba30-8360-403e-b881-cbf056119252.png)
-
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
 
 
 # Gerenciamento de Projeto
