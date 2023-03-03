@@ -126,7 +126,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Controle de estoque e vendas de livros | MÉDIA | 
 |RF-004| Geração de relatórios de vendas, estoque e clientes | MÉDIA | 
 |RF-005| Pesquisa de livros por título, autor ou categoria | ALTA | 
-|RF-006| Controle de pagamentos | ALTA | 
+|RF-006| O administrador do sistema poderá visualizar, alterar, excluir  e cadastrar os itens do estoque| ALTA | 
 
 
 ### Requisitos não Funcionais
@@ -154,7 +154,8 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-![UseCaseDiagramV2.pngUseCase DiagramV2](img/UseCaseDiagramV2.png)
+![UseCase DiagramV3](img/UseCaseDiagramV3.png
+)
 
 # Matriz de Rastreabilidade
 
