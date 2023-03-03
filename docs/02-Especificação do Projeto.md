@@ -116,7 +116,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Pesquisa de livros por título, autor ou categoria | ALTA | 
 |RF-006| O administrador do sistema poderá visualizar, alterar, excluir  e cadastrar os itens do estoque| ALTA | 
 |RF-007| O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido | MÉDIA | 
-|RF-008| O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido | MÉDIA | 
+|RF-008| O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido | BAIXA | 
 
 ### Requisitos não Funcionais
 
