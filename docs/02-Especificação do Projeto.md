@@ -16,6 +16,8 @@ Ocupação: Estudante e estagiário de psicologia
 
 Faixa salarial: 1,5 salários mínimos
 
+![image](https://user-images.githubusercontent.com/103009155/222922747-bbb6bc5f-affd-4be1-81f6-b27c3934aa14.png)
+
 - **Interesses e estilo de vida**: Durante a semana, se dedica à sua graduação e ao seu estágio em psicologia. No tempo livre, gosta de ler livros de suspense, ficção científica e livros relacionados a psicologia humana.
 - **Motivações**: Se esforça muito nos estudos pois sonha em ajudar pessoas através da psicoterapia, e também em dar uma vida melhor para sua família.
 - **Pontos de dor ou Frustrações**: Os livros acadêmicos são muito caros, por isso ele não consegue comprá-los na maioria das vezes, e teme que isso o prejudique nos estudos.
@@ -30,6 +32,8 @@ Ocupação: Estudante do ensino médio
 
 Faixa salarial: 0 salários mínimos 
 
+![image](https://user-images.githubusercontent.com/103009155/222922791-bfa7937f-8a7e-4fb4-ab88-496f3d8757e4.png)
+
 - **Interesses e estilo de vida**: Durante a semana, divide seu tempo entre os estudos e em ajudar sua mãe nas tarefas de casa. No seu tempo livre gosta de ler livros de romance e fantasia, ver filmes e cuidar de seus animais de estimação.
 - **Motivações**: Sonha em ser médica veterinária, por isso faz o máximo para se dedicar nos estudos.
 - **Pontos de dor ou Frustrações**: Se sente frustrada por não conseguir ler todos os livros que gostaria, pois seus pais nem sempre tem condições financeiras para comprar livros, que geralmente são caros.
@@ -43,6 +47,8 @@ Idade: 18 anos
 Ocupação: Jovem aprendiz em uma Editora de livros
 
 Faixa salarial: Meio salário mínimo  
+
+![image](https://user-images.githubusercontent.com/103009155/222922848-9c699699-753b-4923-88b6-8829ea1af774.png)
    
 - **Interesses e estilo de vida**: Atualmente trabalha em meio período como Jovem Aprendiz em uma editora de livros. No seu tempo livre, gosta de ler todos os tipos de livros e participa de um clube de leitura.
 - **Motivações**: Se esforça e dedica muito no seu trabalho, pois tem como meta ser efetivada na editora em que trabalha.
@@ -148,7 +154,7 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 - Em "X" estão os requisitos funcionais e não funcionais que se adequam as queixas que os usuários aprensentam.
 - O colorido mostra a relação vertical para trás ou frente e horizontal.
 
-![image](https://user-images.githubusercontent.com/103009155/222579836-45cbba30-8360-403e-b881-cbf056119252.png)
+![image](https://user-images.githubusercontent.com/103009155/222922669-4533c728-4436-45a9-ae22-c859673e2290.png)
 
 
 # Gerenciamento de Projeto
