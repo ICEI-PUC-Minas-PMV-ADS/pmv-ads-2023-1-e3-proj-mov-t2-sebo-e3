@@ -95,7 +95,7 @@ As ferramentas empregadas no projeto são:
 
  Função |Ferramentas|Justificativa|
 |--------|----------|--------------|
-|Repositório de código fonte e documentação|GitHub|A ferramenta foi escolhida pois é disponibilizado aos alunos um repositório nos modelos do curso, bem como uma integração robusta com boards de acompanhamento de projetos, facilitando a gestão de processos|
+|Repositório de código fonte e documentação|GitHub|A ferramenta foi escolhida pois em cada eixo é disponibilizado aos alunos um repositório com o modelo da documentação do curso, bem como uma integração robusta com boards de acompanhamento de projetos, facilitando a gestão de processos|
 |Gerenciamento do Projeto|GitHub Projects|O Projects auxilia na integração de tarefas atribuídas à sua execução em commits|
 |Editor de código |Visual Studio Code| Foi escolhido por sua integração com o sistema de versão, bem como extensões que agilizam o desenvolvimento de uma aplicação |
 |Projeto de Interface e  Wireframes|MarvelApp| | 
