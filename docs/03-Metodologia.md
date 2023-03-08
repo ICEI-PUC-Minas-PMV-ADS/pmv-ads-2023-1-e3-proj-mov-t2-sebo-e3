@@ -9,14 +9,6 @@ A metodologia deste trabalho consiste em apresentar o grupo de ferramentas prese
 
 A tabela abaixo demonstra as plataformas nas quais foram desenvolvidos os respectivos artefatos do projeto, além do link para acessá-los:
 
-|Ambiente|Plataforma|Link de Acesso|
-|--------|----------|--------------|
-|Repositório de código fonte|GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3|
-|Documentos do projeto|GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/tree/main/docs|
-|Projeto de Interface e  Wireframes|MarvelApp| | 
-|Gerenciamento do Projeto|GitHub|https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/228|
-|Comunicação e Reuniões|Microsoft Teams|[https://teams.microsoft.com/l/meetup-join/19:e40bca8dbdf5461e86c94ffc8725ffd7@thread.tacv2/1677863575268?context=%7B%22Tid%22:%2214cbd5a7-ec94-46ba-b314-cc0fc972a161%22,%22Oid%22:%22c30a447e-5023-4b32-b15d-e6550c9a959d%22%7D|
-
 Ambiente   | Plataforma 
 :--------- | :------:
 Repositório de código fonte | [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3)
