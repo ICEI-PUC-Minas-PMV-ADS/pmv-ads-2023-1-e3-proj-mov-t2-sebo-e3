@@ -72,7 +72,7 @@ O público-alvo do sebo é composto por pessoas que buscam livros usados a preç
 
 ### Eficiência de desempenho
 
-Nenhum usuário gosta de um software lento. Normalmente ficam impacientes e dependendo da situação até desinstalam ou deixam de lado.Esse princípio reflete justamente esse aspecto. Chegamos ao consenso de que o software deve ser capaz de responder em tempo hábil, sem deixar o usuário esperando.
+Nenhum usuário gosta de um software lento. Normalmente ficam impacientes e dependendo da situação até desinstalam ou deixam de lado. Esse princípio reflete justamente esse aspecto. Chegamos ao consenso de que o software deve ser capaz de responder em tempo hábil, sem deixar o usuário esperando.
 
 ### Compatibilidade
 
@@ -92,9 +92,8 @@ A segurança é um dos pontos mais importantes. Afinal, ninguém quer utilizar a
 
 ### Capacidade de manutenção
 
-A reusabilidade da aplicação significará reduzir custos e tempo no processo de desenvolvimento, aumentar a qualidade, entre outras diversas vantagens. Como nossa aplicação será desenvolvida em React Native, será possível reutilizar componentes para se obter agilidade no desenvolvimento.
+A reusabilidade da aplicação significará reduzir custos e tempo no processo de desenvolvimento e manutenção, aumentar a qualidade, entre outras diversas vantagens. Como nossa aplicação será desenvolvida em React Native, será possível reutilizar componentes para se obter agilidade no desenvolvimento e manutenção.
 
 ### Portabilidade
 
-Por fim a portabilidade será fundamental em nossa aplicação pois ela abrange um público variado e será definida através da capacidade da aplicação ser facilmente transportável, ou seja, se é capaz de executar todas as suas funções em diferentes sistemas operacionais, como Android na versão 9.0 e IOS na versão 10.0. Nosso objetivo é que nossa aplicação possa ser utilizada por tipos de pessoas diferentes em diversos ambientes.
-
+Por fim a portabilidade será fundamental em nossa aplicação e será definida através da capacidade da aplicação ser facilmente transportável, ou seja, se é capaz de executar todas as suas funções em diferentes sistemas operacionais, como Android na versão 9.0 e IOS na versão 10.0. Nosso objetivo é que nossa aplicação possa ser utilizada por tipos de pessoas diferentes em diversos ambientes e dispostivos móveis.
