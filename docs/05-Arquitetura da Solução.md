@@ -55,17 +55,6 @@ O glossário do IEEE (Instituto de Engenheiros Eletrônicos e Eletricistas) defi
 
 A qualidade de software do projeto Sebo Digital segue os fundamentos descriminados na norma técnica ISO/IEC 25010 para a avaliação.
 
-
-Adequação funcional
-Eficiência de desempenho
-Compatibilidade
-Usabilidade
-Confiabilidade
-Segurança
-Capacidade de Manutenção
-Portabilidade
-
-
 ### Adequação funcional
 
 O público-alvo do sebo é composto por pessoas que buscam livros usados a preços mais acessíveis em comparação com os preços de mercado. Esse público pode incluir estudantes, pesquisadores, colecionadores, aficionados por literatura e pessoas que apreciam produtos vintage ou raros.
