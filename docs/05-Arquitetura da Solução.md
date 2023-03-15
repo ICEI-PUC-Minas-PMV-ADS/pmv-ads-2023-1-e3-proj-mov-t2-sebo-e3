@@ -14,13 +14,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-![image](https://user-images.githubusercontent.com/103009155/224402509-8cff03a3-2485-4720-8e69-bb96a653018b.png)
+![image](https://user-images.githubusercontent.com/103009155/225174291-1c78aee8-ce74-4617-b76b-4f8a33a9aa49.png)
 
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
 
-![image](https://user-images.githubusercontent.com/103009155/225036650-2de712b8-1202-48d5-80bd-ff1fb4611450.png)
+![image](https://user-images.githubusercontent.com/103009155/225178118-01b70b74-44d7-440a-8c81-5237630056c1.png)
 
 ## Modelo Físico
 
