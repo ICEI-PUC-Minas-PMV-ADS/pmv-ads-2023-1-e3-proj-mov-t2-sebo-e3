@@ -8,7 +8,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![Diagramadeclasses](img/DiagramaDeClasses.png)
+![Diagramadeclasses](img/DiagramaDeClassesv2.png)
 
 ## Modelo ER
 
