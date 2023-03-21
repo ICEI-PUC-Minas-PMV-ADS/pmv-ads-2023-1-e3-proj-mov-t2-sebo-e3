@@ -83,20 +83,20 @@ Para desenvolvimento da nossa proposta utilizaremos a notação BPMN. Segundo M.
 
 Esse processo tem como característica apresentar o modelo atual de compra de livros, onde o cliente precisa ir até a loja física para adquirir seu exemplar. 
 
-![Processo 1](<img width="1158" alt="image" src="https://user-images.githubusercontent.com/103540696/226735972-8cab392c-171e-41f3-b9bd-abdeb7b2b395.png">
+<img width="1158" alt="image" src="https://user-images.githubusercontent.com/103540696/226735972-8cab392c-171e-41f3-b9bd-abdeb7b2b395.png">
 
 
 ### Processo 2 – PROCESSO TO-BE
 
 Esse processo tem como característica apresentar o modelo futuro de compra e venda de livros no sebo digital, onde o cliente pode realizar sua compra ou venda de maneira online através do aplicativo desenvolvido.
 
-![Processo 2]<img width="1103" alt="image" src="https://user-images.githubusercontent.com/103540696/226736375-14374b95-16e2-46e3-b587-451abea4b337.png">
+<img width="1103" alt="image" src="https://user-images.githubusercontent.com/103540696/226736375-14374b95-16e2-46e3-b587-451abea4b337.png">
 
 Para essa etapa foi possível desenvolver também o processo relacionado as atividades de desenvolvimento do projeto, para que possamos ter mais assertividade para atingir nossos objetivos.
 
 ### Processo 3 – PROCESSO DESENVOLVIMENTO
 
-![Processo 3] <img width="1240" alt="image" src="https://user-images.githubusercontent.com/103540696/226737070-ffdc53e2-5dee-4363-a582-964be2051fc8.png">
+<img width="1240" alt="image" src="https://user-images.githubusercontent.com/103540696/226737070-ffdc53e2-5dee-4363-a582-964be2051fc8.png">
 
 
 ## Indicadores de Desempenho
