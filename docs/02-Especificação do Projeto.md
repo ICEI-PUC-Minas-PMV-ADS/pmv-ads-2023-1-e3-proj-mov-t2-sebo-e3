@@ -103,12 +103,11 @@ M. Chinosi, A. Trombetta. BPMN: An introduction to the standard. Computer Standa
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Os indicadores de desempenho serão apresentados abaixo, considerando as possibilidades de avaliação através das informações do diagrama de classes.
 
-Usar o seguinte modelo: 
+<img width="990" alt="image" src="https://user-images.githubusercontent.com/103540696/226762402-d0631e5c-dafa-4ba7-867e-41067a3f13c9.png">
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+
 
 ## Requisitos
 
