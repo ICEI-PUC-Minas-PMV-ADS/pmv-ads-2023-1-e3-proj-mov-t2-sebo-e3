@@ -90,7 +90,7 @@ Esse processo tem como característica apresentar o modelo atual de compra de li
 
 Esse processo tem como característica apresentar o modelo futuro de compra e venda de livros no sebo digital, onde o cliente pode realizar sua compra ou venda de maneira online através do aplicativo desenvolvido.
 
-<img width="1103" alt="image" src="https://user-images.githubusercontent.com/103540696/226736375-14374b95-16e2-46e3-b587-451abea4b337.png">
+<img width="1101" alt="image" src="https://user-images.githubusercontent.com/103540696/226738585-547e9940-eb2c-4339-a893-757f5fe3b186.png">
 
 Para essa etapa foi possível desenvolver também o processo relacionado as atividades de desenvolvimento do projeto, para que possamos ter mais assertividade para atingir nossos objetivos.
 
