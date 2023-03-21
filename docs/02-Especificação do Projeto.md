@@ -99,6 +99,8 @@ Para essa etapa foi possível desenvolver também o processo relacionado as ativ
 <img width="1240" alt="image" src="https://user-images.githubusercontent.com/103540696/226737070-ffdc53e2-5dee-4363-a582-964be2051fc8.png">
 
 
+M. Chinosi, A. Trombetta. BPMN: An introduction to the standard. Computer Standards & Interfaces 34 (2012) 124–134
+
 ## Indicadores de Desempenho
 
 Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
