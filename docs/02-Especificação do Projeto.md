@@ -73,23 +73,31 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Como apresentado na introdução do projeto com o advento da tecnologia temos a possiblidade de realizar compras online. Antes tínhamos que nos deslocar as lojas locais, sebos, para adquirir livros de interesse. O projeto em questão sebos on-line, tem como característicasolucionar problemas recorrentes do dia a dia destes leitores, a qual pessoas desapegam de livros em desuso das estantes ou afins e passam adquirir com um preço bem acessível outros exemplares publicados no aplicativo, caso tenham interesse. Com o desenvolvimento de uma aplicação móvel, o usuário é capaz de divulgar os livros disponíveis para doações ou compras/vendas, para que os demais possam adquiri-los e vice-versa, através de um simples acesso a esta ferramenta.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+Para desenvolvimento da nossa proposta utilizaremos a notação BPMN. Segundo M. Chinosi, A. Trombetta (2012), o processo de negócio (BP) é um conjunto de um ou mais procedimentos ligados ou atividades executadas seguindo uma ordem predefinida que coletivamente realizam uma meta, normalmente dentro do contexto de uma estrutura organizacional que define funções ou relacionamentos funcionais. Um processo pode estar inteiramente contido em uma única unidade organizacional, bem como pode abranger várias organizações diferentes. Nosso projeto tem como objetivo criar uma aplicação móvel que permita que leitores comprem ou doem livros (novos ou usados) sem que precisem comparecer pessoalmente ao sebo,e para isso desenvolvemos um processo AS-IS e um processo TO-BE.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – PROCESSO AS-IS
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Esse processo tem como característica apresentar o modelo atual de compra de livros, onde o cliente precisa ir até a loja física para adquirir seu exemplar. 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](<img width="1158" alt="image" src="https://user-images.githubusercontent.com/103540696/226735972-8cab392c-171e-41f3-b9bd-abdeb7b2b395.png">
 
-### Processo 2 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+### Processo 2 – PROCESSO TO-BE
 
-![Processo 2](img/02-bpmn-proc2.png)
+Esse processo tem como característica apresentar o modelo futuro de compra e venda de livros no sebo digital, onde o cliente pode realizar sua compra ou venda de maneira online através do aplicativo desenvolvido.
+
+![Processo 2]<img width="1103" alt="image" src="https://user-images.githubusercontent.com/103540696/226736375-14374b95-16e2-46e3-b587-451abea4b337.png">
+
+Para essa etapa foi possível desenvolver também o processo relacionado as atividades de desenvolvimento do projeto, para que possamos ter mais assertividade para atingir nossos objetivos.
+
+### Processo 3 – PROCESSO DESENVOLVIMENTO
+
+![Processo 3] <img width="1240" alt="image" src="https://user-images.githubusercontent.com/103540696/226737070-ffdc53e2-5dee-4363-a582-964be2051fc8.png">
+
 
 ## Indicadores de Desempenho
 
