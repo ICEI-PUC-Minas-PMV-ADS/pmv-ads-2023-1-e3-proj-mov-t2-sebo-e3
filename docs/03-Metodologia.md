@@ -97,5 +97,5 @@ As ferramentas empregadas no projeto são:
 |Repositório de código fonte e documentação|GitHub|A ferramenta foi escolhida pois em cada eixo é disponibilizado aos alunos um repositório com o modelo dos tópicos e da documentação do curso, bem como uma integração robusta com boards de acompanhamento de projetos, facilitando a gestão de processos|
 |Gerenciamento do Projeto|GitHub Projects|O Projects auxilia na integração de tarefas atribuídas à sua execução em commits|
 |Editor de código |Visual Studio Code| Foi escolhido por sua integração com o sistema de versão, bem como extensões que agilizam o desenvolvimento de uma aplicação |
-|Projeto de Interface e  Wireframes|MarvelApp| | 
+|Projeto de Interface e  Wireframes|Figma|A ferramenta foi escolhida por ser uma plataforma colaborativa completa para construção de design de interfaces e protótipos que agiliza o desenvolvimento visual de um projeto| 
 |Comunicação e Reuniões|Microsoft Teams e Whats App|Foram ferramentas escolhidas pela conveniência e praticidade: contato com o professor e demais membros e acesso frequente diário, nessa ordem|
