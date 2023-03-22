@@ -19,6 +19,7 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 ## Wireframes
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+
 https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0-1&t=bYblCGvjyNU8Wehu-0
 
 ![image](https://user-images.githubusercontent.com/103009155/227032972-a090a360-6356-4c23-a3da-6350ad985014.png)
