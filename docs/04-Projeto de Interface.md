@@ -25,23 +25,20 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0-1&t=bYblCGvjyNU8Wehu-0
 
-![image](https://user-images.githubusercontent.com/103009155/227032972-a090a360-6356-4c23-a3da-6350ad985014.png)
-![image](https://user-images.githubusercontent.com/103009155/227033034-1aabcc02-45ab-4edb-bbb5-a3593f643242.png)
-![image](https://user-images.githubusercontent.com/103009155/227033318-2798a292-335b-420a-a5f9-1a0a42b23ba5.png)
-![image](https://user-images.githubusercontent.com/103009155/227033399-aee92de0-58f4-4fd7-b0b0-6013b25ea721.png)
-![image](https://user-images.githubusercontent.com/103009155/227033670-cd9e1b45-0d95-4531-8ddd-030585b3e673.png)
-![image](https://user-images.githubusercontent.com/103009155/227033758-39c9c510-fe0e-47a4-b9fc-df8d6316b636.png)
-![image](https://user-images.githubusercontent.com/103009155/227033851-5c47c7fa-35c1-4411-8955-c65a7d86aa92.png)
-![image](https://user-images.githubusercontent.com/103009155/227034016-21f81390-9afc-4b9e-a001-ec819c34900f.png)
-![image](https://user-images.githubusercontent.com/103009155/227034207-94a84124-f0b5-476c-ad36-58943e7b9c93.png)
-![image](https://user-images.githubusercontent.com/103009155/227034376-0b6f432a-0c7e-4195-ad11-aba6f8808d72.png)
-![image](https://user-images.githubusercontent.com/103009155/227034732-b670548a-b1e2-4bdd-bc5a-b3c7c4ff6d01.png)
-![image](https://user-images.githubusercontent.com/103009155/227034822-063df4fa-3293-41c5-8582-aaff0ad8f1b9.png)
-![image](https://user-images.githubusercontent.com/103009155/227034869-f6438527-c8b1-4f5c-90aa-1927c9a26bfd.png)
-![image](https://user-images.githubusercontent.com/103009155/227034936-e03a5b1b-cc68-405e-b46d-bc83e1dd0ba6.png)
-![image](https://user-images.githubusercontent.com/103009155/227035164-2e1943a2-481b-4e02-9cf0-55d35fd4929a.png)
+*Telas de Login*
+![Telas de Login](https://user-images.githubusercontent.com/89920953/227051165-0cf21d28-865a-4c45-9327-7921374c9280.png)
 
-![image](https://user-images.githubusercontent.com/103009155/227035228-7af163ab-a941-4cd9-bb53-11b20477e067.png)
+*Tela Home*
+![home (1)](https://user-images.githubusercontent.com/89920953/227052149-26323f77-8a9d-4be4-a0b5-bd04bffa52b1.png)
+
+*Telas de Perfil*
+![perfil (1)](https://user-images.githubusercontent.com/89920953/227052933-7b6c51bc-d57a-4f01-b5fa-1db2619f21b0.png)
+
+*Tela de Busca e de Produto*
+![Busca](https://user-images.githubusercontent.com/89920953/227053264-67cc1a6c-7318-412e-8b1a-78627ce43a76.png)
+
+*Telas de Carrinho*
+![Carrinho](https://user-images.githubusercontent.com/89920953/227053670-52139b7f-c9e2-4dce-9749-aa2ef0b6cf82.png)
 
 
 
