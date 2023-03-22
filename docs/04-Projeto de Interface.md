@@ -40,7 +40,8 @@ https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0
 *Telas de Carrinho*
 ![Carrinho](https://user-images.githubusercontent.com/89920953/227053670-52139b7f-c9e2-4dce-9749-aa2ef0b6cf82.png)
 
-
+*Telas de Estoque*
+![Estoque](https://user-images.githubusercontent.com/89920953/227053886-97f25ae4-e2a3-41f6-9861-1712f652e917.png)
 
 
 
