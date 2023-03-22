@@ -31,7 +31,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 * IDEs de desenvolvimento: Visual Studio Code;
 * Linguagens utilizadas: Javascript;
 * Frameworks: React-Native;
-* Local Storage: JSON;
+* Back-end: JSON Server;
 * Ferramenta de design: Figma;
 * Plataforma para hospedagem dos arquivos: GitHub, Azure e Google Play Store; 
 * Ferramenta de divisão de tarefas: Github Project;
