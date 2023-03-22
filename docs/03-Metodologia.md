@@ -72,7 +72,8 @@ Os entregáveis estão dispostos no “Product Backlog” e apresentados em mét
 - **Done**: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação. 
 
 Abaixo, figura demonstrando a disposição dos entregáveis:
-![image](https://user-images.githubusercontent.com/103009155/222449006-e3af7700-ed13-43c1-8e43-56b59d855110.png)
+![image](https://user-images.githubusercontent.com/103009155/227023566-4a76575a-cb38-4d57-a821-d4730f6340b4.png)
+![image](https://user-images.githubusercontent.com/103009155/227023907-f9fa9704-a338-4b03-874b-a39d1596c094.png)
 
 As tarefas são, ainda, etiquetadas em função da urgência da atividade e seguem o seguinte esquema de cores/categorias:
 
