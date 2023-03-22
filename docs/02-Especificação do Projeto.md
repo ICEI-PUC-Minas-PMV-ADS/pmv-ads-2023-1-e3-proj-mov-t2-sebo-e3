@@ -90,7 +90,8 @@ Esse processo tem como característica apresentar o modelo atual de compra de li
 
 Esse processo tem como característica apresentar o modelo futuro de compra e venda de livros no sebo digital, onde o cliente pode realizar sua compra ou venda de maneira online através do aplicativo desenvolvido.
 
-<img width="1101" alt="image" src="https://user-images.githubusercontent.com/103540696/226738585-547e9940-eb2c-4339-a893-757f5fe3b186.png">
+<img width="937" alt="image" src="https://user-images.githubusercontent.com/103540696/227059804-dbd269db-da6a-4104-9d9d-977526afafa7.png">
+
 
 Para essa etapa foi possível desenvolver também o processo relacionado as atividades de desenvolvimento do projeto, para que possamos ter mais assertividade para atingir nossos objetivos.
 
@@ -105,8 +106,7 @@ M. Chinosi, A. Trombetta. BPMN: An introduction to the standard. Computer Standa
 
 Os indicadores de desempenho serão apresentados abaixo, considerando as possibilidades de avaliação através das informações do diagrama de classes.
 
-<img width="990" alt="image" src="https://user-images.githubusercontent.com/103540696/226762402-d0631e5c-dafa-4ba7-867e-41067a3f13c9.png">
-
+<img width="993" alt="image" src="https://user-images.githubusercontent.com/103540696/227060446-d011b22c-5090-417f-af0a-525faa1969d5.png">
 
 
 ## Requisitos
