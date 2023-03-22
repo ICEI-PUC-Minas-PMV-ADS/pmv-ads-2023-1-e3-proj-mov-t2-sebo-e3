@@ -23,7 +23,7 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
-https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0-1&t=bYblCGvjyNU8Wehu-0
+Link para Wireframes: https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0%3A1&t=tJUSqnw1nPywohvV-1
 
 *Telas de Login*
 ![Telas de Login](https://user-images.githubusercontent.com/89920953/227051165-0cf21d28-865a-4c45-9327-7921374c9280.png)
@@ -32,10 +32,10 @@ https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0
 ![home (1)](https://user-images.githubusercontent.com/89920953/227052149-26323f77-8a9d-4be4-a0b5-bd04bffa52b1.png)
 
 *Telas de Perfil*
-![perfil (1)](https://user-images.githubusercontent.com/89920953/227052933-7b6c51bc-d57a-4f01-b5fa-1db2619f21b0.png)
+![Perfil](https://user-images.githubusercontent.com/89920953/227054269-d3c09832-7a03-449a-a6d0-0907473580bb.png)
 
 *Tela de Busca e de Produto*
-![Busca](https://user-images.githubusercontent.com/89920953/227053264-67cc1a6c-7318-412e-8b1a-78627ce43a76.png)
+![Busca](https://user-images.githubusercontent.com/89920953/227054120-b10bbf39-8ff2-448d-971c-ef2d777d1ac0.png)
 
 *Telas de Carrinho*
 ![Carrinho](https://user-images.githubusercontent.com/89920953/227053670-52139b7f-c9e2-4dce-9749-aa2ef0b6cf82.png)
