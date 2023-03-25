@@ -38,7 +38,7 @@ Os requisitos para realização dos testes de software são:
 |	Requisito Associado 	| RF-007 –  O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido|
 | Objetivo do Teste 	| Verificar se a área do usuário está apresentando as informações de compras realizadas corretamente. |
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário 5) O usuário poderá alterar os itens no carrinho, finalizar a compra e visualizar os pedidos realizados. |
-|Critério de Êxito | 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home do administrador em que ele poderá cadastrar, alterar, excluir ou editar os itens do estoque. |
+|Critério de Êxito | - A tela área do usuário deve abrir corretamente – após efetuar o login na aplicação, o usuário poderá pesquisar os livros que deseja comprar, adicionar ao carrinho, finalizar a compra e visualizar as compras realizadas perfeitamente. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-05 – Área do administrador** 	|
 |:---:	|:---:	|
