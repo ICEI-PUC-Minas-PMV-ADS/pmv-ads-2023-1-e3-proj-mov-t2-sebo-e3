@@ -36,9 +36,9 @@ Os requisitos para realização dos testes de software são:
 | **Caso de Teste** 	| ** CT-04 – Área do usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-007 –  O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido|
-| Objetivo do Teste 	| Verificar se o administrador consegue fazer a gestão de estoque na aplicação. |
-| Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home do administrador em que ele poderá cadastrar, alterar, excluir ou editar os itens do estoque. |
-|Critério de Êxito | - A tela área do administrador deve abrir corretamente, o usuário deverá conseguir alterar, cadastrar, excluir e editar os itens do estoque, que deverão ser atualizados no estoque após o salvamento das informações. |
+| Objetivo do Teste 	| Verificar se a área do usuário está apresentando as informações de compras realizadas corretamente. |
+| Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário 5) O usuário poderá alterar os itens no carrinho, finalizar a compra e visualizar os pedidos realizados. |
+|Critério de Êxito | 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home do administrador em que ele poderá cadastrar, alterar, excluir ou editar os itens do estoque. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-05 – Área do administrador** 	|
 |:---:	|:---:	|
