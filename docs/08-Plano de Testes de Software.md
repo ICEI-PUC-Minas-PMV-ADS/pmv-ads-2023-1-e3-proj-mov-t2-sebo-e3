@@ -19,6 +19,7 @@ Os requisitos para realização dos testes de software são:
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário. |
 |Critério de Êxito | - A tela de login deve abrir corretamente - O login e senha cadastrados devem direcionar o usuário para a tela de home do Sebo Digital - Login e senha incorretos devem exibir uma mensagem de login ou senha incorretos. |
 |  	|  	|
+|  	|  	|
 | **Caso de Teste** 	| **CT-02 – Cadastrar usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 – Cadastro de clientes com nome, CPF, endereço, e-mail, senha |
@@ -33,6 +34,7 @@ Os requisitos para realização dos testes de software são:
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Ir para a página de login 4) Acessar com o e-mail e senha 5) Clicar no botão esqueceu a senha 6) O usuário será direcionado para a página de esqueceu a senha, digitará o e-mail para que possa acessar sua caixa de entrada do e-mail. Clicar no link presente no corpo da mensagem enviada no e-mail pessoal, encaminhar a página do app de redefinir senha e alterar para uma nova senha com êxito 7) Acessar o login novamente com a senha alterada. |
 |Critério de Êxito | - A tela de novo cadastro deve abrir corretamente - Ao alterar a senha, o usuário deverá conseguir realizar o login perfeitamente |
 |  	|  	|
+|  	|  	|
 | **Caso de Teste** 	| **CT-04 – Área do administrador** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006 - O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque. RF-001 - Cadastro de livros, autores, editoras e clientes.|
@@ -40,8 +42,15 @@ Os requisitos para realização dos testes de software são:
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home do administrador em que ele poderá cadastrar, alterar, excluir ou editar os itens do estoque. |
 |Critério de Êxito | - A tela área do administrador deve abrir corretamente, o usuário deverá conseguir alterar, cadastrar, excluir e editar os itens do estoque, que deverão ser atualizados no estoque após o salvamento das informações. |
 |  	|  	|
-
- 
+|  	|  	|
+| **Caso de Teste** 	| **CT-04 – Área do administrador** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-006 - O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque. RF-001 - Cadastro de livros, autores, editoras e clientes.|
+| Objetivo do Teste 	| Verificar se o administrador consegue fazer a gestão de estoque na aplicação. |
+| Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home do administrador em que ele poderá cadastrar, alterar, excluir ou editar os itens do estoque. |
+|Critério de Êxito | - A tela área do administrador deve abrir corretamente, o usuário deverá conseguir alterar, cadastrar, excluir e editar os itens do estoque, que deverão ser atualizados no estoque após o salvamento das informações. |
+|  	|  	|
+|  	|  	|
 ## Ferramentas de Testes (Opcional)
 
 Comente sobre as ferramentas de testes utilizadas.
