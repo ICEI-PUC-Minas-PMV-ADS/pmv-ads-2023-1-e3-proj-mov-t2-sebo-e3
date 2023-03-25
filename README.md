@@ -4,7 +4,7 @@ Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio
 
 Eixo 3 - Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 02 - 2023/1
 
-![logo](https://user-images.githubusercontent.com/89920953/227056610-373ba86a-99d6-49cb-8097-cf42a7b97a68.png)
+![image](https://user-images.githubusercontent.com/103009155/227723919-ed7aa3f3-c8fd-4fb3-a6b9-cb1c8200ba48.png)
 
 Nem todo mundo possui um sebo perto de casa, ou não tem tempo para ir e procurar um item específico em meio a tantos outros, portanto, para fins de democratização ao acesso desses itens, este projeto prevê a criação de uma aplicação móvel, na qual o leitor poderá ter acesso a compra de livros sem que haja a necessidade do deslocamento até o sebo
 
