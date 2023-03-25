@@ -11,6 +11,7 @@ Os requisitos para realização dos testes de software são:
        •	Aplicação publicada em dispositivos móveis com acesso à Internet
        •	Navegador da Internet - Chrome, Firefox, Edge ou Google Play Store
        •	Conectividade de Internet para acesso às plataformas (APIs)
+       
  
 | **Caso de Teste** 	| **CT-01 – Login** 	|
 |:---:	|:---:	|
