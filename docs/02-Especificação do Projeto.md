@@ -119,14 +119,14 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando s
 |------|-----------------------------------------|----|
 |RF-001| Cadastro de livros, autores, editoras e clientes | ALTA | 
 |RF-002| Autenticação no sistema | ALTA |
-|RF-001| Cadastro de clientes com nome, CPF, endereço, e-mail, senha | ALTA | 
-|RF-002| Entrega do produto e confirmação da compra | ALTA | 
-|RF-003| Controle de estoque e vendas de livros | MÉDIA | 
-|RF-004| Geração de relatórios de vendas, estoque e clientes | MÉDIA | 
-|RF-005| Pesquisa de livros por título, autor ou categoria | ALTA | 
-|RF-006| O administrador do sistema poderá visualizar, alterar, excluir  e cadastrar os itens do estoque| ALTA | 
-|RF-007| O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido | MÉDIA | 
-|RF-008| O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido | BAIXA | 
+|RF-003| Cadastro de clientes com nome, CPF, endereço, e-mail, senha | ALTA | 
+|RF-004| Entrega do produto e confirmação da compra | ALTA | 
+|RF-005| Controle de estoque e vendas de livros | MÉDIA | 
+|RF-006| Geração de relatórios de vendas, estoque e clientes | MÉDIA | 
+|RF-007| Pesquisa de livros por título, autor ou categoria | ALTA | 
+|RF-008| O administrador do sistema poderá visualizar, alterar, excluir  e cadastrar os itens do estoque| ALTA | 
+|RF-009| O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido | MÉDIA | 
+|RF-010| O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido | BAIXA | 
 
 ### Requisitos não Funcionais
 
