@@ -48,7 +48,7 @@
 |Critério de Êxito | - A tela área do administrador deve abrir corretamente, o usuário deverá conseguir alterar, cadastrar, excluir e editar os itens do estoque, que deverão ser atualizados no estoque após salvar as informações. |
 |  	|  	|
 
-![image](https://user-images.githubusercontent.com/103009155/229203016-52345368-a51d-4a47-80fc-28b6062b793b.png)
+![image](https://user-images.githubusercontent.com/103009155/229203520-68ecc03b-2019-4894-920d-500db002ef31.png)
 
 | **Caso de Teste** 	| **CT-06 – Usuário busca por livros** 	|
 |:---:	|:---:	|
