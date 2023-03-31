@@ -27,6 +27,9 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Ir para a página de login 4) Acessar com o e-mail e senha 5) Clicar no botão esqueceu a senha 6) O usuário será direcionado para a página de esqueceu a senha, digitará o e-mail para que possa acessar sua caixa de entrada do e-mail. Clicar no link presente no corpo da mensagem enviada no e-mail pessoal, encaminhar a página do app de redefinir senha e alterar para uma nova senha com êxito 7) Acessar o login novamente com a senha alterada. |
 |Critério de Êxito | - A tela de novo cadastro deve abrir corretamente - Ao alterar a senha, o usuário deverá conseguir realizar o login perfeitamente |
 |  	|  	|
+
+![image](https://user-images.githubusercontent.com/103009155/229198152-b93db2ec-bdf7-498e-a23d-d769c3edfe1e.png)
+
 | **Caso de Teste** 	| **CT-04 – Área do usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-007 –  O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido. RF-008 - O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido |
