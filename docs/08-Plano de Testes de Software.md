@@ -7,8 +7,9 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário. |
 |Critério de Êxito | - A tela de login deve abrir corretamente - O login e senha cadastrados devem direcionar o usuário para a tela de home do Sebo Digital - Login e senha incorretos devem exibir uma mensagem de login ou senha incorretos. |
 |  	|  	|
+
 ![image](https://user-images.githubusercontent.com/103009155/229194342-dce48986-b6bc-41bc-aa8b-e8b91d59a059.png)
-|  	|  	|
+
 | **Caso de Teste** 	| **CT-02 – Cadastrar usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 – Cadastro de clientes com nome, CPF, endereço, e-mail, senha |
