@@ -57,6 +57,9 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário 5) Tela de Busca e de Produto, usuário vai em Pesquisar para encontrar os livros disponíveis e detalhar sobre o mesmo |
 |Critério de Êxito | - O campo de pesquisar deve encontrar o que o usuário solicitar ao digitar no aplicativo e ao mesmo tempo conseguir clicar no livro para ver as informações. |
 |  	|  	|
+
+![image](https://user-images.githubusercontent.com/103009155/229204787-69def63b-4391-47c5-b17d-f82745e04642.png)
+
 | **Caso de Teste** 	| **CT-07 – Finalização da compra** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002 - Entrega do produto e confirmação da compra |
@@ -64,3 +67,5 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário 5) O usuário poderá alterar os itens no carrinho, finalizar a compra e visualizar os pedidos realizados. 6) O usuário decide inserir os livros no carrinho, preenche os dados corretamente e após será direcionado para a página do status de andamento do pedido |
 |Critério de Êxito | - A tela área do usuário deve abrir corretamente e ser preenchida – Para que possa vir a tela de Meus Pedidos e indicar qual status está o pedido: “Em aberto” ou “Concluído”. |
 |  	|  	|
+
+![image](https://user-images.githubusercontent.com/103009155/229205229-660946f0-0665-4fe3-b4c1-d7054e1f2639.png)
