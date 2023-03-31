@@ -37,6 +37,9 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário 5) O usuário poderá alterar os itens no carrinho, finalizar a compra e visualizar os pedidos realizados. |
 |Critério de Êxito | - A tela área do usuário deve abrir corretamente – após efetuar o login na aplicação, o usuário poderá pesquisar os livros que deseja comprar, adicionar ao carrinho, finalizar a compra e visualizar as compras realizadas perfeitamente. |
 |  	|  	|
+
+![image](https://user-images.githubusercontent.com/103009155/229202950-0945dece-7985-419c-a00a-9b2a16e81dfb.png)
+
 | **Caso de Teste** 	| **CT-05 – Área do administrador** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006 - O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque. RF-001 - Cadastro de livros, autores, editoras e clientes. RF-003 - Controle de estoque e vendas de livros |
@@ -44,6 +47,9 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home do administrador em que ele poderá cadastrar, alterar, excluir ou editar os itens do estoque. |
 |Critério de Êxito | - A tela área do administrador deve abrir corretamente, o usuário deverá conseguir alterar, cadastrar, excluir e editar os itens do estoque, que deverão ser atualizados no estoque após salvar as informações. |
 |  	|  	|
+
+![image](https://user-images.githubusercontent.com/103009155/229203016-52345368-a51d-4a47-80fc-28b6062b793b.png)
+
 | **Caso de Teste** 	| **CT-06 – Usuário busca por livros** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005 - Pesquisa de livros por título, autor ou categoria |
