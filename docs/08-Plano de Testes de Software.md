@@ -17,6 +17,9 @@
 | Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Cadastre-se na página inicial 3) Cadastrar um novo usuário 4) Preencher os campos solicitados (nome, e-mail, senha e confirme senha) 5) Clique no botão cadastrar. |
 |Critério de Êxito | - O cadastro foi realizado com sucesso, caso não seja bem-sucedido deverá obedecer aos critérios de senha: - Crie uma senha com no mínimo 8 caracteres, - Adicione letras minúsculas, -Adicione pelo menos uma letra maiúscula. |
 |  	|  	|
+
+![image](https://user-images.githubusercontent.com/103009155/229196911-b05778c7-7a83-4cf6-ad93-9d9c8eb6bcf3.png)
+
 | **Caso de Teste** 	| **CT-03 – Esqueceu a senha / Redefinir senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002 – Autenticação no sistema |
