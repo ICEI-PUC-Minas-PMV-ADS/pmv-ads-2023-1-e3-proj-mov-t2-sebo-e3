@@ -12,7 +12,7 @@ A tabela abaixo demonstra as plataformas nas quais foram desenvolvidos os respec
 Ambiente   | Plataforma 
 :--------- | :------:
 Repositório de código fonte | [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3)
-Projeto de Interface e Wireframes | [Figma](https://www.figma.com/) 
+Projeto de Interface e Wireframes | [Figma]([https://www.figma.com/](https://www.figma.com/file/OExu22cUkBSL6in4D06Z1V/Projeto-de-Interface?node-id=0-1&t=uS1KavmVOYREn57R-0)) 
 Gerenciamento do Projeto | [Kanban do Github](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/228) 
 Ambiente de desenvolvimento integrado (IDE) | [Visual Studio Code](https://code.visualstudio.com/docs) 
 Tecnologias para comunicação | [Teams](https://teams.microsoft.com/_#/school/conversations/Geral?threadId=19:LalckUyFc6HlgnKcRQrdHL5O64qQNmAdV5lP8mI4UsI1@thread.tacv2&ctx=channel) e [Whatsapp](https://chat.whatsapp.com/Gcen8ZvFSGx4VDSSAWxeXM)
