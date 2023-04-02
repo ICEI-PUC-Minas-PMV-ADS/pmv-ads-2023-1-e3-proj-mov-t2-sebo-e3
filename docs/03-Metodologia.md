@@ -104,6 +104,9 @@ As ferramentas empregadas no projeto são:
 
 ## Quadro Visual Atual de Gestão de Trabalho 
 
+![Image](img/kanban.png)
+![Image](img/metaseindicadores.png)
+
 
 ## Status Atual das Contribuições dos Membros do Time no Github ##
 
