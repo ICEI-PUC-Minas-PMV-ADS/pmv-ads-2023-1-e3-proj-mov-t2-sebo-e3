@@ -102,4 +102,4 @@ As ferramentas empregadas no projeto são:
 |Comunicação e Reuniões|Microsoft Teams e Whats App|Foram ferramentas escolhidas pela conveniência e praticidade: contato com o professor e demais membros e acesso frequente diário, nessa ordem|
 
 
-## Quadro Visual Atual de Gestão de Trabalho no Github ##
+## Quadro Visual Atual de Gestão de Trabalho e Status Atual das Contribuições dos Membros do Time no Github ##
