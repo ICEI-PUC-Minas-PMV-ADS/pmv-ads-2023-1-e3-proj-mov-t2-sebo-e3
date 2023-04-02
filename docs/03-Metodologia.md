@@ -100,3 +100,6 @@ As ferramentas empregadas no projeto são:
 |Editor de código |Visual Studio Code| Foi escolhido por sua integração com o sistema de versão, bem como extensões que agilizam o desenvolvimento de uma aplicação |
 |Projeto de Interface e  Wireframes|Figma|A ferramenta foi escolhida por ser uma plataforma colaborativa completa para construção de design de interfaces e protótipos que agiliza o desenvolvimento visual de um projeto| 
 |Comunicação e Reuniões|Microsoft Teams e Whats App|Foram ferramentas escolhidas pela conveniência e praticidade: contato com o professor e demais membros e acesso frequente diário, nessa ordem|
+
+
+## Quadro Visual Atual de Gestão de Trabalho no Github ##
