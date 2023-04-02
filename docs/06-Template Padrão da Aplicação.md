@@ -1,12 +1,13 @@
 # Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+As telas foram criadas conforme a Arquitetura da Solução e o Projeto de Interface. Com base nele, foi desenvolvido os wireframes e o protótipo inicial de nossa solução que será mostrado a seguir.
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+![carrinho (1)](https://user-images.githubusercontent.com/89920953/229356729-cd8e8ce4-bc11-4efc-bfac-3d0fe670d4b2.png)
+![perfil (1)](https://user-images.githubusercontent.com/89920953/229356731-45f0a770-51bc-4255-8550-3ecedb50aeea.png)
+![produto](https://user-images.githubusercontent.com/89920953/229356734-f372bf6b-bcf2-4c76-9cb5-f81271eb637e.png)
+![login](https://user-images.githubusercontent.com/89920953/229356740-ded42604-1844-4338-a52e-5fdffeeeeb62.png)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+A seguir podemos observar a definição de identidade visual e iconografia definida pelo grupo.
+
+
+![id-visual](https://user-images.githubusercontent.com/89920953/229357480-f5a693b2-e133-498b-9cfb-9ceb29765578.png)
