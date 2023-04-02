@@ -107,10 +107,10 @@ As ferramentas empregadas no projeto são:
 
 ## Status Atual das Contribuições dos Membros do Time no Github ##
 
-!Image](img/assigneexsprint.png)
-!Image](img/prioridadexassignee.png)
-!Image](img/prioridadexuser.png)
-!Image](img/Statusxassignee.png)
+![Image](img/assigneexsprint.png)
+![Image](img/prioridadexassignee.png)
+![Image](img/prioridadexuser.png)
+![Image](img/Statusxassignee.png)
 
 
 
