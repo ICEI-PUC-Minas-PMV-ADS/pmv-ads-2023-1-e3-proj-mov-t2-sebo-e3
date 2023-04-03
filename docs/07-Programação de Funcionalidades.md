@@ -4,12 +4,70 @@
 
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+Para cada requisito funcional, pode ser entregue um artefato desse tipo:
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+## Tela Inicial (RF-002,003 / RNF-001,003,006,007,008)
+
+A Tela Inicial do aplicativo "Sebo Virtual" apresenta as boas-vindas para os usuários que detêm de uma conta e gostaria de realizar o seu login ou para aqueles que estão tendo o primeiro contato, gostaria de realizar o seu cadastro no aplicativo.   
+
+![image](https://user-images.githubusercontent.com/103009155/229543133-b6a40cdd-4bca-499c-8e61-79fd9390ceef.png)
+
+### Requisitos atendidos 
+
+- RF-002 - Autenticação no sistema.
+- RF-003 - Cadastro de clientes com nome, CPF, endereço, e-mail, senha.
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React from "react";
+        import { Linking, Text } from "react-native";
+        import ButtonPrimary from "../../components/Forms/ButtonPrimary";
+        import ButtonSecundary from "../../components/Forms/ButtonSecundary";
+        import { Label } from "../../components/Forms/Label/style";
+        import Spacer from "../../components/Spacer";
+        import { LogoContainer, Title, ViewContainer } from "../../ui/style/style";
+        import { Header, SubTitle } from "./style";
+
+        function Initial({ navigation }) {
+        return (
+        <ViewContainer>
+        <Header>
+        <LogoContainer wdt={133} hgt={131} radius={84}></LogoContainer>
+        </Header>
+
+        <Title>Boas-vindas ao Sebo!</Title>
+        <Spacer margin={"xx"} />
+
+        <SubTitle>
+        Lorem ipsum dolor sit amet consectetur. Congue consequat
+        </SubTitle>
+        <Spacer margin={"xxx"} />
+
+        <ButtonPrimary title="Fazer Login" onPress={() => navigation.navigate('Login')} />
+        <Spacer margin={"mx"} />
+
+        <ButtonSecundary title="Cadastre-se"  onPress={() => navigation.navigate('Cadastre-se')} />
+        <Spacer margin={"xx"} />
+
+        <SubTitle>Entrar como convidado</SubTitle>
+        <Spacer margin={"xx"} />
+        </ViewContainer>
+        );
+        }
+
+        export default Initial;
+     
+        
+### Instruções de acesso 
+
+Para efetuar a tela inicial, basta o usuário iniciar o aplicativo "Sebo Virtual".
