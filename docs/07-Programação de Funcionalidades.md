@@ -10,7 +10,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo:
 
 A Tela Inicial do aplicativo "Sebo Virtual" apresenta as boas-vindas para os usuários que detêm de uma conta e gostaria de realizar o seu login ou para aqueles que estão tendo o primeiro contato, gostaria de realizar o seu cadastro no aplicativo.   
 
-![image](https://user-images.githubusercontent.com/103009155/229543133-b6a40cdd-4bca-499c-8e61-79fd9390ceef.png)
+![image](https://user-images.githubusercontent.com/103009155/229544172-647ed1dd-b669-45b0-a658-9036e3682f21.png)
 
 ### Requisitos atendidos 
 
