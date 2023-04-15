@@ -36,7 +36,7 @@ function Login({ navigation }) {
 
       <Form>
         <Label title="E-mail" />
-        <Input placeholder="Login" />
+        <Input placeholder="E-mail" />
         <Spacer margin="xx" />
 
         <Label title="Senha" />
