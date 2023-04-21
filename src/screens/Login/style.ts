@@ -59,4 +59,3 @@ export const Conect = styled.View`
     background-color: ${({ theme }) => theme.colors.shape};
     
 `;
-
