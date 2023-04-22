@@ -5,7 +5,7 @@ const Stack = createNativeStackNavigator();
 import Initial from '../screens/Initial';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
-import Redefinir from '../screens/Redefinir';
+import RedefinePassword from '../screens/RedefinePassword';
 
 function AppRoutes(){
     return (
@@ -26,8 +26,8 @@ function AppRoutes(){
                 component={Register}
             />
             <Stack.Screen 
-                name="Redefinir senha"
-                component={Redefinir}
+                name="Redefinir"
+                component={RedefinePassword}
             />
         </Stack.Navigator>
     )

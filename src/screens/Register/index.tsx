@@ -5,19 +5,16 @@ import Label from "../../components/Forms/Label";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 
-import {
-  Form,
-  SubTitle
-} from "./style";
+import { Form, SubTitle } from "./style";
 
 function Register({ navigation }) {
-  
   function teste() {
     console.log("registrado");
   }
 
   return (
     <ViewContainer>
+      <Spacer margin={"sx"} />
 
       <Form>
         <Label title="Nome" />
@@ -37,17 +34,15 @@ function Register({ navigation }) {
         <Spacer margin="xx" />
 
         <SubTitle>
-        Sua senha deve conter: {"\n"} {"\n"} 
-        - Crie uma senha com no mínimo 8 caracteres {"\n"}
-        - Adicione letra minúsculas {"\n"}
-        - Adicione pelo menos uma letra maiúscula
-      </SubTitle>
-      <Spacer margin="xx" />
-
+          Sua senha deve conter: {"\n"} {"\n"}- Crie uma senha com no mínimo 8
+          caracteres {"\n"}- Adicione letra minúsculas {"\n"}- Adicione pelo
+          menos uma letra maiúscula
+        </SubTitle>
+        <Spacer margin="xx" />
 
         <ButtonPrimary title="Cadastrar" onPress={teste} />
       </Form>
-
+      <Spacer margin={"xx"} />
     </ViewContainer>
   );
 }
