@@ -5,6 +5,7 @@ const Stack = createNativeStackNavigator();
 import Initial from '../screens/Initial';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
+import Redefinir from '../screens/Redefinir';
 
 function AppRoutes(){
     return (
@@ -23,6 +24,10 @@ function AppRoutes(){
             <Stack.Screen 
                 name="Cadastre-se"
                 component={Register}
+            />
+            <Stack.Screen 
+                name="Redefinir senha"
+                component={Redefinir}
             />
         </Stack.Navigator>
     )

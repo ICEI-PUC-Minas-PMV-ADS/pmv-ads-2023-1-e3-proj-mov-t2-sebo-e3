@@ -42,9 +42,10 @@ function Login({ navigation }) {
         <Label title="Senha" />
         <Input placeholder="Senha" />
 
-        <ForgotPassword>Esqueci minha senha</ForgotPassword>
+        <ForgotPassword> Esqueci minha senha </ForgotPassword>
+        <ForgotPassword title="Esqueci minha senha"  onPress={() => navigation.navigate('Redefinir senha')} />
+        
         <Spacer margin="xx" />
-
         <ButtonPrimary title="Entrar" onPress={teste} />
       </Form>
       <Spacer margin="xx" />
