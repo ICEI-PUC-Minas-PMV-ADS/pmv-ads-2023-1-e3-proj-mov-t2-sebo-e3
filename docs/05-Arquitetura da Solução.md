@@ -62,7 +62,7 @@ foreign key (administradorId) references AdministradorDoSistema (id)
 
 CREATE TABLE Carrinho
 (
-id int primary key auto_increment
+id int primary key auto_increment,
 livroId int not null,
 clienteId int not null,
 compraId int not null,
