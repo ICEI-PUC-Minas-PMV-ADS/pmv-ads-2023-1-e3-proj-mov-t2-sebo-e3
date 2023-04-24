@@ -36,7 +36,10 @@ endereco string not null
 
 CREATE TABLE Cliente
 (
-id int primary key auto_increment
+id int primary key auto_increment,
+usuarioId int not null,
+foreign key (usuarioId) references Usuario (id),
+
 )
 
 CREATE TABLE AdministradorDoSistema
