@@ -34,7 +34,16 @@ senha string not null,
 endereco string not null
 )
 
+CREATE TABLE Cliente
+(
+id int primary key auto_increment
+)
+
 CREATE TABLE AdministradorDoSistema
+(
+id int primary key auto_increment,
+administradorNome string not null
+)
 
 CREATE TABLE Livro
 (
@@ -45,11 +54,22 @@ estadoConservacao string not null,
 preco double not null,
 editora string not null,
 quantidade int not null,
+clienteId int not null,
+administradorId int not null,
+foreign key (clienteId) references Cliente (id),
+foreign key (administradorId) references AdministradorDoSistema (id)
+
 )
 
 CREATE TABLE Carrinho
 (
 id int primary key auto_increment
+livroId int not null,
+clienteId int not null,
+compraId int not null,
+foreign key (livroId) references Livro (id),
+foreign key (clienteId) references Cliente (id),
+foreign key (compraId) references Compra (id)
 )
 
 CREATE TABLE Compra
@@ -58,6 +78,12 @@ id int primary key auto_increment,
 comprador string not null,
 enderecoEntrega string not null,
 valorFrete string not null
+livroId int not null,
+clienteId int not null,
+carrinhoId int not null,
+foreign key (livroId) references Livro (id),
+foreign key (clienteId) references Cliente (id),
+foreign key (carrinhoId) references Carrinho (id)
 )
 
 ```
