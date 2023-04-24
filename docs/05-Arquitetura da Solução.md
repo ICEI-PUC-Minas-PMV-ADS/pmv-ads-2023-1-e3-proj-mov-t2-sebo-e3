@@ -38,8 +38,7 @@ CREATE TABLE Cliente
 (
 id int primary key auto_increment,
 usuarioId int not null,
-foreign key (usuarioId) references Usuario (id),
-
+foreign key (usuarioId) references Usuario (id)
 )
 
 CREATE TABLE AdministradorDoSistema
