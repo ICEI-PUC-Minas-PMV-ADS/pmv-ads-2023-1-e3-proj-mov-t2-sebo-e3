@@ -24,7 +24,43 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+```
+CREATE TABLE Usuario
+(
+id int primary key auto_increment,
+nome string not null,
+cpf string not null,
+senha string not null,
+endereco string not null
+)
+
+CREATE TABLE AdministradorDoSistema
+
+CREATE TABLE Livro
+(
+id int primary key auto_increment,
+titulo string not null,
+autor string not null,
+estadoConservacao string not null,
+preco double not null,
+editora string not null,
+quantidade int not null,
+)
+
+CREATE TABLE Carrinho
+(
+id int primary key auto_increment
+)
+
+CREATE TABLE Compra
+(
+id int primary key auto_increment,
+comprador string not null,
+enderecoEntrega string not null,
+valorFrete string not null
+)
+
+```
 
 ## Tecnologias Utilizadas
 
