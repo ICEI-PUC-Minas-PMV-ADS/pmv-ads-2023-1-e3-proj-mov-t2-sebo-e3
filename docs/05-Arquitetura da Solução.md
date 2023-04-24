@@ -58,7 +58,6 @@ clienteId int not null,
 administradorId int not null,
 foreign key (clienteId) references Cliente (id),
 foreign key (administradorId) references AdministradorDoSistema (id)
-
 )
 
 CREATE TABLE Carrinho
