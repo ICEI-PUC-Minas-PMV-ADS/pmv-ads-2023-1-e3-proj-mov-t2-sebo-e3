@@ -40,6 +40,8 @@ function Login({ navigation }) {
 
   return (
     <ViewContainer>
+      <Spacer margin={"xx"} />
+
       <Header>
         <LogoContainer
           wdt={83}
@@ -70,7 +72,9 @@ function Login({ navigation }) {
           }
         />
 
-        <ForgotPassword onPress={() => navigation.navigate("Redefinir senha")}> Esqueci minha senha </ForgotPassword>
+        <ForgotPassword onPress={() => navigation.navigate("Redefinir")}>
+          Esqueci minha senha
+        </ForgotPassword>
 
         <Spacer margin="xx" />
         <ButtonPrimary title="Entrar" onPress={loginUser} />
@@ -92,6 +96,8 @@ function Login({ navigation }) {
         <Conect></Conect>
         <Conect></Conect>
       </ConectContainer>
+
+      <Spacer margin={"xx"} />
     </ViewContainer>
   );
 }

@@ -22,6 +22,8 @@ function Register({ navigation }) {
 
   return (
     <ViewContainer>
+      <Spacer margin={"sx"} />
+
       <Form>
         <Label title="Nome" />
         <Input
@@ -63,6 +65,7 @@ function Register({ navigation }) {
 
         <ButtonPrimary title="Cadastrar" onPress={createUser} />
       </Form>
+      <Spacer margin={"xx"} />
     </ViewContainer>
   );
 }

@@ -5,22 +5,18 @@ import Label from "../../components/Forms/Label";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 
-import {
-  Form,
-  SubTitle
-} from "./style";
+import { Form, SubTitle } from "./style";
 
-function Redefinir({ navigation }) {
-  
+function RedefinePassword({ navigation }) {
   function teste() {
     console.log("redefinido");
   }
 
   return (
     <ViewContainer>
-
       <SubTitle>
-        Digite aqui o e-mail cadastrado, caso não possua ativar o cadastro:{"\n"}
+        Digite aqui o e-mail cadastrado, caso não possua ativar o cadastro:
+        {"\n"}
       </SubTitle>
 
       <Form>
@@ -28,9 +24,7 @@ function Redefinir({ navigation }) {
         <Input placeholder="E-mail" />
         <Spacer margin="xx" />
 
-        <SubTitle>
-        Digite a nova senha abaixo: {"\n"}
-      </SubTitle>
+        <SubTitle>Digite a nova senha abaixo: {"\n"}</SubTitle>
 
         <Label title="Senha" />
         <Input placeholder="Senha" />
@@ -41,19 +35,18 @@ function Redefinir({ navigation }) {
         <Spacer margin="xx" />
 
         <SubTitle>
-        Sua senha deve conter: {"\n"} {"\n"} 
-        - Crie uma senha com no mínimo 8 caracteres {"\n"}
-        - Adicione letra minúsculas {"\n"}
-        - Adicione pelo menos uma letra maiúscula
-      </SubTitle>
-      <Spacer margin="xx" />
-
+          Sua senha deve conter: {"\n"} {"\n"}- Crie uma senha com no mínimo 8
+          caracteres {"\n"}- Adicione letra minúsculas {"\n"}- Adicione pelo
+          menos uma letra maiúscula
+        </SubTitle>
+        <Spacer margin="xx" />
 
         <ButtonPrimary title="Redefinir senha" onPress={teste} />
       </Form>
+      <Spacer margin="xx" />
 
     </ViewContainer>
   );
 }
 
-export default Redefinir;
+export default RedefinePassword;
