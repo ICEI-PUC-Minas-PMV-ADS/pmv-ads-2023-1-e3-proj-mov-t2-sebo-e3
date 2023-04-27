@@ -6,6 +6,7 @@ import Initial from '../screens/Initial';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
 import RedefinePassword from '../screens/RedefinePassword';
+import InformationPeople from '../screens/InformationPeople';
 
 function AppRoutes(){
     return (
@@ -26,8 +27,12 @@ function AppRoutes(){
                 component={Register}
             />
             <Stack.Screen 
-                name="Redefinir"
+                name="Redefinir Senha"
                 component={RedefinePassword}
+            />
+            <Stack.Screen 
+                name="Informações Pessoais"
+                component={InformationPeople}
             />
         </Stack.Navigator>
     )

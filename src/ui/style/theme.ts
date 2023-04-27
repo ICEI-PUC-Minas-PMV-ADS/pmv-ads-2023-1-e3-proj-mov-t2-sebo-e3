@@ -1,7 +1,7 @@
 export default {
     colors : {
         primary: '#7a4183',
-
+        
         secundary: '#005f83',
 
         success: '#12A454',
@@ -21,6 +21,7 @@ export default {
         obs: 12,
         label: 14,
         text: 16,
+        subtitle: 18,
         title: 24
     },
     margin: {
