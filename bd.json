@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": 1,
+      "name": "herbert",
+      "email": "herbert@nordson.com.br",
+      "password": "herbertteste"
+    }
+  ]
+}

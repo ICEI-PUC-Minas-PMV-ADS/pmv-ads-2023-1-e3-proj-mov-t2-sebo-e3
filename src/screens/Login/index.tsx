@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import Input from "../../components/Forms/Input";
 import Label from "../../components/Forms/Label";
@@ -17,12 +17,26 @@ import {
   Conect,
   EnterLogin,
 } from "./style";
+import { getUsers } from "../../services/api";
 
 function Login({ navigation }) {
-  
-  function teste() {
-    console.log("teste");
-  }
+  const [login, setLogin] = useState({
+    email: "",
+    password: "",
+  });
+
+  const loginUser = async () => {
+    const users = await getUsers();
+
+    for(let i =0; i < users.length; i++) {
+      if (
+        users[i].email === login.email &&
+        users[i].password === login.password
+      ) {
+        console.log("Login efetuado!");
+      }
+    }
+  };
 
   return (
     <ViewContainer>
@@ -36,17 +50,30 @@ function Login({ navigation }) {
 
       <Form>
         <Label title="E-mail" />
-        <Input placeholder="E-mail" />
+        <Input
+          placeholder="E-mail"
+          onChangeText={(ev) =>
+            setLogin((old) => {
+              return { ...old, email: ev };
+            })
+          }
+        />
         <Spacer margin="xx" />
 
         <Label title="Senha" />
-        <Input placeholder="Senha" />
+        <Input
+          placeholder="Senha"
+          onChangeText={(ev) =>
+            setLogin((old) => {
+              return { ...old, password: ev };
+            })
+          }
+        />
 
-        <ForgotPassword> Esqueci minha senha </ForgotPassword>
-        <ForgotPassword title="Esqueci minha senha"  onPress={() => navigation.navigate('Redefinir senha')} />
-        
+        <ForgotPassword onPress={() => navigation.navigate("Redefinir senha")}> Esqueci minha senha </ForgotPassword>
+
         <Spacer margin="xx" />
-        <ButtonPrimary title="Entrar" onPress={teste} />
+        <ButtonPrimary title="Entrar" onPress={loginUser} />
       </Form>
       <Spacer margin="xx" />
 
