@@ -1,4 +1,4 @@
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 
@@ -6,7 +6,7 @@ export const Header = styled.View `
     justify-content: flex-end;
     align-items: center;
 
-    height: ${RFPercentage(2)}%;
+    height: 10%;
     padding-bottom: 16px;
 `;
 

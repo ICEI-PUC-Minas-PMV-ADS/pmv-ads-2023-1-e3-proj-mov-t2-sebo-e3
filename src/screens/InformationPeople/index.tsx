@@ -7,6 +7,8 @@ import Spacer from "../../components/Spacer";
 import { LogoContainer, ViewContainer } from "../../ui/style/style";
 import theme from "../../ui/style/theme";
 import { View } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 
 
 import {
@@ -21,11 +23,7 @@ function InformationPeople({ navigation }) {
     <ViewContainer>
 
       <Header>
-        <LogoContainer
-          wdt={83}
-          hgt={83}
-          radius={theme.radius.xx}
-        ></LogoContainer>
+      <Icon name="person" size={80} color="#FFFFFF" />
       </Header>
 
       <Form>
@@ -51,13 +49,14 @@ function InformationPeople({ navigation }) {
         <Input placeholder="20/03/2000" />
         <Spacer margin="xx" />
 
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 10, paddingBottom: 200 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 10, paddingBottom: 44}}>
         <ButtonSecundary50 title="Cancelar" onPress={() => navigation.navigate('')} style={{ marginRight: 5 }} /> 
         <ButtonPrimary50 title="Salvar" onPress={() => navigation.navigate('')} style={{ marginLeft: 5 }} />
         </View>
 
+        <ButtonNavBar style={{ flexDirection: 'row', justifyContent: 'space-around', paddingBottom: 44}}></ButtonNavBar>
+
       </Form>
-      <Spacer margin="xx" />
 
     </ViewContainer>
   );

@@ -15,7 +15,7 @@ function RedefinePassword({ navigation }) {
   return (
     <ViewContainer>
       <SubTitle>
-        Digite aqui o e-mail cadastrado, caso não possua ativar o cadastro:
+        Digite aqui o e-mail já cadastrado, caso não possua é necessário realizar o cadastro:
         {"\n"}
       </SubTitle>
 
