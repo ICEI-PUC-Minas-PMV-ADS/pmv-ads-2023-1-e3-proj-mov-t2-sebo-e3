@@ -5,6 +5,7 @@ const Stack = createNativeStackNavigator();
 import Initial from '../screens/Initial';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
+import Profile from '../screens/Profile';
 import RedefinePassword from '../screens/RedefinePassword';
 import InformationPeople from '../screens/InformationPeople';
 
@@ -33,6 +34,10 @@ function AppRoutes(){
             <Stack.Screen 
                 name="Informações Pessoais"
                 component={InformationPeople}
+            />
+            <Stack.Screen 
+                name="Perfil"
+                component={Profile}
             />
         </Stack.Navigator>
     )
