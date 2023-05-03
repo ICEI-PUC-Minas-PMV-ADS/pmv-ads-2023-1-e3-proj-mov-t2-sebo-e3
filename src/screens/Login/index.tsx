@@ -19,13 +19,14 @@ import {
 } from "./style";
 
 function Login({ navigation }) {
-  
   function teste() {
     console.log("teste");
   }
 
   return (
     <ViewContainer>
+      <Spacer margin={"xx"} />
+
       <Header>
         <LogoContainer
           wdt={83}
@@ -36,15 +37,17 @@ function Login({ navigation }) {
 
       <Form>
         <Label title="E-mail" />
-        <Input placeholder="Login" />
+        <Input placeholder="E-mail" />
         <Spacer margin="xx" />
 
         <Label title="Senha" />
         <Input placeholder="Senha" />
 
-        <ForgotPassword>Esqueci minha senha</ForgotPassword>
-        <Spacer margin="xx" />
+        <ForgotPassword onPress={() => navigation.navigate("Redefinir Senha")}>
+          Esqueci minha senha
+        </ForgotPassword>
 
+        <Spacer margin="xx" />
         <ButtonPrimary title="Entrar" onPress={teste} />
       </Form>
       <Spacer margin="xx" />
@@ -64,6 +67,8 @@ function Login({ navigation }) {
         <Conect></Conect>
         <Conect></Conect>
       </ConectContainer>
+
+      <Spacer margin={"xx"} />
     </ViewContainer>
   );
 }

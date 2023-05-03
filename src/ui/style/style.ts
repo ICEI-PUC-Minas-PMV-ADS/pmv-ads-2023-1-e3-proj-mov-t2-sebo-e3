@@ -6,10 +6,7 @@ interface ILogoContainer {
     hgt: number
 }
 
-export const ViewContainer = styled.View `
-    flex: 1;
-    justify-content: center;
-
+export const ViewContainer = styled.ScrollView `
     padding: ${RFValue(24)}px;
 `;
 
@@ -18,6 +15,7 @@ export const LogoContainer = styled.View<ILogoContainer>`
     height: ${({ hgt }) => RFValue(hgt)}px;
     border-radius: ${({ radius }) => RFValue(radius)}px;
     background-color: ${({ theme }) => theme.colors.shape};
+    margin: auto;
 `;
 
 export const Title = styled.Text `

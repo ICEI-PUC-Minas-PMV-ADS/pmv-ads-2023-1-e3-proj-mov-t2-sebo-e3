@@ -15,18 +15,21 @@ function Initial({ navigation }) {
       </Header>
 
       <Title>Boas-vindas ao Sebo!</Title>
-      <Spacer margin={"xx"} />
+      <Spacer margin={"mx"} />
 
       <SubTitle>
         Lorem ipsum dolor sit amet consectetur. Congue consequat
       </SubTitle>
-      <Spacer margin={"xxx"} />
+      <Spacer margin={"mx"} />
 
       <ButtonPrimary title="Fazer Login" onPress={() => navigation.navigate('Login')} />
       <Spacer margin={"mx"} />
 
       <ButtonSecundary title="Cadastre-se"  onPress={() => navigation.navigate('Cadastre-se')} />
-      <Spacer margin={"xx"} />
+      <Spacer margin={"mx"} />
+
+      <ButtonSecundary title="Informações Pessoais"  onPress={() => navigation.navigate('Informações Pessoais')} />
+      <Spacer margin={"mx"} />
 
       <ButtonSecundary title="Perfil"  onPress={() => navigation.navigate('Perfil')} />
       <Spacer margin={"mx"} />

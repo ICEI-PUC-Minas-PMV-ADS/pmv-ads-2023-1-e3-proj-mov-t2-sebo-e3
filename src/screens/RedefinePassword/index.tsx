@@ -7,23 +7,24 @@ import { ViewContainer } from "../../ui/style/style";
 
 import { Form, SubTitle } from "./style";
 
-function Register({ navigation }) {
+function RedefinePassword({ navigation }) {
   function teste() {
-    console.log("registrado");
+    console.log("redefinido");
   }
 
   return (
     <ViewContainer>
-      <Spacer margin={"sx"} />
+      <SubTitle>
+        Digite aqui o e-mail já cadastrado, caso não possua é necessário realizar o cadastro:
+        {"\n"}
+      </SubTitle>
 
       <Form>
-        <Label title="Nome" />
-        <Input placeholder="Nome" />
-        <Spacer margin="xx" />
-
         <Label title="E-mail" />
         <Input placeholder="E-mail" />
         <Spacer margin="xx" />
+
+        <SubTitle>Digite a nova senha abaixo: {"\n"}</SubTitle>
 
         <Label title="Senha" />
         <Input placeholder="Senha" />
@@ -40,11 +41,12 @@ function Register({ navigation }) {
         </SubTitle>
         <Spacer margin="xx" />
 
-        <ButtonPrimary title="Cadastrar" onPress={teste} />
+        <ButtonPrimary title="Redefinir senha" onPress={teste} />
       </Form>
-      <Spacer margin={"xx"} />
+      <Spacer margin="xx" />
+
     </ViewContainer>
   );
 }
 
-export default Register;
+export default RedefinePassword;

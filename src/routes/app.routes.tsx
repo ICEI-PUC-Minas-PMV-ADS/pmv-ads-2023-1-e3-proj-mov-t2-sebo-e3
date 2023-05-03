@@ -5,12 +5,9 @@ const Stack = createNativeStackNavigator();
 import Initial from '../screens/Initial';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
-<<<<<<< Updated upstream
-=======
+import Profile from '../screens/Profile';
 import RedefinePassword from '../screens/RedefinePassword';
 import InformationPeople from '../screens/InformationPeople';
-import Profile from '../screens/Profile';
->>>>>>> Stashed changes
 
 function AppRoutes(){
     return (
@@ -30,8 +27,6 @@ function AppRoutes(){
                 name="Cadastre-se"
                 component={Register}
             />
-<<<<<<< Updated upstream
-=======
             <Stack.Screen 
                 name="Redefinir Senha"
                 component={RedefinePassword}
@@ -44,7 +39,6 @@ function AppRoutes(){
                 name="Perfil"
                 component={Profile}
             />
->>>>>>> Stashed changes
         </Stack.Navigator>
     )
 }
