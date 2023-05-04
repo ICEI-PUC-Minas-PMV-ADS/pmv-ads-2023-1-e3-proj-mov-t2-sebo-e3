@@ -1,24 +1,21 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, TouchableOpacityProps } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
+//Icons
+import Icon from '@expo/vector-icons/Ionicons';
+
+interface ButtonIconProps extends TouchableOpacityProps {
+  title?: string;
+}
 
 const ButtonIcon: React.FC <ButtonIconProps> = (props) => {
-  const handlePress = () => {
-    console.log('Button Pressed');
-  };
-
   return (
-    <TouchableOpacity style={styles.button} onPress={handlePress} {...props}>
-      <Icon name="shopping-cart" size={20} color="#fff" />
+    <TouchableOpacity style={styles.button} {...props}>
+      <Icon name="cart" size={20} color="#fff" />
       <Text style={styles.text}> {props.title || 'Button'}</Text>
     </TouchableOpacity>
   );
 };
-
-interface ButtonIconProps extends TouchableOpacityProps {
-    title?: string;
-  }
 
 const styles = StyleSheet.create({
   button: {

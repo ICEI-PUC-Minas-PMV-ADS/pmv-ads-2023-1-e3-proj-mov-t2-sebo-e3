@@ -7,7 +7,8 @@ interface ILogoContainer {
 }
 
 export const ViewContainer = styled.ScrollView `
-    padding: ${RFValue(24)}px;
+flex: 1;
+    padding: 0 ${RFValue(24)}px;
 `;
 
 export const LogoContainer = styled.View<ILogoContainer>`

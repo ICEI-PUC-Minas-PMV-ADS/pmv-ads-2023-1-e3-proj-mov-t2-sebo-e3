@@ -28,7 +28,7 @@ function Initial({ navigation }) {
       <ButtonSecundary title="Cadastre-se"  onPress={() => navigation.navigate('Cadastre-se')} />
       <Spacer margin={"mx"} />
 
-      <ButtonSecundary title="Informações Pessoais"  onPress={() => navigation.navigate('Informações Pessoais')} />
+      <ButtonSecundary title="Informações Pessoais"  onPress={() => navigation.navigate('Informacoes Pessoais')} />
       <Spacer margin={"mx"} />
 
       <ButtonSecundary title="Perfil"  onPress={() => navigation.navigate('Perfil')} />

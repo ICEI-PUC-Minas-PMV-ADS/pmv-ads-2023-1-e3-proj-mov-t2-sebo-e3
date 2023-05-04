@@ -11,6 +11,7 @@ export default {
         error_light: 'rgba(232, 63, 91, 0.5)',
 
         shape: '#D9D9D9',
+        navbar: '#767676',
 
         title: '#404040',
         text: '#404040',

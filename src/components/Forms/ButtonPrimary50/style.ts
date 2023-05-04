@@ -5,7 +5,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 
 export const Container = styled(TouchableOpacity)<IButton>`
-    width: 50%;
+    width: 45%;
     padding: 13px;
 
     border: 2px;

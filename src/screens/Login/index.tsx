@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import Input from "../../components/Forms/Input";
 import Label from "../../components/Forms/Label";
@@ -17,59 +17,94 @@ import {
   Conect,
   EnterLogin,
 } from "./style";
+import { getUsers } from "../../services/api";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "react-native";
 
 function Login({ navigation }) {
-  function teste() {
-    console.log("teste");
-  }
+  const [login, setLogin] = useState({
+    email: "",
+    password: "",
+  });
+
+  const loginUser = async () => {
+    const users = await getUsers();
+
+    for (let i = 0; i < users.length; i++) {
+      if (
+        users[i].email === login.email &&
+        users[i].password === login.password
+      ) {
+        console.log("Login efetuado!");
+      }
+    }
+  };
 
   return (
-    <ViewContainer>
-      <Spacer margin={"xx"} />
+    <SafeAreaView style={{flex: 1 , paddingTop: StatusBar.currentHeight}}>
+      <ViewContainer>
+        <Spacer margin={"ms"} />
 
-      <Header>
-        <LogoContainer
-          wdt={83}
-          hgt={83}
-          radius={theme.radius.xx}
-        ></LogoContainer>
-      </Header>
+        <Header>
+          <LogoContainer
+            wdt={83}
+            hgt={83}
+            radius={theme.radius.xx}
+          ></LogoContainer>
+        </Header>
 
-      <Form>
-        <Label title="E-mail" />
-        <Input placeholder="E-mail" />
+        <Form>
+          <Label title="E-mail" />
+          <Input
+            placeholder="E-mail"
+            onChangeText={(ev) =>
+              setLogin((old) => {
+                return { ...old, email: ev };
+              })
+            }
+          />
+          <Spacer margin="xx" />
+
+          <Label title="Senha" />
+          <Input
+            placeholder="Senha"
+            onChangeText={(ev) =>
+              setLogin((old) => {
+                return { ...old, password: ev };
+              })
+            }
+          />
+
+          <ForgotPassword
+            onPress={() => navigation.navigate("Redefinir Senha")}
+          >
+            Esqueci minha senha
+          </ForgotPassword>
+
+          <Spacer margin="xx" />
+          <ButtonPrimary title="Entrar" onPress={loginUser} />
+        </Form>
         <Spacer margin="xx" />
 
-        <Label title="Senha" />
-        <Input placeholder="Senha" />
-
-        <ForgotPassword onPress={() => navigation.navigate("Redefinir Senha")}>
-          Esqueci minha senha
-        </ForgotPassword>
-
+        <OrContainer>
+          <OrLine></OrLine>
+          <OrTitle> ou </OrTitle>
+          <OrLine></OrLine>
+        </OrContainer>
         <Spacer margin="xx" />
-        <ButtonPrimary title="Entrar" onPress={teste} />
-      </Form>
-      <Spacer margin="xx" />
 
-      <OrContainer>
-        <OrLine></OrLine>
-        <OrTitle> ou </OrTitle>
-        <OrLine></OrLine>
-      </OrContainer>
-      <Spacer margin="xx" />
+        <EnterLogin>Entre com:</EnterLogin>
+        <Spacer margin="mx" />
 
-      <EnterLogin>Entre com:</EnterLogin>
-      <Spacer margin="mx" />
+        <ConectContainer>
+          <Conect></Conect>
+          <Conect></Conect>
+          <Conect></Conect>
+        </ConectContainer>
 
-      <ConectContainer>
-        <Conect></Conect>
-        <Conect></Conect>
-        <Conect></Conect>
-      </ConectContainer>
-
-      <Spacer margin={"xx"} />
-    </ViewContainer>
+        <Spacer margin={"xx"} />
+      </ViewContainer>
+    </SafeAreaView>
   );
 }
 

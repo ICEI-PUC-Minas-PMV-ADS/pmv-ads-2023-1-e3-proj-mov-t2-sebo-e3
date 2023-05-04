@@ -6,59 +6,74 @@ import Label from "../../components/Forms/Label";
 import Spacer from "../../components/Spacer";
 import { LogoContainer, ViewContainer } from "../../ui/style/style";
 import theme from "../../ui/style/theme";
-import { View } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { SafeAreaView, StatusBar, View } from "react-native";
+import Icon from "@expo/vector-icons/Ionicons";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 
-
-import {
-  Header,
-  Form,
-  SubTitle,
-} from "./style";
-
+import { Header, Form, SubTitle } from "./style";
 
 function InformationPeople({ navigation }) {
   return (
-    <ViewContainer>
+    <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+      <ViewContainer>
+        <Header>
+          <Icon name="person" size={80} color="#767676" />
+        </Header>
 
-      <Header>
-      <Icon name="person" size={80} color="#FFFFFF" />
-      </Header>
+        <Form>
+          <SubTitle> Conta {"\n"} </SubTitle>
+          <Label title="Nome do Usuário" />
+          <Spacer margin={"xs"} />
+          <Input placeholder="Arthur Valentin" />
+          <Spacer margin={"xs"} />
 
-      <Form>
-      <SubTitle> Conta {"\n"} </SubTitle>
-        <Label title="Nome do Usuário" />
-        <Input placeholder="Arthur Valentin" /> 
+          <Label title="Email" />
+          <Spacer margin={"xs"} />
+          <Input placeholder="arthur.valentin@gmail.com" />
+          <Spacer margin={"xs"} />
 
-        <Label title="Email" />
-        <Input placeholder="arthur.valentin@gmail.com" />
+          <Label title="Senha Atual" />
+          <Spacer margin={"xs"} />
+          <Input placeholder="*************" />
+          <Spacer margin={"xx"} />
 
-        <Label title="Senha Atual" />
-        <Input placeholder="*************" />
-        <Spacer margin="xx" />
+          <SubTitle> Pessoal {"\n"} </SubTitle>
+          <Label title="Nome Completo" />
+          <Spacer margin={"xs"} />
+          <Input placeholder="Arthur Valentin Ferreira" />
+          <Spacer margin={"xs"} />
 
-        <SubTitle> Pessoal {"\n"} </SubTitle>
-        <Label title="Nome Completo" />
-        <Input placeholder="Arthur Valentin Ferreira" />
+          <Label title="CPF" />
+          <Spacer margin={"xs"} />
+          <Input placeholder="123.456.789-10" />
+          <Spacer margin={"xs"} />
 
-        <Label title="CPF" />
-        <Input placeholder="123.456.789-10" />
+          <Label title="Data de Nascimento" />
+          <Spacer margin={"xs"} />
+          <Input placeholder="20/03/2000" />
+          <Spacer margin={"xx"} />
 
-        <Label title="Data de Nascimento" />
-        <Input placeholder="20/03/2000" />
-        <Spacer margin="xx" />
-
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 10, paddingBottom: 44}}>
-        <ButtonSecundary50 title="Cancelar" onPress={() => navigation.navigate('')} style={{ marginRight: 5 }} /> 
-        <ButtonPrimary50 title="Salvar" onPress={() => navigation.navigate('')} style={{ marginLeft: 5 }} />
-        </View>
-
-        <ButtonNavBar style={{ flexDirection: 'row', justifyContent: 'space-around', paddingBottom: 44}}></ButtonNavBar>
-
-      </Form>
-
-    </ViewContainer>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              paddingBottom: 44,
+              paddingHorizontal: 6,
+            }}
+          >
+            <ButtonSecundary50
+              title="Cancelar"
+              onPress={() => navigation.navigate("")}
+            />
+            <ButtonPrimary50
+              title="Salvar"
+              onPress={() => navigation.navigate("")}
+            />
+          </View>
+        </Form>
+      </ViewContainer>
+      <ButtonNavBar />
+    </SafeAreaView>
   );
 }
 

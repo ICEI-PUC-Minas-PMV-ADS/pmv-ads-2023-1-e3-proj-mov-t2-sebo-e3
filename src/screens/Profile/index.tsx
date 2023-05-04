@@ -1,17 +1,21 @@
 import React from "react";
+
+//Style
+import { LogoContainer, ViewContainer } from "../../ui/style/style";
+import theme from "../../ui/style/theme";
+
+//Components
 import ButtonPrimary50 from "../../components/Forms/ButtonPrimary50";
 import ButtonSecundary from "../../components/Forms/ButtonSecundary";
 import Input from "../../components/Forms/Input";
 import Label from "../../components/Forms/Label";
-import Spacer from "../../components/Spacer";
-import { LogoContainer, ViewContainer } from "../../ui/style/style";
-import theme from "../../ui/style/theme";
-import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { View, Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 import ButtonIcon from "../../components/Forms/ButtonIcon";
-import {TouchableOpacity, TouchableOpacityProps } from 'react-native';
-//import Ionicons from '@expo/vector-icons/Ionicons';
+import Spacer from "../../components/Spacer";
+
+//Icons
+import Icon from '@expo/vector-icons/Ionicons';
 
 
 
@@ -24,6 +28,7 @@ import {
 
 
 function Profile({ navigation }) {
+
   return (
     <ViewContainer>
 
@@ -58,8 +63,6 @@ function Profile({ navigation }) {
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 10, paddingBottom: 44}}>
         <ButtonSecundary title="Sair" onPress={() => navigation.navigate('Inicial')} style={{ marginRight: 5 }} /> 
         </View>
-
-        <ButtonNavBar style={{ flexDirection: 'row', justifyContent: 'space-around', paddingBottom: 44}}></ButtonNavBar>
 
       </Form>
 
