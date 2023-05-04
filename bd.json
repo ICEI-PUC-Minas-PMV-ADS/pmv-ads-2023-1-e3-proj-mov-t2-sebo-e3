@@ -17,6 +17,12 @@
       "name": "herbert",
       "email": "herbert@nordson.com.br",
       "password": "herbertteste"
+    },
+    {
+      "id": 2,
+      "name": "Herbert",
+      "email": "herbert@puc",
+      "password": "herbert123"
     }
   ]
 }

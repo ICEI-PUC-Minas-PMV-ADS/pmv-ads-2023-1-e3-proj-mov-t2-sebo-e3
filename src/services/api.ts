@@ -29,3 +29,15 @@ export const postUsers = async (data: IUser) => {
         return "failed request";
     }
 }
+
+export const putUsers = async (data: IUser) => {
+    try {
+        const response = await apiBase.put(`users/${data.id}`, data);
+        
+        if(response.status >= 200){
+            return "success put";
+        }
+    } catch (error) {
+        return "failed request";
+    }
+}
