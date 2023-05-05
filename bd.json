@@ -9,20 +9,11 @@
     {
       "id": 0,
       "name": "",
+      "full-name": "",
       "email": "",
-      "password": ""
-    },
-    {
-      "id": 1,
-      "name": "herbert",
-      "email": "herbert@nordson.com.br",
-      "password": "herbertteste"
-    },
-    {
-      "id": 2,
-      "name": "Herbert",
-      "email": "herbert@puc",
-      "password": "herbert123"
+      "password": "",
+      "cpf": "",
+      "date-of-birth": ""
     }
   ]
 }

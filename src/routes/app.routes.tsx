@@ -27,8 +27,17 @@ function AppRoutes() {
         <Stack.Screen
           name="Informacoes Pessoais"
           component={InformationPeople}
+          options={{
+            headerShown: false,
+          }}
         />
-        <Stack.Screen name="Perfil" component={Profile} />
+        <Stack.Screen
+          name="Perfil"
+          component={Profile}
+          options={{
+            headerShown: false,
+          }}
+        />
       </>
     </Stack.Navigator>
   );
