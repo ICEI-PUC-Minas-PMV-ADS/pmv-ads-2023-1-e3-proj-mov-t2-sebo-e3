@@ -7,8 +7,11 @@ import { ViewContainer } from "../../ui/style/style";
 import { postUsers } from "../../services/api";
 import { Form, SubTitle } from "./style";
 import { IUser } from "../../ui/interfaces";
+import { checkPass } from "../../utils/validators";
 
 function Register({ navigation }) {
+  const [pass, setPass] = useState<string>();
+  const [confirmPass, setConfirmPass] = useState<string>();
   const [user, setUser] = useState<IUser>({
     id: 0,
     name: "",
@@ -17,7 +20,28 @@ function Register({ navigation }) {
   });
 
   async function createUser() {
-    const response = await postUsers(user);
+    if (user.email && user.name && user.password) {
+      const response = await postUsers(user);
+
+      if (response === "success post") {
+        return navigation.navigate("Login");
+      }
+
+      alert(
+        "Estamos com uma instabilidade, por favor, tente novamente mais tarde!"
+      );
+    } else {
+      alert("Por favor, preencher todos os dados para efetuar cadastro.");
+    }
+  }
+
+  function submitForm() {
+    if (checkPass(pass, confirmPass)) {
+      setUser((old) => {
+        return { ...old, password: pass };
+      });
+      createUser();
+    }
   }
 
   return (
@@ -37,33 +61,33 @@ function Register({ navigation }) {
         <Spacer margin="xx" />
 
         <Label title="E-mail" />
-        <Input placeholder="E-mail" onChangeText={(ev) =>
+        <Input
+          placeholder="E-mail"
+          onChangeText={(ev) =>
             setUser((old) => {
               return { ...old, email: ev };
             })
-          }/>
+          }
+        />
         <Spacer margin="xx" />
 
         <Label title="Senha" />
-        <Input placeholder="Senha" onChangeText={(ev) =>
-            setUser((old) => {
-              return { ...old, password: ev };
-            })
-          }/>
+        <Input placeholder="Senha" onChangeText={setPass} />
         <Spacer margin="xx" />
 
         <Label title="Confirme a senha" />
-        <Input placeholder="Confirme a senha" />
+        <Input placeholder="Confirme a senha" onChangeText={setConfirmPass} />
         <Spacer margin="xx" />
 
         <SubTitle>
           Sua senha deve conter: {"\n"} {"\n"}- Crie uma senha com no mínimo 8
           caracteres {"\n"}- Adicione letra minúsculas {"\n"}- Adicione pelo
-          menos uma letra maiúscula
+          menos uma letra maiúscula {"\n"}- Adicione pelo menos um caractere
+          especial
         </SubTitle>
         <Spacer margin="xx" />
 
-        <ButtonPrimary title="Cadastrar" onPress={createUser} />
+        <ButtonPrimary title="Cadastrar" onPress={submitForm} />
       </Form>
       <Spacer margin={"xx"} />
     </ViewContainer>

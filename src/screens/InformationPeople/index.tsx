@@ -63,7 +63,7 @@ function InformationPeople({ navigation }) {
           >
             <ButtonSecundary50
               title="Cancelar"
-              onPress={() => navigation.navigate("")}
+              onPress={() => navigation.navigate("Login")}
             />
             <ButtonPrimary50
               title="Salvar"
