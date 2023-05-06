@@ -6,6 +6,7 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 
 Para cada requisito funcional, pode ser entregue um artefato desse tipo:
 
+
 ## Tela Inicial (RF-002,003 / RNF-001,003,006,007,008)
 
 A Tela Inicial do aplicativo "Sebo Virtual" apresenta as boas-vindas para os usuários que detêm de uma conta e gostaria de realizar o seu login ou para aqueles que estão tendo o primeiro contato realizarem o seu cadastro no aplicativo.   
@@ -172,3 +173,443 @@ A Tela de Login do aplicativo "Sebo Virtual" o usuário poderá efetuar o acesso
 ### Instruções de acesso 
 
 Para efetuar o login o usuário deverá clicar no botão fazer login na tela inicial, preencher os campos login e senha e apertar o botão entrar, caso não saiba a senha poderá apertar o campo esqueci minha senha, para ser redirecionado para a página de alteração da senha cadastrada.
+
+
+## Redefinir Senha (RF-002 / RNF-001,002,003,004,006,007,008)
+
+A Tela de Redefinir Senha do aplicativo "Sebo Virtual" o usuário poderá alterar a senha cadastrada na aplicação.
+
+![image](https://user-images.githubusercontent.com/103009155/236585565-64829530-9d6f-4c6b-bb44-b22c206d931a.png)
+
+### Requisitos atendidos 
+
+- RF-002 - Autenticação no sistema.
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-004 - O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React from "react";
+        import ButtonPrimary from "../../components/Forms/ButtonPrimary";
+        import Input from "../../components/Forms/Input";
+        import Label from "../../components/Forms/Label";
+        import Spacer from "../../components/Spacer";
+        import { ViewContainer } from "../../ui/style/style";
+
+        import { Form, SubTitle } from "./style";
+
+        function RedefinePassword({ navigation }) {
+        function teste() {
+        console.log("redefinido");
+        }
+
+        return (
+        <ViewContainer>
+        <SubTitle>
+        Digite aqui o e-mail já cadastrado, caso não possua é necessário realizar o cadastro:
+        {"\n"}
+        </SubTitle>
+
+        <Form>
+        <Label title="E-mail" />
+        <Input placeholder="E-mail" />
+        <Spacer margin="xx" />
+
+        <SubTitle>Digite a nova senha abaixo: {"\n"}</SubTitle>
+
+        <Label title="Senha" />
+        <Input placeholder="Senha" />
+        <Spacer margin="xx" />
+
+        <Label title="Confirme a senha" />
+        <Input placeholder="Confirme a senha" />
+        <Spacer margin="xx" />
+
+        <SubTitle>
+        Sua senha deve conter: {"\n"} {"\n"}- Crie uma senha com no mínimo 8
+        caracteres {"\n"}- Adicione letra minúsculas {"\n"}- Adicione pelo
+        menos uma letra maiúscula
+        </SubTitle>
+        <Spacer margin="xx" />
+
+        <ButtonPrimary title="Redefinir senha" onPress={teste} />
+        </Form>
+        <Spacer margin="xx" />
+
+        </ViewContainer>
+        );
+        }
+
+        export default RedefinePassword;
+     
+        
+### Instruções de acesso 
+
+Caso o usuário esqueça a senha, ele poderá clicar no botão esqueci minha senha na tela de login, ele será encaminhado para a tela Redefinir Senha em que deverá digitar o e-mail cadastrado, nova senha, confirmar a senha para que possa atualizar o sistema com a senha atribuída. 
+
+
+## Cadastre-se (RF-002,003 / RNF-001,002,003,004,006,007,008)
+
+A Tela de Cadastro do aplicativo "Sebo Virtual" o usuário deve preencher obrigatório: nome, e-mail, senha e confirmar senha. Para atribuir a função de Create, Edit, Details e Delete. Para quaisquer tipos de alterações das informações dos dados no Json Server. 
+
+![image](https://user-images.githubusercontent.com/103009155/236584470-bdbb6d54-97e8-4655-9df3-ff1c770ef33d.png)
+
+### Requisitos atendidos 
+
+- RF-002 - Autenticação no sistema.
+- RF-003 - Cadastro de clientes com nome, CPF, endereço, e-mail, senha
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-004 - O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React, { useState } from "react";
+        import ButtonPrimary from "../../components/Forms/ButtonPrimary";
+        import Input from "../../components/Forms/Input";
+        import Label from "../../components/Forms/Label";
+        import Spacer from "../../components/Spacer";
+        import { ViewContainer } from "../../ui/style/style";
+        import { postUsers } from "../../services/api";
+        import { Form, SubTitle } from "./style";
+        import { IUser } from "../../ui/interfaces";
+        import { checkPass } from "../../utils/validators";
+
+        function Register({ navigation }) {
+        const [pass, setPass] = useState<string>();
+        const [confirmPass, setConfirmPass] = useState<string>();
+        const [user, setUser] = useState<IUser>({
+        id: 0,
+        name: "",
+        email: "",
+        password: "",
+        });
+
+       async function createUser() {
+       if (user.email && user.name && user.password) {
+       const response = await postUsers(user);
+
+       if (response === "success post") {
+        return navigation.navigate("Login");
+       }
+
+       alert(
+       "Estamos com uma instabilidade, por favor, tente novamente mais tarde!"
+       );
+       } else {
+       alert("Por favor, preencher todos os dados para efetuar cadastro.");
+       }
+       }
+
+       function submitForm() {
+       if (checkPass(pass, confirmPass)) {
+       setUser((old) => {
+       return { ...old, password: pass };
+       });
+       createUser();
+       }
+       }
+
+        return (
+        <ViewContainer>
+        <Spacer margin={"sx"} />
+
+        <Form>
+        <Label title="Nome" />
+        <Input
+        placeholder="Nome"
+        onChangeText={(ev) =>
+        setUser((old) => {
+        return { ...old, name: ev };
+        })
+        }
+        />
+        <Spacer margin="xx" />
+
+        <Label title="E-mail" />
+        <Input
+        placeholder="E-mail"
+        onChangeText={(ev) =>
+        setUser((old) => {
+        return { ...old, email: ev };
+        })
+        }
+        />
+        <Spacer margin="xx" />
+
+        <Label title="Senha" />
+        <Input placeholder="Senha" onChangeText={setPass} />
+        <Spacer margin="xx" />
+
+        <Label title="Confirme a senha" />
+        <Input placeholder="Confirme a senha" onChangeText={setConfirmPass} />
+        <Spacer margin="xx" />
+
+        <SubTitle>
+        Sua senha deve conter: {"\n"} {"\n"}- Crie uma senha com no mínimo 8
+        caracteres {"\n"}- Adicione letra minúsculas {"\n"}- Adicione pelo
+        menos uma letra maiúscula {"\n"}- Adicione pelo menos um caractere
+        especial
+        </SubTitle>
+        <Spacer margin="xx" />
+
+        <ButtonPrimary title="Cadastrar" onPress={submitForm} />
+        </Form>
+        <Spacer margin={"xx"} />
+        </ViewContainer>
+        );
+        }
+
+        export default Register;
+     
+        
+### Instruções de acesso 
+
+Para efetuar o cadastro, o usuário deverá clicar no botão Cadastre-se na tela inicial.
+
+
+## Perfil (RF-002 / RNF-001,002,003,006,007,008)
+
+A Tela de Perfil do aplicativo "Sebo Virtual" o usuário possui acesso aos meus pedidos, informações pessoais e deletar a conta.  
+
+![image](https://user-images.githubusercontent.com/103009155/236588295-bb05427b-5ec7-4172-8ea8-d6851b2774df.png)
+
+### Requisitos atendidos 
+
+- RF-002 - Autenticação no sistema.
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React from "react";
+
+        //Style
+        import { LogoContainer, ViewContainer } from "../../ui/style/style";
+        import { Header, Form, SubTitle } from "./style";
+        import theme from "../../ui/style/theme";
+
+        //Components
+        import ButtonPrimary50 from "../../components/Forms/ButtonPrimary50";
+        import ButtonSecundary from "../../components/Forms/ButtonSecundary";
+        import Input from "../../components/Forms/Input";
+        import Label from "../../components/Forms/Label";
+        import {
+        View,
+        Text,
+        TouchableOpacity,
+        TouchableOpacityProps,
+        StatusBar,
+        } from "react-native";
+        import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+        import ButtonIcon from "../../components/Forms/ButtonIcon";
+        import Spacer from "../../components/Spacer";
+        import { SafeAreaView } from "react-native-safe-area-context";
+
+        //Icons
+        import Icon from "@expo/vector-icons/Ionicons";
+
+
+        function Profile({ navigation }) {
+        return (
+        <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+        <ViewContainer>
+        <Spacer margin="ms" />
+
+        <Header>
+        <Text>{"\n"}</Text>
+        <Icon name="person" size={100} color="#005f83" />
+        <Text>{"Usuário"}</Text>
+        </Header>
+
+        <Text>{"\n\n\n"}</Text>
+        <ButtonIcon
+        title="Meus Pedidos"
+        onPress={() => navigation.navigate("")}
+        />
+
+        <Form>
+        <Text>{"\n\n"}</Text>
+        <SubTitle>Conta {"\n"} </SubTitle>
+
+        <TouchableOpacity
+        onPress={() => navigation.navigate("Informacoes Pessoais")}
+        >
+        <Text>Informações Pessoais</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+        onPress={() => navigation.navigate("TelaDeDestino")}
+        >
+        <Text>Deletar conta</Text>
+        </TouchableOpacity>
+
+        <Spacer margin="xx" />
+
+        <View
+        style={{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        paddingHorizontal: 10,
+        paddingBottom: 44,
+        }}
+        >
+        <ButtonSecundary
+        title="Sair"
+        onPress={() => navigation.navigate("Inicial")}
+        style={{ marginRight: 5 }}
+        />
+        </View>
+        </Form>
+        </ViewContainer>
+        <ButtonNavBar />
+        </SafeAreaView>
+        );
+        }
+
+        export default Profile;
+     
+        
+### Instruções de acesso 
+
+Para efetuar a tela Perfil, o usuário deverá estar logado e clicar no ícone Perfil do menu inferior da tela Home.
+
+
+## Informações pessoais (RF-002,003 / RNF-001,002,003,004,006,007,008)
+
+A Tela de Informações pessoais do aplicativo "Sebo Virtual" o usuário poderá editar ou visualizar os dados já efetuados no cadastro: nome do usuário, e-mail, senha atual, nome completo, CPF e Data de Nascimento. Para atribuir a função de Create, Edit, Details e Delete. Para quaisquer tipos de alterações das informações dos dados no Json Server. 
+
+![image](https://user-images.githubusercontent.com/103009155/236587758-4835ed71-a160-48bd-8bc3-57ae6dc6ea8e.png)
+
+### Requisitos atendidos 
+
+- RF-002 - Autenticação no sistema.
+- RF-003 - Cadastro de clientes com nome, CPF, endereço, e-mail, senha
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-004 - O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React from "react";
+        import ButtonPrimary50 from "../../components/Forms/ButtonPrimary50";
+        import ButtonSecundary50 from "../../components/Forms/ButtonSecundary50";
+        import Input from "../../components/Forms/Input";
+        import Label from "../../components/Forms/Label";
+        import Spacer from "../../components/Spacer";
+        import { LogoContainer, ViewContainer } from "../../ui/style/style";
+        import theme from "../../ui/style/theme";
+        import { SafeAreaView, StatusBar, View } from "react-native";
+        import Icon from "@expo/vector-icons/Ionicons";
+        import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+
+        import { Header, Form, SubTitle } from "./style";
+
+        function InformationPeople({ navigation }) {
+        return (
+        <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+        <ViewContainer>
+        <Header>
+        <Icon name="person" size={80} color="#767676" />
+        </Header>
+
+        <Form>
+        <SubTitle> Conta {"\n"} </SubTitle>
+        <Label title="Nome do Usuário" />
+        <Spacer margin={"xs"} />
+        <Input placeholder="Arthur Valentin" />
+        <Spacer margin={"xs"} />
+
+        <Label title="Email" />
+        <Spacer margin={"xs"} />
+        <Input placeholder="arthur.valentin@gmail.com" />
+        <Spacer margin={"xs"} />
+
+        <Label title="Senha Atual" />
+        <Spacer margin={"xs"} />
+        <Input placeholder="*************" />
+        <Spacer margin={"xx"} />
+
+        <SubTitle> Pessoal {"\n"} </SubTitle>
+        <Label title="Nome Completo" />
+        <Spacer margin={"xs"} />
+        <Input placeholder="Arthur Valentin Ferreira" />
+        <Spacer margin={"xs"} />
+
+        <Label title="CPF" />
+        <Spacer margin={"xs"} />
+        <Input placeholder="123.456.789-10" />
+        <Spacer margin={"xs"} />
+
+        <Label title="Data de Nascimento" />
+        <Spacer margin={"xs"} />
+        <Input placeholder="20/03/2000" />
+        <Spacer margin={"xx"} />
+
+         <View
+         style={{
+         flexDirection: "row",
+         justifyContent: "space-between",
+         paddingBottom: 44,
+         paddingHorizontal: 6,
+         }}
+         >
+         <ButtonSecundary50
+         title="Cancelar"
+         onPress={() => navigation.navigate("Login")}
+         />
+         <ButtonPrimary50
+         title="Salvar"
+         onPress={() => navigation.navigate("")}
+         />
+         </View>
+         </Form>
+         </ViewContainer>
+         <ButtonNavBar />
+         </SafeAreaView>
+         );
+         }
+
+         export default InformationPeople;
+        
+        
+### Instruções de acesso 
+
+Para acessar a tela de informações pessoais, o usuário deve estar logado a conta para direcionar de imediato na tela Home, que contém o ícone de perfil no menu inferior. Clicando será direcionado a tela Perfil que possui o botão Informações pessoais. 
