@@ -179,7 +179,7 @@ Para efetuar o login o usuário deverá clicar no botão fazer login na tela ini
 
 A Tela de Redefinir Senha do aplicativo "Sebo Virtual" o usuário poderá alterar a senha cadastrada na aplicação.
 
-![image](https://user-images.githubusercontent.com/103009155/236585565-64829530-9d6f-4c6b-bb44-b22c206d931a.png)
+![image](https://user-images.githubusercontent.com/103009155/236588875-15e9c885-c3c2-4b79-9c9e-3990bdfa44bc.png)
 
 ### Requisitos atendidos 
 
@@ -262,7 +262,7 @@ Caso o usuário esqueça a senha, ele poderá clicar no botão esqueci minha sen
 
 A Tela de Cadastro do aplicativo "Sebo Virtual" o usuário deve preencher obrigatório: nome, e-mail, senha e confirmar senha. Para atribuir a função de Create, Edit, Details e Delete. Para quaisquer tipos de alterações das informações dos dados no Json Server. 
 
-![image](https://user-images.githubusercontent.com/103009155/236584470-bdbb6d54-97e8-4655-9df3-ff1c770ef33d.png)
+![image](https://user-images.githubusercontent.com/103009155/236588956-f37a96d3-7c49-42c7-987b-7e4e84a86617.png)
 
 ### Requisitos atendidos 
 
@@ -391,7 +391,7 @@ Para efetuar o cadastro, o usuário deverá clicar no botão Cadastre-se na tela
 
 A Tela de Perfil do aplicativo "Sebo Virtual" o usuário possui acesso aos meus pedidos, informações pessoais e deletar a conta.  
 
-![image](https://user-images.githubusercontent.com/103009155/236588295-bb05427b-5ec7-4172-8ea8-d6851b2774df.png)
+![image](https://user-images.githubusercontent.com/103009155/236589008-1058cd2a-2cbb-49da-b9fb-5d32eb03838b.png)
 
 ### Requisitos atendidos 
 
@@ -507,7 +507,7 @@ Para efetuar a tela Perfil, o usuário deverá estar logado e clicar no ícone P
 
 A Tela de Informações pessoais do aplicativo "Sebo Virtual" o usuário poderá editar ou visualizar os dados já efetuados no cadastro: nome do usuário, e-mail, senha atual, nome completo, CPF e Data de Nascimento. Para atribuir a função de Create, Edit, Details e Delete. Para quaisquer tipos de alterações das informações dos dados no Json Server. 
 
-![image](https://user-images.githubusercontent.com/103009155/236587758-4835ed71-a160-48bd-8bc3-57ae6dc6ea8e.png)
+![image](https://user-images.githubusercontent.com/103009155/236589030-66539902-07ae-453a-a4bb-87fb53405ac5.png)
 
 ### Requisitos atendidos 
 
