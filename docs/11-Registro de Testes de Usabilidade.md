@@ -2,9 +2,7 @@
 
 O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa. Quanto maior for a nota, maior a facilidade no uso da aplicação.
 
-Foi utilizada a ferramenta Maze para a verificação da usabilidade das páginas e dos fluxos do aplicativo Sebo Digital. O relatório completo da avaliação está presente nos links abaixo:
- <a href="https://app.maze.co/report/Sebo-Cliente/cml6n1hlhdrfr5e/intro">Fluxo de Cliente</a>
- <a href=#>Fluxo de Administrador</a>
+Foi utilizada a ferramenta Maze para a verificação da usabilidade das páginas e dos fluxos do aplicativo Sebo Digital. O relatório completo da avaliação está presente nos links <a href="https://app.maze.co/report/Sebo-Cliente/cml6n1hlhdrfr5e/intro">Fluxo de Cliente</a> e <a href=https://app.maze.co/report/Sebo-ADM/1d82ilhcmoayr/intro>Fluxo de Administrador</a>
  
 #### CT 01 - Cadastro de Usuário
 Fluxo de páginas: Pré-login -> Cadastro -> Login
