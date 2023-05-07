@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "",
+      "full-name": "",
+      "email": "",
+      "password": "",
+      "cpf": "",
+      "date-of-birth": ""
+    },
+    {
+      "id": 2,
+      "email": "herbert@puc.com.br",
+      "password": "Herbert@123",
+      "name": "Herbert Nordson"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ function Initial({ navigation }) {
   return (
     <ViewContainer>
       <Header>
-        <LogoContainer wdt={133} hgt={131} radius={84}></LogoContainer>
+        <LogoContainer style={{width: 150, height: 210}} source={require('../../assets/sebo-logo-initial.png')}></LogoContainer>
       </Header>
 
       <Title>Boas-vindas ao Sebo!</Title>
