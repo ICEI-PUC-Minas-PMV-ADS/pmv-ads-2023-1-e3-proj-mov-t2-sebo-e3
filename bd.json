@@ -14,6 +14,12 @@
       "password": "",
       "cpf": "",
       "date-of-birth": ""
+    },
+    {
+      "id": 2,
+      "email": "herbert@puc.com.br",
+      "password": "Herbert@123",
+      "name": "Herbert Nordson"
     }
   ]
 }

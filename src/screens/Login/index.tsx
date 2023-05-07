@@ -35,7 +35,7 @@ function Login({ navigation }) {
         users[i].email === login.email &&
         users[i].password === login.password
       ) {
-        console.log("Login efetuado!");
+        navigation.navigate("Perfil")
       }
     }
   };
@@ -47,12 +47,11 @@ function Login({ navigation }) {
 
         <Header>
           <LogoContainer
-            wdt={83}
-            hgt={83}
-            radius={theme.radius.xx}
-          ></LogoContainer>
+            source={require('../../assets/sebo-logo-app.png')}
+          />
         </Header>
 
+        <Spacer margin="xx" />
         <Form>
           <Label title="E-mail" />
           <Input

@@ -27,6 +27,11 @@ import Icon from "@expo/vector-icons/Ionicons";
 
 
 function Profile({ navigation }) {
+  
+  function navPages() {
+    navigation.navigate("Perfil")
+  }
+
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
@@ -78,7 +83,7 @@ function Profile({ navigation }) {
           </View>
         </Form>
       </ViewContainer>
-      <ButtonNavBar />
+      <ButtonNavBar navigate={navPages}/>
     </SafeAreaView>
   );
 }

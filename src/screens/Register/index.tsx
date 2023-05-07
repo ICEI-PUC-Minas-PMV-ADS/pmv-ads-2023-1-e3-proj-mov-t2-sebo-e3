@@ -7,10 +7,9 @@ import { ViewContainer } from "../../ui/style/style";
 import { postUsers } from "../../services/api";
 import { Form, SubTitle } from "./style";
 import { IUser } from "../../ui/interfaces";
-import { checkPass } from "../../utils/validators";
+import { checkEmail, checkName, checkPass } from "../../utils/validators";
 
 function Register({ navigation }) {
-  const [pass, setPass] = useState<string>();
   const [confirmPass, setConfirmPass] = useState<string>();
   const [user, setUser] = useState<IUser>({
     id: 0,
@@ -30,17 +29,17 @@ function Register({ navigation }) {
       alert(
         "Estamos com uma instabilidade, por favor, tente novamente mais tarde!"
       );
-    } else {
-      alert("Por favor, preencher todos os dados para efetuar cadastro.");
     }
+    alert("Por favor, preencher todos os dados para efetuar cadastro.");
   }
 
   function submitForm() {
-    if (checkPass(pass, confirmPass)) {
-      setUser((old) => {
-        return { ...old, password: pass };
-      });
-      createUser();
+    if (checkName(user.name)) {
+      if (checkEmail(user.email)) {
+        if (checkPass(user.password, confirmPass)) {
+          createUser();
+        }
+      }
     }
   }
 
@@ -72,7 +71,14 @@ function Register({ navigation }) {
         <Spacer margin="xx" />
 
         <Label title="Senha" />
-        <Input placeholder="Senha" onChangeText={setPass} />
+        <Input
+          placeholder="Senha"
+          onChangeText={(ev) =>
+            setUser((old) => {
+              return { ...old, password: ev };
+            })
+          }
+        />
         <Spacer margin="xx" />
 
         <Label title="Confirme a senha" />
