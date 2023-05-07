@@ -30,12 +30,12 @@ export const postUsers = async (data: IUser) => {
     }
 }
 
-export const putUsers = async (data: IUser) => {
+export const patchUsers = async (id: number, data: {}) => {
     try {
-        const response = await apiBase.put(`users/${data.id}`, data);
+        const response = await apiBase.patch(`users/${id}`, data);
         
         if(response.status >= 200){
-            return "success put";
+            return "success patch";
         }
     } catch (error) {
         return "failed request";
