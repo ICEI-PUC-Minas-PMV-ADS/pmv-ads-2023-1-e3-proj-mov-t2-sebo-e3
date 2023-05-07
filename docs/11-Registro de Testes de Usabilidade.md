@@ -43,7 +43,7 @@ Fluxo de páginas: Home -> Buscar livros -> Resultados -> Página do livro
 ![Busca (1)](https://user-images.githubusercontent.com/89920953/236699179-de836e4f-cfb3-4287-9316-a310644ee8fd.png)
 
 
-#### CT 03 - Finalizar Compra
+#### CT 07 - Finalizar Compra
 Fluxo de páginas: Página do livro -> Carrinho -> Finalizar compra
 
 | Pontos Avaliados | Resultado                                  |
@@ -53,3 +53,7 @@ Fluxo de páginas: Página do livro -> Carrinho -> Finalizar compra
 | Sucesso direto   | 100.0%                                     |
 
 ![Compra](https://user-images.githubusercontent.com/89920953/236699570-ec4f50ab-a37c-44f1-8480-e2474e9541a6.png)
+
+### Avaliação do usuário
+![Usabilidade](https://user-images.githubusercontent.com/89920953/236699760-48500d24-908f-4e5f-a444-903660c134d3.png)
+![satisfação](https://user-images.githubusercontent.com/89920953/236699772-f3a0a40f-8fbe-4eb9-86a5-a18978c08db9.png)
