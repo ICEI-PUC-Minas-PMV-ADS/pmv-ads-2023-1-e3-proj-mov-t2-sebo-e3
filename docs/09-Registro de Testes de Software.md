@@ -21,7 +21,7 @@ Caso o usuário não tenha uma conta, através da tela de pré-login, ele seria 
 >
 
 ### CT 3 - Recuperação de Senha
-
+Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá redefini-la através do link "esqueci minha senha" presente na tela de login.
 
 >**Resultado**
 >
