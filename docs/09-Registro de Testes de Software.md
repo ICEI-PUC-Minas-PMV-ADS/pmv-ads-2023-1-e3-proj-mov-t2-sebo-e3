@@ -30,7 +30,7 @@ Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá red
 > - Quando as senhas informadas nos campos "Senha" e "Confirme a senha" não foram iguais, apareceu uma mensagem dizendo "As senhas fornecidas não são iguais".
 > - Quando as senhas foram escritas corretamente, a senha foi alterada no banco de dados, mostrando a mensagem "Senha alterada com sucesso!"
 
-[https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/commit/bab856adcae59afbcfe777e84887e8236a32c7d5](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/bab856adcae59afbcfe777e84887e8236a32c7d5/apresentacao-app-etapa-3.mp4)
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/bab856adcae59afbcfe777e84887e8236a32c7d5/apresentacao-app-etapa-3.mp4
 
 ## Conclusão
 O grupo conseguiu desenvolver as funções iniciais do aplicativo, tendo como ponto de destaque a parte visual das telas. Para as próximas iterações, os erros encontrados no registro de teste, serão resolvidos fazendo com que o funcionalidades e seu fluxo de navegação funcione normalmente como o esperado. Também será feito um teste geral com todas as telas que foram planejadas para o sistema.
