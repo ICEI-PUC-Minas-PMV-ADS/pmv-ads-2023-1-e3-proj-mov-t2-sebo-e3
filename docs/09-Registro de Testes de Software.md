@@ -26,5 +26,5 @@ Caso o usuário não tenha uma conta, através da tela de pré-login, ele seria 
 >**Resultado**
 >
 
-### Conclusão
+## Conclusão
 O grupo conseguiu desenvolver as funções iniciais do aplicativo, tendo como ponto de destaque a parte visual das telas. Para as próximas iterações, os erros encontrados no registro de teste, serão resolvidos fazendo com que o funcionalidades e seu fluxo de navegação funcione normalmente como o esperado. Também será feito um teste geral com todas as telas que foram planejadas para o sistema.
