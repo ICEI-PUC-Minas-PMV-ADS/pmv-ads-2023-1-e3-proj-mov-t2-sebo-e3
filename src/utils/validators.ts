@@ -1,14 +1,16 @@
+import { getUsers } from "../services/api";
+
 export function checkName(name: string) {
-  if(name.length >= 3){
+  if (name.length >= 3) {
     return true;
   }
   alert("Insira um nome com pelo menos 3 caracteres");
   return false;
 }
 
-export function checkEmail(email: string) {
+export async function checkEmail(email: string) {
   const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-  if(regex.test(email)){
+  if (regex.test(email)) {
     return true;
   }
   alert("E-mail não existe!");
@@ -31,4 +33,3 @@ export function checkPass(pass: string, confirmPass: string) {
   }
   return false;
 }
-

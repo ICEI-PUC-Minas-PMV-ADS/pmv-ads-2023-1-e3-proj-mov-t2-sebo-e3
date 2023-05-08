@@ -4,7 +4,7 @@ import Input from "../../components/Forms/Input";
 import Label from "../../components/Forms/Label";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
-import { postUsers } from "../../services/api";
+import { getUsers, postUsers } from "../../services/api";
 import { Form, SubTitle } from "./style";
 import { IUser } from "../../ui/interfaces";
 import { checkEmail, checkName, checkPass } from "../../utils/validators";
@@ -33,7 +33,17 @@ function Register({ navigation }) {
     alert("Por favor, preencher todos os dados para efetuar cadastro.");
   }
 
-  function submitForm() {
+  async function submitForm() {
+    const response = await getUsers();
+    if (response.length > 0) {
+      for (let i = 0; i < response.length; i++) {
+        if (user.email === response[i].email) {
+          alert("email já cadastrado!");
+          return false;
+        }
+      }
+    }
+
     if (checkName(user.name)) {
       if (checkEmail(user.email)) {
         if (checkPass(user.password, confirmPass)) {
