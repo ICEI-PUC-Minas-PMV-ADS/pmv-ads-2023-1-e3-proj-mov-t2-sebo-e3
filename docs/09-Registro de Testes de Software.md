@@ -5,6 +5,7 @@
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
 ## Avaliação
+https://user-images.githubusercontent.com/89920953/236722370-6bec74f7-ded1-4cec-82ee-0aa2182ae59d.mp4
 
 ### CT 1 - Pré-login e Login
 O teste foi iniciado pela tela de login. Inicialmente o aplicativo apresenta uma tela de pré-login, onde o usuário tem a opção de fazer o login, caso tenha uma conta, e fazer seu cadastro, caso ainda não possua uma conta.
@@ -30,7 +31,6 @@ Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá red
 > - Quando as senhas informadas nos campos "Senha" e "Confirme a senha" não foram iguais, apareceu uma mensagem dizendo "As senhas fornecidas não são iguais".
 > - Quando as senhas foram escritas corretamente, a senha foi alterada no banco de dados, mostrando a mensagem "Senha alterada com sucesso!"
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/bab856adcae59afbcfe777e84887e8236a32c7d5/apresentacao-app-etapa-3.mp4
 
 ## Conclusão
 O grupo conseguiu desenvolver as funções iniciais do aplicativo, tendo como ponto de destaque a parte visual das telas. Para as próximas iterações, os erros encontrados no registro de teste, serão resolvidos fazendo com que o funcionalidades e seu fluxo de navegação funcione normalmente como o esperado. Também será feito um teste geral com todas as telas que foram planejadas para o sistema.
