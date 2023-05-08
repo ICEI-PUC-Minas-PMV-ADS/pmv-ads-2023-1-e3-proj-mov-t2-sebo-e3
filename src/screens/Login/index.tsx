@@ -17,7 +17,7 @@ import {
   Conect,
   EnterLogin,
 } from "./style";
-import { getUsers } from "../../services/api";
+import { getUsers, postLogin } from "../../services/api";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "react-native";
 
@@ -35,9 +35,12 @@ function Login({ navigation }) {
         users[i].email === login.email &&
         users[i].password === login.password
       ) {
-        navigation.navigate("Perfil")
+        const response = await postLogin(users[i]);
+        return navigation.navigate("Perfil")
       }
     }
+
+    alert("Usuário ou senha incorretos!");
   };
 
   return (

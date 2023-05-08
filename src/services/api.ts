@@ -41,3 +41,15 @@ export const patchUsers = async (id: number, data: {}) => {
         return "failed request";
     }
 }
+
+export const postLogin = async (data: IUser) => {
+    try {
+        const response = await apiBase.post(`login`, data);
+        
+        if(response.status >= 200 || response.status < 300){
+            return "success post";
+        }
+    } catch (error) {
+        return "failed request";
+    }
+}

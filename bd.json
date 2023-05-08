@@ -1,4 +1,12 @@
 {
+  "login": [
+    {
+      "id": 1,
+      "name": "herbert",
+      "password": "Herbert@15!",
+      "email": "herbert@puc.com.br"
+    }
+  ],
   "books": [
     {
       "id": 1,
@@ -16,10 +24,10 @@
       "date-of-birth": ""
     },
     {
-      "id": 2,
-      "email": "herbert@puc.com.br",
-      "password": "Herbert@123",
-      "name": "Herbert Nordson"
+      "id": 1,
+      "name": "herbert",
+      "password": "Herbert@15!",
+      "email": "herbert@puc.com.br"
     }
   ]
 }
