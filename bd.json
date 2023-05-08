@@ -1,0 +1,33 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "name": "herbert",
+      "password": "Herbert@15!",
+      "email": "herbert@puc.com.br"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "",
+      "full-name": "",
+      "email": "",
+      "password": "",
+      "cpf": "",
+      "date-of-birth": ""
+    },
+    {
+      "id": 1,
+      "name": "herbert",
+      "password": "Herbert@15!",
+      "email": "herbert@puc.com.br"
+    }
+  ]
+}
