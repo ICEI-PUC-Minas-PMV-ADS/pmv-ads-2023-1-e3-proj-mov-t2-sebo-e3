@@ -3,23 +3,21 @@ import { Image, View } from "react-native";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import ButtonSecundary from "../../components/Forms/ButtonSecundary";
 import Spacer from "../../components/Spacer";
-import { Title, ViewContainer } from "../../ui/style/style";
-import { OrContainer, OrLine, SubTitle } from "./style"
-import { SafeAreaView } from "react-native-safe-area-context";
-import { StatusBar } from "react-native";
+import { ViewContainer } from "../../ui/style/style";
+import { OrContainer, OrLine, SubTitle, Title } from "./style"
 
 
 function ProductPage({ navigation }) {
+  
     return (
-      <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
-
       <ViewContainer>
         
-      <View style={{width: "100%"}}>
+      <View style={{width: "100%", alignItems: "center"}}>
         
         <Image
         source={require('../../assets/Capa.png')}
         />
+        
       </View>
 
         <Title>Trono de Vidro - Vol 1</Title>
@@ -27,6 +25,7 @@ function ProductPage({ navigation }) {
         <SubTitle>
          Sarah J. Maas
         </SubTitle>
+        <Spacer margin="xx" />
         <Title>R$ 15,80</Title>
         <Spacer margin="xx" />
 
@@ -38,8 +37,8 @@ function ProductPage({ navigation }) {
       </OrContainer>
   
         <SubTitle>
-         {"\n"}Autor: Sarah J. Maas {"\n"}Editora: Galera
-         {"\n"} Quantidade de páginas: 392 Páginas {"\n"}Estado de conservação: Bom
+         {"\n"}Autor(a): Sarah J. Maas {"\n"}Editora: Galera
+         {"\n"}Quantidade de páginas: 392 {"\n"}Estado de conservação: Bom
         </SubTitle>
         <Spacer margin="xx" />
         
@@ -49,7 +48,6 @@ function ProductPage({ navigation }) {
         <ButtonSecundary title="Comprar agora"  onPress={() => navigation.navigate('Cadastre-se')} />
         <Spacer margin={"mx"} />
       </ViewContainer>
-      </SafeAreaView>
     );
   }
   
