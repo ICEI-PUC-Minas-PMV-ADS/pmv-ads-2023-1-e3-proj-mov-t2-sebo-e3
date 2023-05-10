@@ -9,6 +9,7 @@ import Profile from "../screens/Profile";
 import RedefinePassword from "../screens/RedefinePassword";
 import InformationPeople from "../screens/InformationPeople";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
+import ProductPage from "../screens/ProductPage";
 
 function AppRoutes() {
   return (
@@ -22,6 +23,7 @@ function AppRoutes() {
       />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Cadastre-se" component={Register} />
+      <Stack.Screen name="ProductPage" component={ProductPage} />
       <>
         <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
         <Stack.Screen
