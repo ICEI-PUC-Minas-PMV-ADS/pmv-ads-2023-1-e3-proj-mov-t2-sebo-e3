@@ -13,7 +13,7 @@ import ProductPage from "../screens/ProductPage";
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Inicial">
+    <Stack.Navigator initialRouteName="Livro">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -23,7 +23,7 @@ function AppRoutes() {
       />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Cadastre-se" component={Register} />
-      <Stack.Screen name="ProductPage" component={ProductPage} />
+      <Stack.Screen name="Livro" component={ProductPage} />
       <>
         <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
         <Stack.Screen
