@@ -31,21 +31,27 @@ function ProductPage({ navigation }) {
 
         <Title>Detalhes do produto</Title>
 
-      <OrContainer>
-        <OrLine></OrLine>
-        <OrLine></OrLine>
-      </OrContainer>
-  
+        <OrContainer>
+          <OrLine></OrLine>
+          <OrLine></OrLine>
+        </OrContainer>
+
         <SubTitle>
          {"\n"}Autor(a): Sarah J. Maas {"\n"}Editora: Galera
          {"\n"}Quantidade de páginas: 392 {"\n"}Estado de conservação: Bom
         </SubTitle>
         <Spacer margin="xx" />
-        
-        <ButtonPrimary title="Adicionar ao carrinho" onPress={() => navigation.navigate('Login')} />
+
+        <ButtonPrimary
+          title="Adicionar ao carrinho"
+          onPress={() => navigation.navigate("Login")}
+        />
         <Spacer margin={"mx"} />
-  
-        <ButtonSecundary title="Comprar agora"  onPress={() => navigation.navigate('Cadastre-se')} />
+
+        <ButtonSecundary
+          title="Comprar agora"
+          onPress={() => navigation.navigate("Cadastre-se")}
+        />
         <Spacer margin={"mx"} />
       </ViewContainer>
     );
