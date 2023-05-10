@@ -13,7 +13,7 @@ import ProductPage from "../screens/ProductPage";
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="ProductPage">
+    <Stack.Navigator initialRouteName="Inicial">
       <Stack.Screen
         name="Inicial"
         component={Initial}
