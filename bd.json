@@ -28,6 +28,12 @@
       "name": "herbert",
       "password": "Herbert@15!",
       "email": "herbert@puc.com.br"
+    },
+    {
+      "id": 2,
+      "name": "Teste",
+      "email": "Hrb@com",
+      "password": "Herbert@234!"
     }
   ]
 }
