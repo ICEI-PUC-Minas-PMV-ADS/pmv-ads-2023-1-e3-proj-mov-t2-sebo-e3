@@ -28,3 +28,12 @@ export const Title = styled.Text `
     color: ${({ theme }) => theme.colors.title};
     font-weight: 500;
 `;
+
+export const CodigoBarra = styled.Text `
+   font-size: ${({ theme }) => theme.fonts.label}px;
+   position: absolute;
+   width: 295px;
+   height: 36px;
+   left: 32px;
+   top: 780px;
+`;
