@@ -3953,7 +3953,7 @@ expo-modules-core@1.2.7:
     invariant "^2.2.4"
 
 expo@^48.0.0:
-  version "48.0.16"
+  version "48.0.0"
   resolved "https://registry.yarnpkg.com/expo/-/expo-48.0.16.tgz#afce3906eba8d0faa72f6e0e1c8aed4f1b046326"
   integrity sha512-3LOfO80FZn+K3NngaP80LC2KE4rQcuzF3hQB6k8877A3Y/UPF5jmr8H7jlRrfvWSaYlenwzHhMs6Lyhr3zwfGw==
   dependencies:

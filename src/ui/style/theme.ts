@@ -23,7 +23,8 @@ export default {
         label: 14,
         text: 16,
         subtitle: 18,
-        title: 24
+        title: 24,
+        titlecar: 22
     },
     margin: {
         ls: 4,
