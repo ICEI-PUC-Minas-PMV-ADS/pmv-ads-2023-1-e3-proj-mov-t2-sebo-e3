@@ -1,9 +1,10 @@
 import React from "react";
-import { Image, View, Alert } from "react-native";
+import { Image, View, Alert, SafeAreaView, StatusBar } from "react-native";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
-import { SubTitle, Title } from "./style"
+import { SubTitle, Title, OrContainer, OrLine } from "./style"
+import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 
 
 const twoOptionAlert = () => {
@@ -32,8 +33,13 @@ const twoOptionAlert = () => {
 
 
 function ConcludePurchase({ navigation }) {
+
+    function navPages() {
+        navigation.navigate("Perfil")
+      }    
   
     return (
+        <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
         <ViewContainer>
           <Spacer margin="ms" />
 
@@ -47,33 +53,64 @@ function ConcludePurchase({ navigation }) {
          Produto
         </SubTitle>
 
-        <View style={{width: 295, height: 66}}>
+        <View style={{flexDirection: 'row'}}>
         
-            <Image
-            source={require('../../assets/minicapa.png')}
-            />
-        
-        </View>
+        <Image style={{width: 120, height: 150}} 
+        source={require('../../assets/Capa.png')}
+        />
+         
+       <View style={{marginTop: 10}}>
+        <Title>Trono de Vidro - Vol 1</Title>
 
         <SubTitle>
-        {"\n"}Trono de Vidro - Vol 1
-        {"\n"}Sarah J. Maas
-        {"\n"}R$ 15,80
-        {"\n"}1 Unidade
+         Sarah J. Maas
+        </SubTitle>
+        <Spacer margin="xx" />
+
+        <View style={{flexDirection: 'row'}}>
+        <Title>R$ 15,80 {'        '} </Title>
+
+        <SubTitle>
+         1 Unidade
+        </SubTitle>        
+        
+      </View>
+      </View>
+      </View>
+      <Spacer margin="xx" />
+
+      <OrContainer>
+          <OrLine></OrLine>
+          <OrLine></OrLine>
+        </OrContainer>
+
+        <Title> {"\n"} Resumo da compra</Title>
+
+        <Spacer margin="xx" />
+
+        <SubTitle>
+         Produto {'                                                        '} R$ 15,80
+        </SubTitle>
+
+        <SubTitle>
+        {"\n"}Frete Fixo {'                                                   '}  R$ 12,00
+        </SubTitle>
+
+        <SubTitle>
+        {"\n"}Desconto {'                                                   '}   R$ 00,00
         </SubTitle>
 
         <Spacer margin="xx" />
 
         <Title>
-            Resumo da Compra
+            Total  {'                     '}   R$ 27,80
         </Title>
+        <Spacer margin="xx" />
 
-        <SubTitle>
-        {"\n"}Produto: R$ 15,80
-        {"\n"}{"\n"}Frete: R$12,00  
-
-        {"\n"}{"\n"}Total: R$ 27,80
-        </SubTitle>
+        <OrContainer>
+          <OrLine></OrLine>
+          <OrLine></OrLine>
+        </OrContainer>        
 
         <Spacer margin="xx" />
 
@@ -93,6 +130,12 @@ function ConcludePurchase({ navigation }) {
         <SubTitle>
         {"\n"}Prazo de entrega: 5 dias úteis    
         </SubTitle>
+
+        <Spacer margin="xx" />
+        <OrContainer>
+          <OrLine></OrLine>
+          <OrLine></OrLine>
+        </OrContainer>
 
         <Spacer margin="xx" />
 
@@ -126,6 +169,8 @@ function ConcludePurchase({ navigation }) {
         />        
         <Spacer margin={"mx"} />
     </ViewContainer>
+    <ButtonNavBar navigate={navPages} />
+    </SafeAreaView>
     );
   }
   
