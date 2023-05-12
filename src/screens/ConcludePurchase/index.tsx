@@ -6,10 +6,6 @@ import { ViewContainer } from "../../ui/style/style";
 import { SubTitle, Title, OrContainer, OrLine, CodigoBarra } from "./style"
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 
-
-
-
-
 function ConcludePurchase({ navigation }) {
 
     const twoOptionAlert = () => {

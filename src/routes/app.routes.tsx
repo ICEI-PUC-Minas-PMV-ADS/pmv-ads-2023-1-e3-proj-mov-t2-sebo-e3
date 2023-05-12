@@ -14,7 +14,7 @@ import ConcludePurchase from "../screens/ConcludePurchase";
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Finalizar Compra">
+    <Stack.Navigator initialRouteName="Livro">
       <Stack.Screen
         name="Inicial"
         component={Initial}
