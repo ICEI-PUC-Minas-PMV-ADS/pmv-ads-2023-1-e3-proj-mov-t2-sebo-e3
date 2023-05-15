@@ -1,5 +1,5 @@
 import axios from "axios"
-import { IUser } from "../ui/interfaces";
+import { IAddress, IUser } from "../ui/interfaces";
 
 const apiBase = axios.create({
     baseURL: " http://192.168.1.11:3000/"
@@ -21,6 +21,19 @@ export const getUsers = async () => {
 export const postUsers = async (data: IUser) => {
     try {
         const response = await apiBase.post(`users`, data);
+        
+        if(response.status >= 200 || response.status < 300){
+            return "success post";
+        }
+    } catch (error) {
+        return "failed request";
+    }
+}
+
+
+export const createAddress = async (data: IAddress) => {
+    try {
+        const response = await apiBase.post(`addresses`, data);
         
         if(response.status >= 200 || response.status < 300){
             return "success post";
