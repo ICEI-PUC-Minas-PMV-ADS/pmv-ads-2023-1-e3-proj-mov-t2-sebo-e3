@@ -35,17 +35,5 @@
       "email": "Hrb@com",
       "password": "Herbert@234!"
     }
-  ],
-  "Address": [
-    {
-      "logradouro": "Rua n",
-      "numero": "122",
-      "complemento": "B",
-      "bairro": "Castelo",
-      "cidade": "BH ",
-      "estado": "MG",
-      "cep": "31330033",
-      "id": 1
-    }
   ]
 }
