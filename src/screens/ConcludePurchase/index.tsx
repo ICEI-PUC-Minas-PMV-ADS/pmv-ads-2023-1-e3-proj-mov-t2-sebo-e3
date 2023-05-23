@@ -102,7 +102,7 @@ function ConcludePurchase({ navigation }) {
         </SubTitle>
 
         <SubTitle>
-        {"\n"}Desconto {'                                                                 '}   R$ 00,00
+        {"\n"}Desconto {'                                                                 '} - R$ 00,00
         </SubTitle>
 
         <Spacer margin="ms" />
