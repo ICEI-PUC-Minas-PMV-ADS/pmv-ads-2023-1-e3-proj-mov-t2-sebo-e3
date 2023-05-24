@@ -1,15 +1,21 @@
 import React from "react";
-import { Image, View } from "react-native";
+import { Image, View, SafeAreaView, StatusBar } from "react-native";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import ButtonSecundary from "../../components/Forms/ButtonSecundary";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 import { OrContainer, OrLine, SubTitle, Title } from "./style"
+import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 
 
 function ProductPage({ navigation }) {
   
+  function navPages() {
+    navigation.navigate("Perfil")
+  }  
+
     return (
+      <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
         
       <View style={{width: "100%", alignItems: "center"}}>
@@ -22,11 +28,17 @@ function ProductPage({ navigation }) {
 
         <Title>Trono de Vidro - Vol 1</Title>
 
-        <SubTitle>
-         Sarah J. Maas
-        </SubTitle>
-        <Spacer margin="xx" />
-        <Title>R$ 15,80</Title>
+        <Spacer margin="ms" />
+        <Spacer margin="ms" />
+
+        <View style={{flexDirection: 'row'}}>
+        <SubTitle>Sarah J. Maas {'                                               '} </SubTitle>
+
+        <Title>
+         R$ 15,80
+        </Title> 
+        </View>
+
         <Spacer margin="xx" />
 
         <Title>Detalhes do produto</Title>
@@ -54,6 +66,8 @@ function ProductPage({ navigation }) {
         />
         <Spacer margin={"mx"} />
       </ViewContainer>
+          <ButtonNavBar navigate={navPages} />
+      </SafeAreaView>
     );
   }
   

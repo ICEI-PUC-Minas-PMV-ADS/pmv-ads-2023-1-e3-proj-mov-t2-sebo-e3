@@ -11,11 +11,12 @@ import InformationPeople from "../screens/InformationPeople";
 import Address from "../screens/Address";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
 import ProductPage from "../screens/ProductPage";
+import ConcludePurchase from "../screens/ConcludePurchase";
 import Cart from "../screens/Cart";
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Inicial">
+    <Stack.Navigator initialRouteName="Livro">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -25,7 +26,8 @@ function AppRoutes() {
       />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Cadastre-se" component={Register} />
-      <Stack.Screen name="ProductPage" component={ProductPage} />
+      <Stack.Screen name="Livro" component={ProductPage} />
+      <Stack.Screen name="Finalizar Compra" component={ConcludePurchase} />
       <Stack.Screen name="Carrinho" component={Cart} />
       <>
         <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
