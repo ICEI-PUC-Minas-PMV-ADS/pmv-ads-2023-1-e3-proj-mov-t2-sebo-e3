@@ -8,6 +8,7 @@ import Register from "../screens/Register";
 import Profile from "../screens/Profile";
 import RedefinePassword from "../screens/RedefinePassword";
 import InformationPeople from "../screens/InformationPeople";
+import Address from "../screens/Address";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
 import ProductPage from "../screens/ProductPage";
 import Cart from "../screens/Cart";
@@ -38,6 +39,13 @@ function AppRoutes() {
         <Stack.Screen
           name="Perfil"
           component={Profile}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Endereço"
+          component={Address}
           options={{
             headerShown: false,
           }}

@@ -19,7 +19,7 @@ const ButtonIcon: React.FC <ButtonIconProps> = (props) => {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#005f83',
+    backgroundColor: '#7a4183',
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
