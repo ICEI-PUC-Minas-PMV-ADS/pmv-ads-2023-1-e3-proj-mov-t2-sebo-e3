@@ -6,6 +6,7 @@
     "@react-navigation/native-stack": "^6.9.12",
     "axios": "^1.4.0",
     "expo": "^48.0.0",
+    "expo-app-loading": "^2.1.1",
     "json-server": "^0.17.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",

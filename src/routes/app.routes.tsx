@@ -1,22 +1,24 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import {
+  Address,
+  Cart,
+  ConcludePurchase,
+  Home,
+  InformationPeople,
+  Initial,
+  Login,
+  ProductPage,
+  Profile,
+  RedefinePassword,
+  Register,
+} from "../screens";
 
 const Stack = createNativeStackNavigator();
-import Initial from "../screens/Initial";
-import Login from "../screens/Login";
-import Register from "../screens/Register";
-import Profile from "../screens/Profile";
-import RedefinePassword from "../screens/RedefinePassword";
-import InformationPeople from "../screens/InformationPeople";
-import Address from "../screens/Address";
-import ButtonNavBar from "../components/Forms/ButtonNavBar";
-import ProductPage from "../screens/ProductPage";
-import ConcludePurchase from "../screens/ConcludePurchase";
-import Cart from "../screens/Cart";
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Livro">
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -29,30 +31,35 @@ function AppRoutes() {
       <Stack.Screen name="Livro" component={ProductPage} />
       <Stack.Screen name="Finalizar Compra" component={ConcludePurchase} />
       <Stack.Screen name="Carrinho" component={Cart} />
-      <>
-        <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
-        <Stack.Screen
-          name="Informacoes Pessoais"
-          component={InformationPeople}
-          options={{
-            headerShown: false,
-          }}
-        />
-        <Stack.Screen
-          name="Perfil"
-          component={Profile}
-          options={{
-            headerShown: false,
-          }}
-        />
-        <Stack.Screen
-          name="Endereço"
-          component={Address}
-          options={{
-            headerShown: false,
-          }}
-        />
-      </>
+      <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Informacoes Pessoais"
+        component={InformationPeople}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Perfil"
+        component={Profile}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Endereço"
+        component={Address}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack.Navigator>
   );
 }
