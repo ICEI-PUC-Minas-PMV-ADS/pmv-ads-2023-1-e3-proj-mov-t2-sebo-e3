@@ -6,9 +6,10 @@ import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 import { OrContainer, OrLine, SubTitle, Title } from "./style"
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+import ButtonNavBarEdit from "../../components/Forms/ButtonNavBarEdit";
 
 
-function ProductPage({ navigation }) {
+function EditProduct({ navigation }) {
   
   function navPages() {
     navigation.navigate("Perfil")
@@ -30,16 +31,13 @@ function ProductPage({ navigation }) {
 
         <Spacer margin="ms" />
         <Spacer margin="ms" />
-
+          
         <View style={{flexDirection: 'row'}}>
-        <SubTitle>Sarah J. Maas {'                                               '} </SubTitle>
-
-        <Title>
-         R$ 15,80
-        </Title> 
+          <SubTitle>Valor: </SubTitle>
+          <SubTitle>R$15,80</SubTitle> 
         </View>
-
-        <Spacer margin="xx" />
+         
+        <Spacer margin="lx" />
 
         <Title>Detalhes do produto</Title>
 
@@ -54,21 +52,29 @@ function ProductPage({ navigation }) {
         </SubTitle>
         <Spacer margin="xx" />
 
-        <ButtonPrimary
-          title="Adicionar ao carrinho"
-          onPress={() => navigation.navigate("Login")}
-        />
+        <View style={{flexDirection: 'column'}}>
+        
+          <ButtonPrimary
+            title="Editar"
+            onPress={() => navigation.navigate("Login")}
+          />
+          
+          <Spacer margin={"lx"} />
+
+          <ButtonSecundary
+            title="Excluir"
+            onPress={() => console.log("IMPLEMENTAR EXCLUSAO")}            
+          />
+        </View>
+
+        <Spacer margin={"mx"} />  
         <Spacer margin={"mx"} />
 
-        <ButtonSecundary
-          title="Comprar agora"
-          onPress={() => navigation.navigate("Cadastre-se")}
-        />
-        <Spacer margin={"mx"} />
       </ViewContainer>
-          <ButtonNavBar navigate={navPages} />
+          {/* <ButtonNavBar navigate={navPages} /> */}
+          <ButtonNavBarEdit navigate={navPages}/>
       </SafeAreaView>
     );
   }
   
-  export default ProductPage;
+  export default EditProduct;

@@ -12,10 +12,15 @@ import Address from "../screens/Address";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
 import ProductPage from "../screens/ProductPage";
 import Cart from "../screens/Cart";
+import ConcludePurchase from "../screens/ConcludePurchase";
+import Estoque from "../screens/Estoque";
+import EditProduct from "../screens/EditProduct";
+import EditProduct2 from "../screens/EditProduct2";
+import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Inicial">
+    <Stack.Navigator initialRouteName="Editar Livro">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -25,22 +30,34 @@ function AppRoutes() {
       />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Cadastre-se" component={Register} />
-      <Stack.Screen name="ProductPage" component={ProductPage} />
+      <Stack.Screen name="Livro" component={ProductPage} />
+      <Stack.Screen name="Estoque" component={Estoque} />
+      <Stack.Screen name="Detalhe de Livro" component={EditProduct} options={{
+            headerLeft: () => (
+              <ButtonReturnLeft onClick={() => console.log('falta implementar volta')}></ButtonReturnLeft>
+            ),
+          }} />
+      <Stack.Screen name="Editar Livro" component={EditProduct2} options={{
+        headerLeft: () => (
+        <ButtonReturnLeft onClick={() => console.log('falta implementar volta')}></ButtonReturnLeft>
+        ),
+      }} />
+      <Stack.Screen name="Finalizar Compra" component={ConcludePurchase} />
       <Stack.Screen name="Carrinho" component={Cart} />
       <>
-        <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
-        <Stack.Screen
+      <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
+      <Stack.Screen
           name="Informacoes Pessoais"
           component={InformationPeople}
           options={{
-            headerShown: false,
+          headerShown: false,
           }}
         />
-        <Stack.Screen
+      <Stack.Screen
           name="Perfil"
           component={Profile}
           options={{
-            headerShown: false,
+          headerShown: false,
           }}
         />
         <Stack.Screen
