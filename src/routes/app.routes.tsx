@@ -8,8 +8,10 @@ import Register from "../screens/Register";
 import Profile from "../screens/Profile";
 import RedefinePassword from "../screens/RedefinePassword";
 import InformationPeople from "../screens/InformationPeople";
+import Address from "../screens/Address";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
 import ProductPage from "../screens/ProductPage";
+import Cart from "../screens/Cart";
 import ConcludePurchase from "../screens/ConcludePurchase";
 import Estoque from "../screens/Estoque";
 import EditProduct from "../screens/EditProduct";
@@ -41,6 +43,7 @@ function AppRoutes() {
         ),
       }} />
       <Stack.Screen name="Finalizar Compra" component={ConcludePurchase} />
+      <Stack.Screen name="Carrinho" component={Cart} />
       <>
       <Stack.Screen name="Redefinir Senha" component={RedefinePassword} />
       <Stack.Screen
@@ -55,6 +58,13 @@ function AppRoutes() {
           component={Profile}
           options={{
           headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Endereço"
+          component={Address}
+          options={{
+            headerShown: false,
           }}
         />
       </>
