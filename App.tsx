@@ -1,39 +1,39 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import { ThemeProvider } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
 import AppRoutes from "./src/routes/app.routes";
 import theme from "./src/ui/style/theme";
-import { useFonts } from "expo-font";
+import * as Font from "expo-font";
 
-import * as SplashScreen from "expo-splash-screen";
-import { View, Text } from "react-native";
+let customFonts = {
+  'Mulish': require("./src/assets/fonts/Mulish-Regular.ttf"),
+};
 
-SplashScreen.preventAutoHideAsync();
+export default class App extends React.Component {
+  state = {
+    fontsLoaded: false,
+  };
 
-export default function App() {
-  const [fontsLoaded] = useFonts({
-    Mulish: require("./assets/fonts/Mulish-Regular.ttf"),
-  });
-
-  const onLayoutRootView = useCallback(async () => {
-    if (fontsLoaded) {
-      await SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded]);
-
-  if (!fontsLoaded) {
-    return null;
+  async _loadFontsAsync() {
+    await Font.loadAsync(customFonts);
+    this.setState({ fontsLoaded: true });
   }
 
-  return (
-    <>
-      {onLayoutRootView && (
-        <ThemeProvider theme={theme}>
-          <NavigationContainer>
-            <AppRoutes />
-          </NavigationContainer>
-        </ThemeProvider>
-      )}
-    </>
-  );
+  componentDidMount() {
+    this._loadFontsAsync();
+  }
+
+  render() {
+    if (!this.state.fontsLoaded) {
+      return null;
+    }
+
+    return (
+      <ThemeProvider theme={theme}>
+        <NavigationContainer>
+          <AppRoutes />
+        </NavigationContainer>
+      </ThemeProvider>
+    );
+  }
 }

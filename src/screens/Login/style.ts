@@ -18,6 +18,7 @@ export const ForgotPassword = styled.Text `
     color: ${({ theme }) => theme.colors.title};   
     
     font-size: ${({ theme }) => RFValue(theme.fonts.obs)}px;
+    font-family: "Mulish";
     text-align: right;
     text-decoration: solid;
     text-decoration-color: aliceblue;
@@ -39,12 +40,14 @@ export const OrLine = styled.View `
 
 export const OrTitle = styled.Text `
     margin: ${({ theme }) => theme.margin.ls}px;
-    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
     padding-bottom: ${({ theme }) => theme.padding.ls}px;
+    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    font-family: "Mulish";
 `;
 
 export const EnterLogin = styled.Text`
     text-align: center;
+    font-family: "Mulish";
 `;
 
 export const ConectContainer = styled.View`
@@ -57,5 +60,4 @@ export const Conect = styled.View`
     height: ${RFValue(34)}px;
     border-radius: ${({ theme }) => theme.radius.lx}px;
     background-color: ${({ theme }) => theme.colors.shape};
-    
 `;

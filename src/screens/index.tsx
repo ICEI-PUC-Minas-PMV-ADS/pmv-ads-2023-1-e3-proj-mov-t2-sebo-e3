@@ -10,6 +10,7 @@ import Profile from "./Profile";
 import RedefinePassword from "./RedefinePassword";
 import Register from "./Register";
 import EditProduct from "./EditProduct";
+import EditProduct2 from "./EditProduct2";
 import Estoque from "./Estoque";
 
 export {
@@ -17,6 +18,7 @@ export {
   Cart,
   ConcludePurchase,
   EditProduct,
+  EditProduct2,
   Estoque,
   Home,
   InformationPeople,
