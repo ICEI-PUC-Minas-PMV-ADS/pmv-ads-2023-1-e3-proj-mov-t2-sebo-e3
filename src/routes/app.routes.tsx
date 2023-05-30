@@ -4,6 +4,8 @@ import {
   Address,
   Cart,
   ConcludePurchase,
+  EditProduct,
+  Estoque,
   Home,
   InformationPeople,
   Initial,
@@ -13,12 +15,13 @@ import {
   RedefinePassword,
   Register,
 } from "../screens";
+import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
 
 const Stack = createNativeStackNavigator();
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Login">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -35,11 +38,11 @@ function AppRoutes() {
               <ButtonReturnLeft onClick={() => console.log('falta implementar volta')}></ButtonReturnLeft>
             ),
           }} />
-      <Stack.Screen name="Editar Livro" component={EditProduct2} options={{
+      {/* <Stack.Screen name="Editar Livro" component={EditProduct2} options={{
         headerLeft: () => (
         <ButtonReturnLeft onClick={() => console.log('falta implementar volta')}></ButtonReturnLeft>
         ),
-      }} />
+      }} /> */}
       <Stack.Screen name="Finalizar Compra" component={ConcludePurchase} />
       <Stack.Screen name="Carrinho" component={Cart} />
       <>
@@ -61,6 +64,13 @@ function AppRoutes() {
         <Stack.Screen
           name="Endereço"
           component={Address}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
           options={{
             headerShown: false,
           }}

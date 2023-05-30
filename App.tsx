@@ -1,25 +1,39 @@
-import React from "react";
-import { View } from "react-native";
+import React, { useCallback } from "react";
 import { ThemeProvider } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
 import AppRoutes from "./src/routes/app.routes";
 import theme from "./src/ui/style/theme";
 import { useFonts } from "expo-font";
-import AppLoading from 'expo-app-loading';
+
+import * as SplashScreen from "expo-splash-screen";
+import { View, Text } from "react-native";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [fontsLoadded] = useFonts({
-    'Mulish': require("./assets/fonts/Mulish-Regular.ttf"),
+  const [fontsLoaded] = useFonts({
+    Mulish: require("./assets/fonts/Mulish-Regular.ttf"),
   });
 
-  if(!fontsLoadded){
-    return <AppLoading />;
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
   }
+
   return (
-    <ThemeProvider theme={theme}>
-      <NavigationContainer>
-        <AppRoutes />
-      </NavigationContainer>
-    </ThemeProvider>
+    <>
+      {onLayoutRootView && (
+        <ThemeProvider theme={theme}>
+          <NavigationContainer>
+            <AppRoutes />
+          </NavigationContainer>
+        </ThemeProvider>
+      )}
+    </>
   );
 }

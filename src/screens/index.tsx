@@ -9,11 +9,15 @@ import ProductPage from "./ProductPage";
 import Profile from "./Profile";
 import RedefinePassword from "./RedefinePassword";
 import Register from "./Register";
+import EditProduct from "./EditProduct";
+import Estoque from "./Estoque";
 
 export {
   Address,
   Cart,
   ConcludePurchase,
+  EditProduct,
+  Estoque,
   Home,
   InformationPeople,
   Initial,
