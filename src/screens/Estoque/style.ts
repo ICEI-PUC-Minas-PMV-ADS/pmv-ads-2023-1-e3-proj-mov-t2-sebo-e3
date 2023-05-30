@@ -19,34 +19,36 @@ export const OrLine = styled.View `
 
 export const OrTitle = styled.Text `
     margin: ${({ theme }) => theme.margin.ls}px;
-    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
     padding-bottom: ${({ theme }) => theme.padding.ls}px;
+    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    font-family: "Mulish";
 `;
 
 export const Title = styled.Text `
     font-size: ${({ theme }) => theme.fonts.title}px;
-    color: ${({ theme }) => theme.colors.title};
+    font-family: "Mulish";
     font-weight: 500;
+    color: ${({ theme }) => theme.colors.title};
 `;
 
 export const SearchBarEdit = styled.View `
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: ${({ theme }) => theme.colors.background},
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const SearchBarIcon = styled.View `
-    padding: 10,
+    padding: 10;
 `;
 
 export const SearchBarInput = styled.View `
-    flex: 1,
-    paddingTop: 10,
-    paddingRight: 10,
-    paddingBottom: 10,
-    paddingLeft: 0,
-    backgroundColor: '${({ theme }) => theme.colors.background},
-    color: '#424242',
+    flex: 1;
+    padding-top: 10;
+    padding-right: 10;
+    padding-bottom: 10;
+    padding-left: 0;
+    background-color: ${({ theme }) => theme.colors.background};
+    color: #424242;
 `;

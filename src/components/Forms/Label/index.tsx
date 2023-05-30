@@ -1,16 +1,16 @@
 import React from "react";
-import { Label } from "./style";
+import { Container } from "./style";
 
 export interface ILabel {
   title: string;
 }
 
-function ButtonSecundary({ title }: ILabel) {
+function Label({ title }: ILabel) {
   return (
-    <Label>
+    <Container>
       {title}
-    </Label>
+    </Container>
   );
 }
 
-export default ButtonSecundary;
+export default Label;

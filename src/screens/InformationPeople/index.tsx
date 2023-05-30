@@ -77,7 +77,7 @@ function InformationPeople({ navigation }) {
           </View>
         </Form>
       </ViewContainer>
-      <ButtonNavBar navigate={navPages} />
+      <ButtonNavBar />
     </SafeAreaView>
   );
 }

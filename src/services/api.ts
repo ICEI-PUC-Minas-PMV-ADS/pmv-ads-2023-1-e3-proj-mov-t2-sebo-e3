@@ -3,7 +3,7 @@ import { IAddress, IUser } from "../ui/interfaces";
 
 const apiBase = axios.create({
    // baseURL: " http://192.168.0.104:3000/"
-    baseURL: " http://192.168.1.11:3000/"
+    baseURL: " http://192.168.1.2:3000/"
 })
 
 export const getUsers = async () => {

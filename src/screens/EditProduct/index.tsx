@@ -71,7 +71,6 @@ function EditProduct({ navigation }) {
         <Spacer margin={"mx"} />
 
       </ViewContainer>
-          {/* <ButtonNavBar navigate={navPages} /> */}
           <ButtonNavBarEdit navigate={navPages}/>
       </SafeAreaView>
     );
