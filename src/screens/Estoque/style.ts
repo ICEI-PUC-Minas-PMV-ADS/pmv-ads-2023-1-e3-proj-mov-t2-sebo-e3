@@ -1,4 +1,3 @@
-import { TextInput } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
@@ -51,5 +50,4 @@ export const SearchBarInput = styled.View `
     border: 1px;
     border-radius: ${({ theme }) => theme.radius.xs}px;
     border-color: ${({ theme }) => theme.colors.text};
-
 `;

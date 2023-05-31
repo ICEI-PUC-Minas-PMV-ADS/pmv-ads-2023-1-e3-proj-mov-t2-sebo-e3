@@ -22,7 +22,8 @@ import { Page } from "../ui/style/style";
 
 const Stack = createNativeStackNavigator();
 
-function AppRoutes({ navigation }) {
+
+function AppRoutes() {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
