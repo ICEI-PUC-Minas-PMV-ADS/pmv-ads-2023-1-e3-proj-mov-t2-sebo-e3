@@ -8,22 +8,22 @@ import { NavBar } from "./style";
 //Icons
 import Icon from '@expo/vector-icons/Ionicons';
 
-function ButtonNavBar({navigate}) {
+function ButtonNavBar(props) {
   return (
     <NavBar>
-      <TouchableOpacity style={{alignItems:"center"}}>
-        <Icon name="home" size={30} color="#767676" />
+      <TouchableOpacity style={{alignItems:"center"}} onPress={() => props.navigation.navigate("Home")}>
+        <Icon name="home" size={30} color="#767676"/>
         <Label title="Home" />
       </TouchableOpacity>
       <TouchableOpacity  style={{alignItems:"center"}}>
         <Icon name="search" size={30} color="#767676" />
         <Label title="Buscar" />
       </TouchableOpacity>
-      <TouchableOpacity  style={{alignItems:"center"}} onPress={navigate}>
+      <TouchableOpacity  style={{alignItems:"center"}} onPress={() => props.navigation.navigate("Perfil")}>
         <Icon name="person" size={30} color="#767676" />
         <Label title="Perfil" />
       </TouchableOpacity>
-      <TouchableOpacity  style={{alignItems:"center"}}>
+      <TouchableOpacity  style={{alignItems:"center"}} onPress={() => props.navigation.navigate("Carrinho")}>
         <Icon name="cart" size={30} color="#767676" />
         <Label title="Carrinho" />
       </TouchableOpacity>

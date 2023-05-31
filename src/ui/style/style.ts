@@ -16,3 +16,9 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.title};
   font-weight: 700;
 `;
+
+export const Page = styled.Text`
+  font-family: "Mulish";
+  font-size: ${({ theme }) => theme.fonts.subtitle}px;
+  font-weight: 700;
+`;

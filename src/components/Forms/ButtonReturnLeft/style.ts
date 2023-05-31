@@ -5,17 +5,12 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 
 export const Container = styled(TouchableOpacity)<IBackButton>`
-    width: 30%;
+    width: 40px;
     padding: 0px;
+    margin-left: -10px;
 
     border: 2px;
     border-radius: ${({ theme }) => theme.radius.xs}px;
     border-color: transparent;
     background-color: "transparent";
 `;
-
-export const Title = styled.Text `
-    color: ${({ theme }) => theme.colors.background};
-    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
-    margin: auto;
-`
