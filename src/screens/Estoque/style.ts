@@ -20,14 +20,16 @@ export const OrLine = styled.View `
 
 export const OrTitle = styled.Text `
     margin: ${({ theme }) => theme.margin.ls}px;
-    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
     padding-bottom: ${({ theme }) => theme.padding.ls}px;
+    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    font-family: "Mulish";
 `;
 
 export const Title = styled.Text `
     font-size: ${({ theme }) => theme.fonts.title}px;
-    color: ${({ theme }) => theme.colors.title};
+    font-family: "Mulish";
     font-weight: 500;
+    color: ${({ theme }) => theme.colors.title};
 `;
 
 export const SearchBarEdit = styled.View `
@@ -49,4 +51,5 @@ export const SearchBarInput = styled.View `
     border: 1px;
     border-radius: ${({ theme }) => theme.radius.xs}px;
     border-color: ${({ theme }) => theme.colors.text};
+
 `;

@@ -6,7 +6,7 @@ export const Header = styled.View`
 `
 export const SubTitle = styled.Text`
     font-size: ${({ theme }) => theme.fonts.label}px;
+    font-family: "Mulish";
     text-align: center;
-
     padding: 0 ${RFValue(38)}px;
 `
