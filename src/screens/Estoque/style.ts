@@ -1,3 +1,4 @@
+import { TextInput } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
@@ -30,23 +31,22 @@ export const Title = styled.Text `
 `;
 
 export const SearchBarEdit = styled.View `
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: ${({ theme }) => theme.colors.background},
+    flexDirection: 'row',   
 `;
 
 export const SearchBarIcon = styled.View `
-    padding: 10,
+    padding: 10px,
 `;
 
 export const SearchBarInput = styled.View `
-    flex: 1,
-    paddingTop: 10,
-    paddingRight: 10,
-    paddingBottom: 10,
-    paddingLeft: 0,
-    backgroundColor: '${({ theme }) => theme.colors.background},
-    color: '#424242',
+    width: 100%;
+    padding: 13px 20px;
+
+    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    color: ${({ theme }) => theme.colors.text_dark};
+
+    background-color: ${({ theme }) => theme.colors.background};
+    border: 1px;
+    border-radius: ${({ theme }) => theme.radius.xs}px;
+    border-color: ${({ theme }) => theme.colors.text};
 `;

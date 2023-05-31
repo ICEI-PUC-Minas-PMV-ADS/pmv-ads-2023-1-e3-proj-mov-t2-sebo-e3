@@ -18,9 +18,10 @@ import EditProduct from "../screens/EditProduct";
 import EditProduct2 from "../screens/EditProduct2";
 import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
 
+
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Editar Livro">
+    <Stack.Navigator initialRouteName="Estoque">
       <Stack.Screen
         name="Inicial"
         component={Initial}
