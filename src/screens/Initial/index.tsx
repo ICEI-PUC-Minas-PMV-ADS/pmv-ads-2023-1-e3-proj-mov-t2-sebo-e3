@@ -28,6 +28,10 @@ function Initial({ navigation }) {
       <ButtonSecundary title="Cadastre-se"  onPress={() => navigation.navigate('Cadastre-se')} />
       <Spacer margin={"mx"} />
 
+
+      <ButtonSecundary title="Endereço"  onPress={() => navigation.navigate('Endereço')} />
+      <Spacer margin={"mx"} />
+
       <SubTitle>Entrar como convidado</SubTitle>
       <Spacer margin={"xx"} />
     </ViewContainer>

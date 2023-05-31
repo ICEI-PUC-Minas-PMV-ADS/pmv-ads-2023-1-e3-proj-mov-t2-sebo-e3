@@ -39,7 +39,7 @@ function Profile({ navigation }) {
 
         <Header>
           <Text>{"\n"}</Text>
-          <Icon name="person" size={100} color="#005f83" />
+          <Icon name="person" size={100} color="#7a4183" />
           <Text>{"Usuário"}</Text>
         </Header>
 
