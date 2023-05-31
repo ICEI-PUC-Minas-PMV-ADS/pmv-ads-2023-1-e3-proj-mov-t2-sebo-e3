@@ -9,11 +9,14 @@ import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 import ButtonNavBarEdit from "../../components/Forms/ButtonNavBarEdit";
 import Label from "../../components/Forms/Label";
 import Input from "../../components/Forms/Input";
+import TabelaEstoque from "../../components/Forms/TabelaEstoque";
 
 
 
 //Icons
 import Icon from '@expo/vector-icons/Ionicons';
+
+
 
 function Estoque({ navigation }) {
   
@@ -30,14 +33,15 @@ function Estoque({ navigation }) {
           onPress={() => console.log("IMPLEMENTAR CREATE")}
         />
 
-        <View style={SearchBarEdit}>
-            <Icon style={SearchBarIcon} name="ios-search" size={20} color="#000"/>
-            <TextInput
-                style={SearchBarInput}
-                placeholder="Buscar Livro"
-                onChangeText={(searchString) => {this.setState({searchString})}}
-                underlineColorAndroid="transparent"
-            />
+        <Spacer margin={"xs"} />
+
+        <View >
+            <Input placeholder="Buscar livro" ></Input>
+            <Icon onPress={() => console.log('IMPLEMENTAR BUSCA')} style={SearchBarIcon} name="ios-search" size={30} color="#000"/>
+        </View>
+
+        <View>
+          <TabelaEstoque></TabelaEstoque>
         </View>
        
       </ViewContainer>
@@ -46,4 +50,4 @@ function Estoque({ navigation }) {
     );
   }
   
-  export default Estoque;
+export default Estoque;
