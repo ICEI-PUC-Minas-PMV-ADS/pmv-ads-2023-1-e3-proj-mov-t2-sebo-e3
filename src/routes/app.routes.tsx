@@ -17,13 +17,14 @@ import {
   Register,
 } from "../screens";
 import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
-import { Text } from "react-native";
+import ButtonNavBar from "../components/Forms/ButtonNavBar";
+import { Page } from "../ui/style/style";
 
 const Stack = createNativeStackNavigator();
 
-function AppRoutes() {
+function AppRoutes({ navigation }) {
   return (
-    <Stack.Navigator initialRouteName="Detalhe de Livro">
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -35,179 +36,100 @@ function AppRoutes() {
         name="Login"
         component={Login}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Login
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Login</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Cadastre-se"
         component={Register}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Cadastre-se
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Cadastre-se</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Livro"
         component={ProductPage}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Livro
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Livro</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Estoque"
         component={Estoque}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Estoque
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Estoque</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Detalhe de Livro"
         component={EditProduct}
         options={{
-          headerLeft: () => (
-            <ButtonReturnLeft
-              onClick={() => console.log("falta implementar volta")}
-            />
-          ),
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "80%",
-              }}
-            >
-              Detalhes do Livro
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Detalhe de Livro</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Editar Livro"
         component={EditProduct2}
         options={{
-          headerLeft: () => (
-            <ButtonReturnLeft
-              onClick={() => console.log("falta implementar volta")}
-            />
-          ),
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Editar Livro
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Editar Livro</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Finalizar Compra"
         component={ConcludePurchase}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Finalizar Compra
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Finalizar Compra</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Carrinho"
         component={Cart}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Carrinho
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Carrinho</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Redefinir Senha"
         component={RedefinePassword}
         options={{
-          headerTitle: () => (
-            <Text
-              style={{
-                fontFamily: "Mulish",
-                textAlign: "center",
-                margin: "auto",
-                width: "70%",
-              }}
-            >
-              Redefinir Senha
-            </Text>
-          ),
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Redefinir Senha</Page>
+          }
         }}
       />
       <Stack.Screen
         name="Informacoes Pessoais"
         component={InformationPeople}
         options={{
-          headerShown: false,
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Informacoes Pessoais</Page>
+          }
         }}
       />
       <Stack.Screen
@@ -228,9 +150,13 @@ function AppRoutes() {
         name="Home"
         component={Home}
         options={{
-          headerShown: false,
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Home</Page>
+          }
         }}
       />
+      <Stack.Screen name="sidebar" component={ButtonNavBar} />
     </Stack.Navigator>
   );
 }
