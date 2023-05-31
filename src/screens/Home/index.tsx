@@ -6,14 +6,20 @@ import {
   StatusBar,
   Text,
   FlatList,
+  Dimensions,
+  Animated,
 } from "react-native";
-import { LogoImage } from "./style";
+import { BookText, Card, LogoImage, Main } from "./style";
 import React from "react";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 import Label from "../../components/Forms/Label";
 import theme from "../../ui/style/theme";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+import { ExpandingDot } from "react-native-animated-pagination-dots";
+
+const dimensions = Dimensions.get("window");
+const imageWidth = dimensions.width;
 
 const DATA = [
   {
@@ -42,97 +48,111 @@ const DATA = [
   },
 ];
 
-function Home() {
+const BANNERS = [
+  {
+    id: "0",
+    image: require("../../assets/banner.png"),
+  },
+  {
+    id: "1",
+    image: require("../../assets/banner.png"),
+  },
+];
+
+function Home({ navigation }) {
   const Item = ({ title, autor, price }) => (
-    <View style={{ width: 115, height: 185, alignItems: "center" }}>
+    <Card>
       <Image
         style={{ width: 87, height: 100, margin: "auto" }}
         source={require("../../assets/Capa.png")}
       />
-      <View style={{ alignItems: "flex-start", gap: 8 }}>
-        <Text
-          style={{
-            fontSize: theme.fonts.label,
-            fontFamily: "Mulish",
-            color: "#404040",
-          }}
-        >
-          {title}
-        </Text>
-        <Text style={{ fontSize: 10, fontWeight: "400", color: "#404040" }}>
-          {autor}
-        </Text>
-        <Text
-          style={{
-            fontSize: theme.fonts.obs,
-            fontFamily: "Mulish",
-            color: "#404040",
-          }}
-        >
-          {" "}
+      <Main>
+        <BookText>{title}</BookText>
+        <BookText style={{ fontSize: 10 }}>{autor}</BookText>
+        <BookText style={{ fontSize: theme.fonts.obs }}>
           R$
-          <Text
-            style={{
-              fontSize: theme.fonts.text,
-            }}
-          >
-            {price}
-          </Text>
-        </Text>
-      </View>
-    </View>
+          <BookText style={{ fontSize: theme.fonts.text }}>{price}</BookText>
+        </BookText>
+      </Main>
+    </Card>
   );
 
+  const ItemImages = ({ image }) => (
+    <Image resizeMode="stretch" style={{ marginHorizontal: 20}} source={image} />
+  );
+  const scrollX = React.useRef(new Animated.Value(0)).current;
+
   return (
-    <SafeAreaView style={{flex: 1, paddingTop: StatusBar.currentHeight }}>
+    <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
-        <ScrollView>
+        <View style={{ alignItems: "center" }}>
           <LogoImage source={require("../../assets/sebo-logo-home.png")} />
-          <View
-            style={{
-              width: 282,
-              height: 148,
-              borderRadius: 8,
-              backgroundColor: "#D9D9D9",
+
+          <FlatList
+            data={BANNERS}
+            keyExtractor={(item) => item.id}
+            showsHorizontalScrollIndicator={false}
+            onScroll={Animated.event(
+              [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+              {
+                useNativeDriver: false,
+              }
+            )}
+            pagingEnabled
+            horizontal
+            decelerationRate={"normal"}
+            scrollEventThrottle={16}
+            renderItem={({ item }) => <ItemImages image={item.image} />}
+          />
+          <ExpandingDot
+            data={BANNERS}
+            expandingDotWidth={30}
+            scrollX={scrollX}
+            inActiveDotOpacity={0.6}
+            dotStyle={{
+              width: 10,
+              height: 10,
+              backgroundColor: "#347af0",
+              borderRadius: 5,
+              marginHorizontal: 5,
             }}
-          ></View>
+            containerStyle={{
+              position: "relative",
+              bottom: -10,
+            }}
+          />
+        </View>
 
-          <Spacer margin={"mx"} />
+        <Spacer margin={"mx"} />
 
-          <View style={{ margin: "auto" }}>
-            <Text style={{ marginBottom: 16 }}>Livros mais pedidos</Text>
-            <FlatList
-              data={DATA}
-              renderItem={({ item }) => (
-                <Item
-                  title={item.title}
-                  autor={item.autor}
-                  price={item.price}
-                />
-              )}
-              keyExtractor={(item) => item.id}
-              horizontal
-            />
-          </View>
+        <BookText style={{ marginBottom: 16, color: theme.colors.text_dark }}>
+          Livros mais pedidos
+        </BookText>
+        <FlatList
+          data={DATA}
+          renderItem={({ item }) => (
+            <Item title={item.title} autor={item.autor} price={item.price} />
+          )}
+          keyExtractor={(item) => item.id}
+          horizontal
+        />
 
-          <View style={{ margin: "auto" }}>
-            <Text style={{ marginBottom: 16 }}>Sobre Tecnologia</Text>
-            <FlatList
-              data={DATA}
-              renderItem={({ item }) => (
-                <Item
-                  title={item.title}
-                  autor={item.autor}
-                  price={item.price}
-                />
-              )}
-              keyExtractor={(item) => item.id}
-              horizontal
-            />
-          </View>
-        </ScrollView>
+        <Spacer margin={"mx"} />
+
+        <BookText style={{ marginBottom: 16, color: theme.colors.text_dark }}>
+          Sobre Tecnologia
+        </BookText>
+        <FlatList
+          data={DATA}
+          renderItem={({ item }) => (
+            <Item title={item.title} autor={item.autor} price={item.price} />
+          )}
+          keyExtractor={(item) => item.id}
+          horizontal
+        />
+        <Spacer margin={"mx"} />
       </ViewContainer>
-      <ButtonNavBar />
+      <ButtonNavBar navigation={navigation} />
     </SafeAreaView>
   );
 }

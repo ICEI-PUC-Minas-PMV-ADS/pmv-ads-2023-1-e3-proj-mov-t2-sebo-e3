@@ -83,7 +83,7 @@ function Profile({ navigation }) {
           </View>
         </Form>
       </ViewContainer>
-      <ButtonNavBar />
+      <ButtonNavBar navigation={navigation}/>
     </SafeAreaView>
   );
 }

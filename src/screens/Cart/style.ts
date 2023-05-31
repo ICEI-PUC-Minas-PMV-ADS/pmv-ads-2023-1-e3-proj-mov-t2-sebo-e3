@@ -32,3 +32,10 @@ export const Title = styled.Text `
 
     color: ${({ theme }) => theme.colors.title};
 `;
+
+export const Tab = styled.View `
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4px; 
+    margin-bottom: 4px; 
+`
