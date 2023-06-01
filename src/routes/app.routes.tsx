@@ -19,6 +19,7 @@ import {
 import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
 import { Page } from "../ui/style/style";
+import EditProduct22 from "../screens/EditProduct2";
 
 const Stack = createNativeStackNavigator();
 
@@ -84,7 +85,7 @@ function AppRoutes({ navigation }) {
       />
       <Stack.Screen
         name="Editar Livro"
-        component={EditProduct2}
+        component={EditProduct}
         options={{
           headerTitleAlign: "center",
           headerTitle(props) {
@@ -136,7 +137,7 @@ function AppRoutes({ navigation }) {
         name="Perfil"
         component={Profile}
         options={{
-          headerShown: false,
+          headerShown: true,
         }}
       />
       <Stack.Screen
@@ -144,6 +145,13 @@ function AppRoutes({ navigation }) {
         component={Address}
         options={{
           headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="EditProduto2"
+        component={EditProduct2}
+        options={{
+          headerShown: true,
         }}
       />
       <Stack.Screen
