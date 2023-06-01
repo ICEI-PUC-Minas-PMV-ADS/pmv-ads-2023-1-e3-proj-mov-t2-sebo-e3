@@ -1,4 +1,3 @@
-import { TextInput } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
@@ -41,7 +40,7 @@ export const SearchBarEdit = styled.View `
 `;
 
 export const SearchBarIcon = styled.View `
-    padding: 10px,
+    padding: 10px;
 `;
 
 export const SearchBarInput = styled.View `
