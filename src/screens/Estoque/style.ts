@@ -1,3 +1,4 @@
+import { TextInput } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
@@ -32,18 +33,20 @@ export const Title = styled.Text `
 `;
 
 export const SearchBarEdit = styled.View `
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: ${({ theme }) => theme.colors.background};
+    flexDirection: 'row',   
 `;
 
 export const SearchBarIcon = styled.View `
-    padding: 10px;
+    padding: 10px,
 `;
 
 export const SearchBarInput = styled.View `
+    width: 100%;
+    padding: 13px 20px;
+
+    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    color: ${({ theme }) => theme.colors.text_dark};
+
     width: 100%;
     padding: 13px 20px;
 
