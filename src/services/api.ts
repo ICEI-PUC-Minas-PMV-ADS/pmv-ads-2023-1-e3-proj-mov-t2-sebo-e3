@@ -2,13 +2,8 @@ import axios from "axios"
 import { IAddress, IUser } from "../ui/interfaces";
 
 const apiBase = axios.create({
-<<<<<<< HEAD
-    baseURL: " http:// 192.168.0.104:3000/"
-    //baseURL: " http://192.168.1.8:3000/"
-=======
-    baseURL: " http://192.168.0.8:3000/"
-    // baseURL: " http://192.168.1.8:3000/"
->>>>>>> origin
+    // baseURL: " http:// 192.168.0.104:3000/"
+    baseURL: " http://192.168.1.8:3000/"
     // baseURL: " http://192.168.1.2:3000/"
 })
 
