@@ -65,6 +65,12 @@ function Profile({ navigation }) {
             <Text>Deletar conta</Text>
           </TouchableOpacity>
 
+          <TouchableOpacity
+            onPress={() => navigation.navigate("EditProduto2")}
+          >
+            <Text>Cadastrar livros</Text>
+          </TouchableOpacity>
+
           <Spacer margin="xx" />
 
           <View

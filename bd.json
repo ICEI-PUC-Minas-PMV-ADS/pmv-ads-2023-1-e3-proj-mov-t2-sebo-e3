@@ -48,5 +48,25 @@
       "cep": "31330033",
       "id": 1
     }
+  ],
+  "books2": [
+    {
+      "titulo": "xzzvzd",
+      "preco": "222",
+      "autor": "sfdsfsa",
+      "editora": "dfffd",
+      "paginas": "200",
+      "conservacao": "bo ",
+      "id": 1
+    },
+    {
+      "titulo": "O Principe",
+      "preco": "8",
+      "autor": "Maquiavel",
+      "editora": "Edipro",
+      "paginas": "176",
+      "conservacao": "Bom",
+      "id": 2
+    }
   ]
 }
