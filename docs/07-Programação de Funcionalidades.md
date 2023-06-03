@@ -1140,3 +1140,156 @@ A Tela de Endereço do aplicativo "Sebo Virtual" o usuário passa as informaçõ
 
 Para acessar a tela de Endereço, o usuário deve estar logado a conta para direcionar de imediato a Home e após, o mesmo, irá adicionar um livro com intuito de compra e será encaminhado ao carrinho que terá todos os passos. Sendo que um deles contém o preenchimento do endereço, através do Json server funcionando para abastecer o Banco de Dados com as informações dos clientes.
 
+
+## Estoque (RF-001,002,005,006,007 / RNF-001,002,003,004,006,007,008)
+
+A Tela de Estoque do aplicativo "Sebo Virtual" o administrador poderá controlar o estoque e as vendas de livros, gerando relatórios de vendas, estoques e clientes pela própria tela do Estoque.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103009155/01e20da3-c58a-4b9e-892b-2afa7b551f5d)
+
+### Requisitos atendidos 
+
+- RF-001 - Cadastro de livros, autores, editoras e clientes
+- RF-002 - Autenticação no sistema
+- RF-005 - Controle de estoque e vendas de livros
+- RF-006 - Geração de relatórios de vendas, estoque e clientes
+- RF-007 - Pesquisa de livros por título, autor ou categoria
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-004 - O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React from "react";
+        import {
+        Image,
+        View,
+        SafeAreaView,
+        StatusBar,
+        TextInput,
+        Text,
+        Button,
+        FlatList,
+        TouchableOpacity,
+        ScrollView,
+        } from "react-native";
+        import ButtonPrimary from "../../components/Forms/ButtonPrimary";
+        import ButtonSecundary from "../../components/Forms/ButtonSecundary";
+        import Spacer from "../../components/Spacer";
+        import { ViewContainer } from "../../ui/style/style";
+        import {
+        OrContainer,
+        OrLine,
+        SubTitle,
+        Title,
+        SearchBarEdit,
+        SearchBarInput,
+        List,
+        ListButton,
+        } from "./style";
+        import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+        import ButtonNavBarEdit from "../../components/Forms/ButtonNavBarEdit";
+        import Label from "../../components/Forms/Label";
+        import Input from "../../components/Forms/Input";
+
+        //Icons
+        import Icon from "@expo/vector-icons/Ionicons";
+
+        const data = [
+        { title: "livro1", qtd: "4", id: "01" },
+        { title: "livro2", qtd: "6", id: "02" },
+        { title: "livro2", qtd: "6", id: "03" },
+        { title: "livro1", qtd: "4", id: "04" },
+        { title: "livro2", qtd: "6", id: "05" },
+        { title: "livro2", qtd: "6", id: "06" },
+        ];
+
+        function Estoque({ navigation }) {
+        function checkIndexIsEven(n) {
+        return n % 2 == 0;
+        }
+        return (
+        <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+        <ViewContainer>
+        <ButtonPrimary
+        title="Adicionar Livro"
+        onPress={() => console.log("IMPLEMENTAR CREATE")}
+        />
+
+        <Spacer margin={"xs"} />
+
+        <View
+        style={{
+        flexDirection: "row",
+        alignItems: "center",
+        position: "relative",
+        marginBottom: 16,
+        }}
+        >
+        <Input placeholder="Buscar livro"></Input>
+        <Icon
+        onPress={() => console.log("IMPLEMENTAR BUSCA")}
+        name="ios-search"
+        size={25}
+        padding={10}
+        color="#404040"
+        position={"absolute"}
+        right={0}
+        />
+        </View>
+
+        <View
+        style={{
+        backgroundColor: "#177397",
+        padding: 8,
+        borderTopLeftRadius: 8,
+        borderTopRightRadius: 8,
+        }}
+        >
+        <Text
+        style={{ color: "#FFF", fontWeight: "700", fontFamily: "Mulish" }}
+        >
+        Título
+        </Text>
+        </View>
+        <View style={{ marginBottom: 16 }}>
+        {data.map((item, index) => (
+        <List
+        style={{
+        backgroundColor: checkIndexIsEven(index)
+        ? "#FFFFFF"
+        : "#D9D9D9",
+        }}
+        key={index}
+        >
+        <Text style={{ fontFamily: "Mulish" }}>{item.title}</Text>
+        <ListButton onPress={() => navigation.navigate("Livro")}>
+        <Text style={{ fontFamily: "Mulish" }}>Detalhes</Text>
+        </ListButton>
+        <ListButton>
+        <Image source={require("../../assets/pencil-outline.png")} />
+        </ListButton>
+        </List>
+        ))}
+        </View>
+        </ViewContainer>
+        <ButtonNavBarEdit navigate={navigation} />
+        </SafeAreaView>
+        );
+        }
+
+        export default Estoque;
+        
+     
+### Instruções de acesso 
+
+Para acessar a tela de Estoque, o administrador precisará logar e após feito poderá alterar os dados dos livros.
