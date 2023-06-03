@@ -805,3 +805,131 @@ A Tela de Home do aplicativo "Sebo Virtual" o usuário passa a ver todos os livr
 ### Instruções de acesso 
 
 Para acessar a tela de Home, o usuário deve estar logado a conta para direcionar de imediato. 
+
+
+## Carrinho (RF-004,009,010 / RNF-001,002,003,004,006,007,008)
+
+A Tela de Carrinho do aplicativo "Sebo Virtual" o usuário passa a comprar os livros. Tendo como opção de editar e excluir, após realizado a compra sinaliza um alerta com a frase de pedido confirmado.  
+
+
+
+### Requisitos atendidos 
+
+- RF-004 - Entrega do produto e confirmação da compra
+- RF-009 - O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido
+- RF-010 - O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido
+- RF-007 - Pesquisa de livros por título, autor ou categoria
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-004 - O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React from "react";
+        import { Image, View } from "react-native";
+        import ButtonPrimary from "../../components/Forms/ButtonPrimary";
+        import ButtonSecundary from "../../components/Forms/ButtonSecundary";
+        import Spacer from "../../components/Spacer";
+        import { ViewContainer } from "../../ui/style/style";
+        import { OrContainer, OrLine, SubTitle, Tab, Title } from "./style";
+        import Icon from "@expo/vector-icons/Ionicons";
+        import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+        import { SafeAreaView, StatusBar } from "react-native";
+
+        function Cart({ navigation }) {
+        return (
+        <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+        <ViewContainer>
+        <View style={{ flexDirection: "row" }}>
+        <Image
+        style={{ width: 120, height: 150 }}
+        source={require("../../assets/Capa.png")}
+        />
+
+        <View style={{ marginTop: 10 }}>
+        <Title>Trono de Vidro - Vol 1</Title>
+
+        <SubTitle>Sarah J. Maas</SubTitle>
+        <Spacer margin="xx" />
+
+        <View style={{ flexDirection: "row" }}>
+        <Title>R$ 15,80</Title>
+        <Icon
+        style={{ paddingHorizontal: 95 }}
+        name="trash"
+        size={25}
+        color="#767676"
+        />
+
+        <Spacer margin="xx" />
+        </View>
+        </View>
+        </View>
+
+        <Spacer margin="xx" />
+
+        <OrContainer>
+        <OrLine></OrLine>
+        <OrLine></OrLine>
+        </OrContainer>
+
+        <Title> {"\n"} Resumo da compra</Title>
+
+        <Spacer margin="xx" />
+
+        <Tab>
+        <SubTitle>Produto</SubTitle>
+        <SubTitle>R$ 15,80</SubTitle>
+        </Tab>
+
+        <Tab>
+        <SubTitle>Frete Fixo</SubTitle>
+        <SubTitle>R$ 12,00</SubTitle>
+        </Tab>
+
+        <Tab>
+        <SubTitle>Desconto</SubTitle>
+        <SubTitle>R$ 00,00</SubTitle>
+        </Tab>
+
+        <Spacer margin="xx" />
+
+        <Tab>
+        <SubTitle>Total</SubTitle>
+        <SubTitle>R$ 27,80</SubTitle>
+        </Tab>
+
+        <Spacer margin="xx" />
+
+        <ButtonPrimary
+        title="Comprar"
+        onPress={() => navigation.navigate("Login")}
+        />
+        <Spacer margin={"mx"} />
+
+        <ButtonSecundary
+        title="Continuar comprando"
+        onPress={() => navigation.navigate("")}
+        />
+        <Spacer margin={"mx"} />
+        </ViewContainer>
+        <ButtonNavBar navigation={navigation} />
+        </SafeAreaView>
+        );
+        }
+
+        export default Cart;
+        
+        
+### Instruções de acesso 
+
+Para acessar a tela de Carrinho, o usuário deve estar logado a conta para direcionar de imediato a Home e após, o mesmo, irá adicionar um livro com intuito de compra e será encaminhado ao carrinho que terá todos os passos para que o pedido seja realizado.
