@@ -17,5 +17,6 @@ export const Container = styled(TouchableOpacity)<IButton>`
 export const Title = styled.Text `
     color: ${({ theme }) => theme.colors.background};
     font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    font-family: "Mulish";
     margin: auto;
 `

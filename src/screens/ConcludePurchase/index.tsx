@@ -179,7 +179,7 @@ function ConcludePurchase({ navigation }) {
         />        
         <Spacer margin={"mx"} />
     </ViewContainer>
-    <ButtonNavBar navigate={navPages} />
+    <ButtonNavBar />
     </SafeAreaView>
     );
   }

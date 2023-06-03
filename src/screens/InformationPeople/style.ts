@@ -16,6 +16,7 @@ export const Form = styled.View `
 
 export const SubTitle = styled.Text`
     font-size: ${({ theme }) => theme.fonts.subtitle}px;
+    font-family: "Mulish";
     font-weight: 700;
     padding: 0 ${RFValue(0)}px;
 `; 

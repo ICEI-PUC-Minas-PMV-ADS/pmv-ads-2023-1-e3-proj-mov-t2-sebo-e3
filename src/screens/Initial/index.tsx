@@ -2,7 +2,6 @@ import React from "react";
 import { Linking, Text } from "react-native";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import ButtonSecundary from "../../components/Forms/ButtonSecundary";
-import { Label } from "../../components/Forms/Label/style";
 import Spacer from "../../components/Spacer";
 import { LogoContainer, Title, ViewContainer } from "../../ui/style/style";
 import { Header, SubTitle } from "./style";

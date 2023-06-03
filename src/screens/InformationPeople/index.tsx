@@ -13,11 +13,6 @@ import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 import { Header, Form, SubTitle } from "./style";
 
 function InformationPeople({ navigation }) {
-
-  
-  function navPages() {
-    navigation.navigate("Perfil")
-  }
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
@@ -77,7 +72,7 @@ function InformationPeople({ navigation }) {
           </View>
         </Form>
       </ViewContainer>
-      <ButtonNavBar navigate={navPages} />
+      <ButtonNavBar navigation={navigation} />
     </SafeAreaView>
   );
 }
