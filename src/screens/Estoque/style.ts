@@ -47,9 +47,14 @@ export const SearchBarInput = styled.View `
     font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
     color: ${({ theme }) => theme.colors.text_dark};
 
+    width: 100%;
+    padding: 13px 20px;
+
+    font-size: ${({ theme }) => RFValue(theme.fonts.label)}px;
+    color: ${({ theme }) => theme.colors.text_dark};
+
     background-color: ${({ theme }) => theme.colors.background};
     border: 1px;
     border-radius: ${({ theme }) => theme.radius.xs}px;
     border-color: ${({ theme }) => theme.colors.text};
-
 `;
