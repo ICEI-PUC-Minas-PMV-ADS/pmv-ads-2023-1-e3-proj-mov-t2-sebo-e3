@@ -122,11 +122,11 @@ O público-alvo do sebo é composto por pessoas que buscam livros usados a preç
 
 ### Eficiência de desempenho
 
-Nenhum usuário gosta de um software lento. Normalmente ficam impacientes e dependendo da situação até desinstalam ou deixam de lado. Esse princípio reflete justamente esse aspecto. Chegamos ao consenso de que o software deve ser capaz de responder em tempo hábil, sem deixar o usuário esperando.
+Nenhum usuário gosta de um software lento. Normalmente ficam impacientes e dependendo da situação até desinstalam ou deixam de lado. Esse princípio reflete justamente esse aspecto. Nosso software possui resposta em tempo hábil, sem deixar o usuário esperando.
 
 ### Compatibilidade
 
-O grupo preza pela capacidade de executar o software independente do dispositivo móvel. Essa caractéristica é muito importante, pois, permite alçancar um número maior de pessoas.
+O grupo preza pela capacidade de executar o software independente do dispositivo móvel. Essa caractéristica é muito importante, pois, permite alçancar um número maior de pessoas. Nossa aplicação é compatível com Android e IOS.
 
 ### Usabilidade
 
@@ -138,7 +138,7 @@ A aplicação será testada por nossos desenvolvedores durante todo o processo p
 
 ### Segurança 
 
-A segurança é um dos pontos mais importantes. Afinal, ninguém quer utilizar algo inseguro, portanto nós desenvolvedores dessa aplicação somos responsáveis por quaisquer informações inseridas pelos usuários no sistema.
+A segurança é um dos pontos mais importantes. Afinal, ninguém quer utilizar algo inseguro, portanto nós desenvolvedores dessa aplicação somos responsáveis por quaisquer informações inseridas pelos usuários no sistema. Nossa aplicação não permite o vazamento de dados dos usuários cadastrados.
 
 ### Capacidade de manutenção
 
@@ -146,4 +146,4 @@ A reusabilidade da aplicação significará reduzir custos e tempo no processo d
 
 ### Portabilidade
 
-Por fim a portabilidade será fundamental em nossa aplicação e será definida através da capacidade da aplicação ser facilmente transportável, ou seja, se é capaz de executar todas as suas funções em diferentes sistemas operacionais, como Android na versão 9.0 e IOS na versão 10.0. Nosso objetivo é que nossa aplicação possa ser utilizada por tipos de pessoas diferentes em diversos ambientes e dispostivos móveis.
+A portabilidade é fundamental em nossa aplicação e será definida através da capacidade da aplicação ser facilmente transportável, ou seja, se é capaz de executar todas as suas funções em diferentes sistemas operacionais. Nossa aplicação pode ser utilizada por tipos de pessoas diferentes em diversos ambientes e dispostivos móveis.
