@@ -11,7 +11,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo:
 
 A Tela Inicial do aplicativo "Sebo Virtual" apresenta as boas-vindas para os usuários que detêm de uma conta e gostaria de realizar o seu login ou para aqueles que estão tendo o primeiro contato realizarem o seu cadastro no aplicativo.   
 
-![image](https://user-images.githubusercontent.com/103009155/229544172-647ed1dd-b669-45b0-a658-9036e3682f21.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103009155/e7dc8538-610c-4b26-a2d5-8db7b2cb1286)
 
 ### Requisitos atendidos 
 
@@ -78,7 +78,7 @@ Para efetuar a tela inicial, basta o usuário iniciar o aplicativo "Sebo Virtual
 
 A Tela de Login do aplicativo "Sebo Virtual" o usuário poderá efetuar o acesso com o e-mail e a senha informados quando for feito o cadastro. 
 
-![image](https://user-images.githubusercontent.com/103009155/229545050-c06bb1bb-1840-4c6d-b4d2-70fd557fb1bd.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103009155/2431b0af-88b4-4ff6-b011-573329929203)
 
 ### Requisitos atendidos 
 
@@ -619,7 +619,7 @@ Para acessar a tela de informações pessoais, o usuário deve estar logado a co
 
 A Tela de Home do aplicativo "Sebo Virtual" o usuário passa a ver todos os livros acessíveis, podendo ver a descrição e realizar a compra do mesmo.  
 
-
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103009155/2e742a52-1f9f-4892-a80c-f85af9550c0f)
 
 ### Requisitos atendidos 
 
@@ -811,7 +811,7 @@ Para acessar a tela de Home, o usuário deve estar logado a conta para direciona
 
 A Tela de Carrinho do aplicativo "Sebo Virtual" o usuário passa a comprar os livros. Tendo como opção de editar e excluir, após realizado a compra sinaliza um alerta com a frase de pedido confirmado.  
 
-
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103009155/bfbfc37f-3eff-4cec-89ed-49b55a431abd)
 
 ### Requisitos atendidos 
 
@@ -933,3 +933,210 @@ A Tela de Carrinho do aplicativo "Sebo Virtual" o usuário passa a comprar os li
 ### Instruções de acesso 
 
 Para acessar a tela de Carrinho, o usuário deve estar logado a conta para direcionar de imediato a Home e após, o mesmo, irá adicionar um livro com intuito de compra e será encaminhado ao carrinho que terá todos os passos para que o pedido seja realizado.
+
+
+## Endereço (RF-004 / RNF-001,002,003,004,006,007,008)
+
+A Tela de Endereço do aplicativo "Sebo Virtual" o usuário passa as informações sobre a sua residência para que o livro chegue no local onde mora.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103009155/10946d1e-3d8f-4ffb-a062-3235264fd0f9)
+
+### Requisitos atendidos 
+
+- RF-004 - Entrega do produto e confirmação da compra
+- RNF-001 - O sistema deve ser responsivo para rodar em um dispositivos móvel.
+- RNF-002 - O sistema deve garantir a segurança dos dados dos clientes e transações financeiras
+- RNF-003 - O sistema deve ser intuitivo e de fácil utilização para os funcionários do sebo.
+- RNF-004 - O sistema deve ser capaz de suportar um grande volume de dados e transações simultâneas
+- RNF-006 - O sistema deve ser confiável, sem apresentar falhas ou erros frequentes.
+- RNF-007 - A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+- RNF-008 - A aplicação deve ser publicada em um ambiente acessível publicamente na Internet.
+
+### Artefatos da funcionalidade 
+
+- index.tsx
+- style.ts
+
+### Estrutura de Dados 
+
+        import React, { useState } from "react";
+        import ButtonPrimary from "../../components/Forms/ButtonPrimary";
+        import Input from "../../components/Forms/Input";
+        import Label from "../../components/Forms/Label";
+        import Spacer from "../../components/Spacer";
+        import { ViewContainer } from "../../ui/style/style";
+        import { getUsers, postUsers } from "../../services/api";
+        import { Form, Header, SubTitle } from "./style";
+        import { IAddress, IUser } from "../../ui/interfaces";
+        import { checkEmail, checkName, checkPass } from "../../utils/validators";
+        import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+        import { SafeAreaView } from "react-native-safe-area-context";
+        import { StatusBar, Dimensions, View, Text, TextInput } from "react-native";
+        import theme from "../../ui/style/theme";
+        import axios from 'axios';
+  
+
+
+        function Address({ navigation }) {
+
+        const [logradouro, setLogradouro] = useState('');
+        const [numero, setNumero] = useState('');
+        const [complemento, setComplemento] = useState('');
+        const [bairro, setBairro] = useState('');
+        const [cidade, setCidade] = useState('');
+        const [estado, setEstado] = useState('');
+        const [cep, setCEP] = useState('');
+
+
+        const saveData = async () => {
+        try {
+        const response = await axios.post('http://192.168.1.11:3000/address', { logradouro, numero,complemento, bairro, cidade, estado, cep });
+        //const response = await axios.post('http://192.168.0.104:3000/address', { logradouro, numero,complemento, bairro, cidade, estado, cep });
+        console.log('Dados salvos:', response.data);
+        } catch (error) {
+        console.error('Erro ao salvar os dados:', error);
+        }
+        };
+
+        /*
+        const [address, setAddress] = useState<IAddress>({
+        id: 0,
+        logradouro: "",
+        numero: "",
+        complemento: "",
+        bairro: "",
+        cidade: "",
+        estado: "",
+        cep: ""
+        });
+
+ 
+
+        async function createAddress() {
+        if (address.logradouro && address.cidade && address.estado) {
+        const response = await createAddress();
+
+        if (response === "success post") {
+        return navigation.navigate("Address");
+        }
+
+        alert(
+        "Estamos com uma instabilidade, por favor, tente novamente mais tarde!"
+        );
+        }
+        alert("Por favor, preencher todos os dados para efetuar cadastro.");
+        }
+        */
+        async function submitForm() {
+
+        //createAddress();
+
+        /* const response = await getUsers();
+        if (response.length > 0) {
+        for (let i = 0; i < response.length; i++) {
+        if (user.email === response[i].email) {
+        alert("email já cadastrado!");
+        return false;
+        }
+        }
+        }
+        */
+        //if (checkName(user.name)) {
+        // if (checkEmail(user.email)) {
+        //   if (checkPass(user.password, confirmPass)) {
+        //     createUser();
+        //  }
+        //}
+        // }
+        }
+
+        //function navPages() {
+        //  navigation.navigate("Endereco")
+        //style={{flexDirection: 'row'}}
+        //}
+
+
+    
+  
+        function navPages() {
+        navigation.navigate("Endereço")
+        }
+    
+
+        const { width } = Dimensions.get('window');
+        return (
+        <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+        <ViewContainer >
+        <Spacer margin={"sx"} />
+        <SubTitle>Endereço {"\n"} </SubTitle>
+        <Form>
+        <Label title="Logradouro" />
+        <Input
+        placeholder="Rua/Avenida"
+        onChangeText={setLogradouro}
+        value={logradouro} 
+        />
+        <Spacer margin="xx" />
+
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <View style={{ flex: 1 }}>
+        <Text>Número</Text>
+        <Input
+        placeholder="Informe o número da residência"
+        onChangeText={setNumero}
+        value={numero}
+        />
+        </View>
+        <View style={{ flex: 1 }}>
+        <Text>Complemento</Text>
+        <Input
+        placeholder="Informe o  complemento "
+        onChangeText={setComplemento}
+        value={complemento}
+        />
+        </View>
+        </View>
+      
+        <Spacer margin="xx" />
+
+        <Label title="Bairro" />
+        <Input placeholder="Informe o bairro"           onChangeText={setBairro}
+        value={bairro} />
+        <Spacer margin="xx" />
+        
+        <Label title="Cidade" />
+        <Input placeholder="Informe a cidade" onChangeText={setCidade} value={cidade}/>
+        
+        <Spacer margin="xx" />
+        
+      
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <View style={{ flex: 1 }}>
+        <Text>Estado</Text>
+        <Input placeholder="Informe o estado" onChangeText={setEstado} value={estado}  />
+        </View>
+        <View style={{ flex: 1 }}>
+        <Text>CEP</Text>
+        <Input placeholder="Informe o CEP" onChangeText={setCEP} value={cep} />
+        </View>
+        </View>
+        <Spacer margin="xx" />       
+       
+        
+
+        <ButtonPrimary title="Continuar" onPress={saveData} />
+        </Form>
+        <Spacer margin={"xx"} />
+        </ViewContainer>
+        <ButtonNavBar navigate={navPages}/>
+        </SafeAreaView>
+        );
+        }
+
+        export default Address;
+        
+     
+### Instruções de acesso 
+
+Para acessar a tela de Endereço, o usuário deve estar logado a conta para direcionar de imediato a Home e após, o mesmo, irá adicionar um livro com intuito de compra e será encaminhado ao carrinho que terá todos os passos. Sendo que um deles contém o preenchimento do endereço, através do Json server funcionando para abastecer o Banco de Dados com as informações dos clientes.
+
