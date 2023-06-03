@@ -1,57 +1,52 @@
 import React from "react";
-import { Image, View, SafeAreaView, StatusBar } from "react-native";
+import { Image, View, SafeAreaView, StatusBar, Text } from "react-native";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import ButtonSecundary from "../../components/Forms/ButtonSecundary";
 import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
-import { OrContainer, OrLine, SubTitle, Title } from "./style"
+import { OrContainer, OrLine, SubTitle, Title } from "./style";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 
-
 function ProductPage({ navigation }) {
-  
   function navPages() {
-    navigation.navigate("Perfil")
-  }  
+    navigation.navigate("Perfil");
+  }
 
-    return (
-      <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
+  return (
+    <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
-        
-      <View style={{width: "100%", alignItems: "center"}}>
-        
-        <Image
-        source={require('../../assets/Capa.png')}
-        />
-        
-      </View>
+        <View style={{ width: "100%", alignItems: "center" }}>
+          <Image source={require("../../assets/Capa.png")} />
+        </View>
 
-        <Title>Trono de Vidro - Vol 1</Title>
+        <Title style={{fontSize: 18}} >Trono de Vidro - Vol 1</Title>
 
         <Spacer margin="ms" />
         <Spacer margin="ms" />
 
-        <View style={{flexDirection: 'row'}}>
-        <SubTitle>Sarah J. Maas {'                                               '} </SubTitle>
-
-        <Title>
-         R$ 15,80
-        </Title> 
+        <View style={{ flexDirection: "row", alignItems: "baseline", justifyContent: "space-between" }}>
+          <SubTitle>Sarah J. Maas</SubTitle>
+          
+          <Text style={{fontSize:16}}>R$<Title> 15,80</Title></Text>
         </View>
 
         <Spacer margin="xx" />
 
-        <Title>Detalhes do produto</Title>
-
+        <Title style={{fontSize: 18}}>Detalhes do produto</Title>
+        
+        <Spacer margin="ms" />
+        
         <OrContainer>
           <OrLine></OrLine>
           <OrLine></OrLine>
         </OrContainer>
 
-        <SubTitle>
-         {"\n"}Autor(a): Sarah J. Maas {"\n"}Editora: Galera
-         {"\n"}Quantidade de páginas: 392 {"\n"}Estado de conservação: Bom
-        </SubTitle>
+        <Spacer margin="xs" />
+
+        <SubTitle>Autor(a): Sarah J. Maas</SubTitle>
+        <SubTitle>Editora: Galera</SubTitle>
+        <SubTitle>Quantidade de páginas: 392</SubTitle>
+        <SubTitle>Estado de conservação: Bom</SubTitle>
         <Spacer margin="xx" />
 
         <ButtonPrimary
@@ -66,9 +61,9 @@ function ProductPage({ navigation }) {
         />
         <Spacer margin={"mx"} />
       </ViewContainer>
-          <ButtonNavBar navigate={navPages} />
-      </SafeAreaView>
-    );
-  }
-  
-  export default ProductPage;
+      <ButtonNavBar navigate={navPages} />
+    </SafeAreaView>
+  );
+}
+
+export default ProductPage;
