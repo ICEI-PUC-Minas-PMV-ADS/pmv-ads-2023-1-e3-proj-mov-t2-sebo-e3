@@ -118,7 +118,7 @@ A qualidade de software do projeto Sebo Digital segue os fundamentos descriminad
 
 ### Adequação funcional
 
-O público-alvo do sebo é composto por pessoas que buscam livros usados a preços mais acessíveis em comparação com os preços de mercado. Esse público pode incluir estudantes, pesquisadores, colecionadores, aficionados por literatura e pessoas que apreciam produtos vintage ou raros.
+O público-alvo do sebo é composto por pessoas que buscam livros usados a preços mais acessíveis em comparação com os preços de mercado. Esse público pode incluir estudantes, pesquisadores, colecionadores, aficionados por literatura e pessoas que apreciam produtos vintage ou raros. As funções da nossa aplicação foram pensadas para realizar as tarefas e atender os objetivos específicos do nosso público-alvo. Apresentamos aos usuários etapas necessárias para a compra de um livro, excluindo as desnecessárias.
 
 ### Eficiência de desempenho
 
@@ -130,7 +130,7 @@ O grupo preza pela capacidade de executar o software independente do dispositivo
 
 ### Usabilidade
 
-Durante as reuniões em grupo foi discutido a praticidade do uso do aplicativo e chegou-se à conclusão de que um design simples, porém funcional como o de outros sites para vendas de livros já existentes trará uma experiência prazerosa para o usuário.
+Durante as reuniões em grupo foi discutido a praticidade do uso do aplicativo e chegou-se à conclusão de que um design simples, porém funcional como o de outros sites para vendas de livros já existentes trará uma experiência prazerosa para o usuário, e assim foi feito.
 
 ### Confiabilidade
 
