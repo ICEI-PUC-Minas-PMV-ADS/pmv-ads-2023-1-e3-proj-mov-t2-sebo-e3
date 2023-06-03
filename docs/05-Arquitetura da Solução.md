@@ -130,7 +130,7 @@ O grupo preza pela capacidade de executar o software independente do dispositivo
 
 ### Usabilidade
 
-Durante as reuniões em grupo foi discutido a praticidade do uso do aplicativo e chegou-se à conclusão de que um design simples, porém funcional como o de outros sites para vendas de livros já existentes trará uma experiência prazerosa para o usuário, e assim foi feito.
+Durante as reuniões em grupo foi discutido a praticidade do uso do aplicativo e chegou-se à conclusão de que um design simples, porém funcional como o de outros sites para vendas de livros já existentes trará uma experiência prazerosa para o usuário, e assim foi desenvolvido.
 
 ### Confiabilidade
 
