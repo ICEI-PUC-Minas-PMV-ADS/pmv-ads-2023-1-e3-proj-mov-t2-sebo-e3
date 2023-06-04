@@ -4,15 +4,17 @@ export const LogoImage = styled.Image`
   margin: ${({ theme }) => theme.margin.xs}px auto;
 `;
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
   width: 115px;
   height: 185px;
   margin-right: ${({ theme }) => theme.margin.lx}px;
+  justify-content: space-between;
   align-items: center;
 `;
 
 export const Main = styled.View`
-  align-items: flex-start;
+  justify-content: space-between;
+  height: 72px;
   gap: 8px;
 `;
 
