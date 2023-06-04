@@ -39,7 +39,7 @@ import { useBookContext } from "../../context/bookContext";
 
 function Estoque({ navigation }) {
   const { user } = useUserContext();
-  const { setBook } = useBookContext();
+  const { setBook, setType } = useBookContext();
   const [ data, setData ] = useState([]);
 
   const books = async () => {
@@ -55,9 +55,16 @@ function Estoque({ navigation }) {
 
   const handleBook = (type: boolean, book: IBooks) => {
     setBook(book);
+    setType(true);
     if(type){
       return navigation.navigate("Editar Livro");
     }
+
+    return navigation.navigate("EditProduto2");
+  }
+
+  const handleAddBook = () => {
+    setType(false);
 
     return navigation.navigate("EditProduto2");
   }
@@ -75,7 +82,7 @@ function Estoque({ navigation }) {
       <ViewContainer>
         <ButtonPrimary
           title="Adicionar Livro"
-          onPress={() => console.log("IMPLEMENTAR CREATE")}
+          onPress={handleAddBook}
         />
 
         <Spacer margin={"xs"} />

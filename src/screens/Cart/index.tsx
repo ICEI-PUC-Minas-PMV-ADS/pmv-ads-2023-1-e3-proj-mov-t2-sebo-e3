@@ -31,7 +31,7 @@ function Cart({ navigation }) {
 
   useEffect(() => {
     ProductTotal();
-  }, []);
+  }, [cart]);
 
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>

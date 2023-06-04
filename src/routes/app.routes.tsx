@@ -28,7 +28,7 @@ const Stack = createNativeStackNavigator();
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName="Inicial">
       <Stack.Screen
         name="Inicial"
         component={Initial}

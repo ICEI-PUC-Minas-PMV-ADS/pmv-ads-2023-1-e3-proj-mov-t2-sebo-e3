@@ -15,6 +15,8 @@ export interface IBookContext {
   setCart: React.Dispatch<React.SetStateAction<any[]>>;
   sale: any[];
   setSale: React.Dispatch<React.SetStateAction<any[]>>;
+  type: boolean; 
+  setType: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface IProvider {

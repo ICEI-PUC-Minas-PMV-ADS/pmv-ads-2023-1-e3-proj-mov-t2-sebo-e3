@@ -44,7 +44,7 @@ function Address({ navigation }) {
       };
       try {
         
-        const response = await patchUsers(0, {
+        const response = await patchUsers(user.id, {
           address: {
             logradouro: logradouro,
             numero: numero,

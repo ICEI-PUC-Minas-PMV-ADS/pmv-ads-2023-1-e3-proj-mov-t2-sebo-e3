@@ -52,7 +52,7 @@
     {
       "userId": 1,
       "title": "Os inovadores",
-      "price": "37,80",
+      "price": "38.80",
       "author": "Walter Isaacson",
       "editor": "Intrínseca",
       "pages": "592",
@@ -192,6 +192,18 @@
       "category": "Tecnologia",
       "image": "https://m.media-amazon.com/images/I/417Vg37EN8L.jpg",
       "id": 16
+    },
+    {
+      "userId": 1,
+      "title": "One Piece Vol. 1",
+      "price": "19.12",
+      "author": "Eiichiro Oda",
+      "editor": "Pamini",
+      "pages": "192",
+      "conservation": "Ótimo",
+      "category": "",
+      "image": "https://m.media-amazon.com/images/I/51olydUbI6L._SX346_BO1,204,203,200_.jpg",
+      "id": 17
     }
   ]
 }

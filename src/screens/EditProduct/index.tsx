@@ -11,7 +11,13 @@ import { useBookContext } from "../../context/bookContext";
 import { deleteBooks } from "../../services/api";
 
 function EditProduct({ navigation }) {
-  const { book } = useBookContext();
+  const { book, setType } = useBookContext();
+
+  const handleBook = () => {
+    setType(true);
+
+    return navigation.navigate("EditProduto2");
+  }
 
   const removeBook = async() => {
     const response = await deleteBooks(book.id);
@@ -64,7 +70,7 @@ function EditProduct({ navigation }) {
         <View style={{ flexDirection: "column" }}>
           <ButtonPrimary
             title="Editar"
-            onPress={() => navigation.navigate("EditProduto2")}
+            onPress={handleBook}
           />
 
           <Spacer margin={"lx"} />

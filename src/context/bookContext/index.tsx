@@ -21,6 +21,7 @@ export const BookProvider: React.FC<IProvider> = ({ children }) => {
   const [cart, setCart] = useState<any>([]);
   const [sale, setSale] = useState<any>([]);
   const [book, setBook] = useState<IBooks>();
+  const [type, setType] = useState<boolean>(true);
 
   const getBooks = async () => {
     try {
@@ -107,6 +108,8 @@ export const BookProvider: React.FC<IProvider> = ({ children }) => {
       setCart,
       sale,
       setSale,
+      type,
+      setType,
     }),
     [
       bookList,
@@ -126,6 +129,8 @@ export const BookProvider: React.FC<IProvider> = ({ children }) => {
       setCart,
       sale,
       setSale,
+      type,
+      setType,
     ]
   );
 

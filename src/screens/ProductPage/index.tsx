@@ -12,7 +12,7 @@ function ProductPage({ navigation }) {
   const { book, setCart, cart } = useBookContext();
 
   const addCart = () => {
-    setCart(prev => [...prev, book]);
+    setCart((prev) => [...prev, book]);
     navigation.navigate("Carrinho");
   };
 
@@ -68,7 +68,12 @@ function ProductPage({ navigation }) {
 
         <ButtonSecundary
           title="Comprar agora"
-          onPress={() => navigation.navigate("Cadastre-se")}
+          onPress={() =>
+            navigation.reset({
+              index: 0,
+              routes: [{ name: "Home" }],
+            })
+          }
         />
         <Spacer margin={"mx"} />
       </ViewContainer>

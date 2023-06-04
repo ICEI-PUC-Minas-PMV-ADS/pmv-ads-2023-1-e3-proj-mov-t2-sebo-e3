@@ -19,24 +19,45 @@ import {
   TextInput,
   SafeAreaView,
 } from "react-native";
-import { putBooks } from "../../services/api";
+import { postBooks, putBooks } from "../../services/api";
 import { useUserContext } from "../../context/userContext";
 import { useBookContext } from "../../context/bookContext";
 
 function EditProduct2({ navigation }) {
   const { user } = useUserContext();
-  const { book } = useBookContext();
-  const [titulo, setTitulo] = useState(book.title);
-  const [preco, setPreco] = useState(book.price);
-  const [autor, setAutor] = useState(book.author);
-  const [editora, setEditora] = useState(book.editor);
-  const [paginas, setPaginas] = useState(book.pages);
-  const [conservacao, setConservacao] = useState(book.conservation);
-  const [imagem, setImagem] = useState(book.image);
-  const [categoria, setCategoria] = useState(book.category);
+  const { book, type } = useBookContext();
+  const [titulo, setTitulo] = useState(type ? book.title : "");
+  const [preco, setPreco] = useState(type ? book.price : "");
+  const [autor, setAutor] = useState(type ? book.author : "");
+  const [editora, setEditora] = useState(type ? book.editor : "");
+  const [paginas, setPaginas] = useState(type ? book.pages : "");
+  const [conservacao, setConservacao] = useState(type ? book.conservation : "");
+  const [imagem, setImagem] = useState(type ? book.image : "");
+  const [categoria, setCategoria] = useState(type ? book.category : "");
 
   const saveData = async () => {
-    const response = await putBooks(book.id, {
+    if (type) {
+      const response = await putBooks(book.id, {
+        userId: user.id,
+        title: titulo,
+        price: preco,
+        author: autor,
+        editor: editora,
+        pages: paginas,
+        conservation: conservacao,
+        category: categoria,
+        image: imagem,
+        id: book.id,
+      });
+      if (response) {
+        alert("Livro atualizado com sucesso!");
+        return navigation.reset({
+          index: 0,
+          routes: [{ name: "Estoque" }],
+        });
+      }
+    }
+    const response = await postBooks({
       userId: user.id,
       title: titulo,
       price: preco,
@@ -46,14 +67,14 @@ function EditProduct2({ navigation }) {
       conservation: conservacao,
       category: categoria,
       image: imagem,
-      id: book.id,
+      id: 0,
     });
 
     if (response) {
-      alert("Livro atualizado com sucesso!");
+      alert("Livro cadastrado com sucesso!");
       return navigation.reset({
         index: 0,
-        routes: [{ name: 'Estoque' }],
+        routes: [{ name: "Estoque" }],
       });
     }
   };
@@ -62,7 +83,10 @@ function EditProduct2({ navigation }) {
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
         <View style={{ width: "100%", alignItems: "center" }}>
-          <Image source={{uri: book.image}} style={{ width: 150, height:200}} />
+          <Image
+            source={{ uri: type ? book.image : "" }}
+            style={{ width: 150, height: 200 }}
+          />
         </View>
         <Spacer margin={"xs"} />
 
@@ -120,11 +144,7 @@ function EditProduct2({ navigation }) {
 
         <Label title="URL de imagem" />
         <Spacer margin={"xs"} />
-        <Input
-          defaultValue="Bom"
-          value={imagem}
-          onChangeText={setImagem}
-        />
+        <Input defaultValue="Bom" value={imagem} onChangeText={setImagem} />
 
         <Spacer margin={"mx"} />
 
@@ -135,7 +155,7 @@ function EditProduct2({ navigation }) {
 
           <ButtonSecundary
             title="Cancelar"
-            onPress={() => console.log("IMPLEMENTAR CANCELAMENTO")}
+            onPress={() => navigation.navigate("Estoque")}
           />
 
           <Spacer margin={"mx"} />
