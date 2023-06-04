@@ -8,6 +8,19 @@ export interface IUser {
     dateOfBirth?: string
 }
 
+export interface IBooks {
+    userId: number,
+    title: string,
+    price: string,
+    author: string,
+    editor: string,
+    pages: string,
+    conservation: string,
+    category: string,
+    image: string,
+    id: number,
+}
+
 export interface IAddress {
     id: number,
     logradouro: string,
