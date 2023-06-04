@@ -20,22 +20,21 @@ export const getUsers = async () => {
     }
 }
 
-export const postUsers = async (data: IUser) => {
+export const deleteUsers = async (id: number) => {
     try {
-        const response = await apiBase.post(`users`, data);
+        const response = await apiBase.delete(`users/${id}`);
         
         if(response.status >= 200 || response.status < 300){
-            return "success post";
+            return "success delete";
         }
     } catch (error) {
         return "failed request";
     }
 }
 
-
-export const createAddress = async (data: IAddress) => {
+export const postUsers = async (data: IUser) => {
     try {
-        const response = await apiBase.post(`address`, data);
+        const response = await apiBase.post(`users`, data);
         
         if(response.status >= 200 || response.status < 300){
             return "success post";
@@ -69,6 +68,18 @@ export const postLogin = async (data: IUser) => {
     }
 }
 
+export const getBooks = async () => {
+    try {
+        const response = await apiBase.get(`books`);
+        
+        if(response.status === 200){
+            return response.data;
+        }
+    } catch (error) {
+        console.error(error);
+        return [];
+    }
+}
 
 export const postBooks = async (data: IBooks) => {
     try {
@@ -80,5 +91,29 @@ export const postBooks = async (data: IBooks) => {
     } catch (error) {
         alert(error);
         return false;
+    }
+}
+
+export const putBooks = async (id: number, data: {}) => {
+    try {
+        const response = await apiBase.patch(`books/${id}`, data);
+        
+        if(response.status >= 200){
+            return "success patch";
+        }
+    } catch (error) {
+        return "failed request";
+    }
+}
+
+export const deleteBooks = async (id: number) => {
+    try {
+        const response = await apiBase.delete(`books/${id}`);
+        
+        if(response.status >= 200){
+            return "success delete";
+        }
+    } catch (error) {
+        return "failed request";
     }
 }

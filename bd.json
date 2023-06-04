@@ -1,38 +1,39 @@
 {
-  "login": [],
   "users": [
     {
-      "id": 0,
-      "name": "",
-      "full-name": "",
-      "email": "",
-      "password": "",
-      "cpf": "",
-      "date-of-birth": ""
-    },
-    {
       "id": 1,
-      "name": "herbert",
+      "name": "herbert Nordson",
       "password": "Herbert@15!",
-      "email": "herbert@puc.com.br"
+      "email": "herbert@puc.com.br",
+      "sale": true,
+      "fullName": "Herbert Nordson S S",
+      "cpf": "22255447833",
+      "dateOfBirth": "31/10/1993"
     },
     {
       "id": 2,
       "name": "Teste",
       "email": "Hrb@com",
       "password": "Herbert@234!"
-    }
-  ],
-  "Address": [
+    },
     {
-      "logradouro": "Rua n",
-      "numero": "122",
-      "complemento": "B",
-      "bairro": "Castelo",
-      "cidade": "BH ",
-      "estado": "MG",
-      "cep": "31330033",
-      "id": 1
+      "id": 3,
+      "name": "herbert vendedor",
+      "email": "herbert@loja.com.br",
+      "password": "Loja@15!",
+      "fullName": "",
+      "cpf": "",
+      "dateOfBirth": "",
+      "address": {
+        "logradouro": "",
+        "numero": "",
+        "complemento": "",
+        "bairro": "",
+        "cidade": "",
+        "estado": "",
+        "cep": ""
+      },
+      "sale": true
     }
   ],
   "books": [
@@ -47,18 +48,6 @@
       "category": "Ficção Infantil Romance",
       "image": "https://images.tcdn.com.br/img/img_prod/850317/pequeno_principe_o_2329_1_6917d4e12c4129c862834e02ec9dce37.jpg",
       "id": 1
-    },
-    {
-      "userId": 1,
-      "title": "Computation and its Limits",
-      "price": "301,74",
-      "author": "Paul Cockshott",
-      "editor": "Oxford University Press, USA",
-      "pages": "248",
-      "conservation": "Bom",
-      "category": "Tecnologia",
-      "image": "https://m.media-amazon.com/images/I/51Rze4-9KrL._SX382_BO1,204,203,200_.jpg",
-      "id": 2
     },
     {
       "userId": 1,
@@ -191,18 +180,6 @@
       "category": "auto-ajuda",
       "image": "https://m.media-amazon.com/images/I/41suUFbw-eL._SX346_BO1,204,203,200_.jpg",
       "id": 14
-    },
-    {
-      "userId": 0,
-      "title": "O poder do hábito",
-      "price": "50,70",
-      "author": "Charles Duhigg",
-      "editor": "Objetiva",
-      "pages": "408",
-      "conservation": "Bom",
-      "category": "auto-ajuda",
-      "image": "https://m.media-amazon.com/images/I/51Xby92J9KL._SX346_BO1,204,203,200_.jpg",
-      "id": 15
     },
     {
       "userId": 2,

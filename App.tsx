@@ -5,6 +5,7 @@ import AppRoutes from "./src/routes/app.routes";
 import theme from "./src/ui/style/theme";
 import * as Font from "expo-font";
 import BookContext, { BookProvider } from "./src/context/bookContext";
+import { UserProvider } from "./src/context/userContext";
 
 let customFonts = {
   Mulish: require("./src/assets/fonts/Mulish-Regular.ttf"),
@@ -32,9 +33,11 @@ export default class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <BookProvider>
-          <NavigationContainer>
-            <AppRoutes />
-          </NavigationContainer>
+          <UserProvider>
+            <NavigationContainer>
+              <AppRoutes />
+            </NavigationContainer>
+          </UserProvider>
         </BookProvider>
       </ThemeProvider>
     );

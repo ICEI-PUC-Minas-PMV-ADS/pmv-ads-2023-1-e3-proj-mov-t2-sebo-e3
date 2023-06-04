@@ -5,7 +5,9 @@ export interface IUser {
     email: string,
     password: string,
     cpf?: string,
-    dateOfBirth?: string
+    dateOfBirth?: string,
+    address?: IAddress,
+    sale: boolean
 }
 
 export interface IBooks {
@@ -22,10 +24,9 @@ export interface IBooks {
 }
 
 export interface IAddress {
-    id: number,
     logradouro: string,
     numero: string,
-    complemento: string,
+    complemento?: string,
     bairro: string,
     cidade: string,
     estado: string,

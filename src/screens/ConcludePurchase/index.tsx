@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Image,
   View,
@@ -12,9 +12,19 @@ import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 import { SubTitle, Title, OrContainer, OrLine } from "./style";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+import { IBooks } from "../../ui/interfaces";
+import { useBookContext } from "../../context/bookContext";
+import { ScrollView } from "react-native";
+import { useUserContext } from "../../context/userContext";
 
 function ConcludePurchase({ navigation }) {
+  const { cart, setSale, setCart } = useBookContext();
+  const { address } = useUserContext();
+  const [prcTotal, setPrcTotal] = useState("");
+
   const twoOptionAlert = () => {
+    setSale(cart);
+    setCart([]);
     Alert.alert(
       // Title
       "Pedido realizado!",
@@ -30,12 +40,25 @@ function ConcludePurchase({ navigation }) {
         {
           text: "Meus Pedidos",
           onPress: () => {
-            navigation.navigate("Meus Pedidos");
+            navigation.navigate("Pedidos");
           },
         },
       ]
     );
   };
+
+  function ProductTotal() {
+    let prc: number = 0;
+    for (let i = 0; i < cart.length; i++) {
+      prc = prc + Number(cart[i].price.replace(",", ""));
+    }
+    setPrcTotal(parseFloat((prc / 100).toString()).toFixed(2));
+    return;
+  }
+
+  useEffect(() => {
+    ProductTotal();
+  }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
@@ -44,33 +67,46 @@ function ConcludePurchase({ navigation }) {
 
         <Spacer margin="xs" />
 
-        <SubTitle style={{ fontSize: 16 }}>Produto</SubTitle>
+        <SubTitle style={{ fontSize: 16 }}>Produto(os)</SubTitle>
 
         <Spacer margin="lx" />
-
-        <View style={{ flexDirection: "row", gap: 16 }}>
-          <Image
-            style={{ width: 120, height: 120 }}
-            source={require("../../assets/Capa.png")}
-          />
-
-          <View style={{ justifyContent: "space-between" }}>
-            <View>
-              <Title style={{ fontSize: 18 }}>Trono de Vidro - Vol 1</Title>
-
-              <SubTitle style={{ fontSize: 12 }}>Sarah J. Maas</SubTitle>
-            </View>
+        {cart.map((car: IBooks) => (
+          <>
             <View
-              style={{ flexDirection: "row", justifyContent: "space-between" }}
+              style={{
+                flexDirection: "row",
+                gap: 16,
+              }}
+              key={car.id + Math.random()}
             >
-              <SubTitle style={{ fontSize: 14 }}>R$ 15,80</SubTitle>
+              <Image
+                style={{ width: 90, height: 110 }}
+                resizeMode="contain"
+                source={{ uri: car.image }}
+              />
 
-              <SubTitle>1 Unidade</SubTitle>
+              <View style={{ justifyContent: "space-between" }}>
+                <View>
+                  <Title style={{ fontWeight: "400" }}>{car.title}</Title>
+                  <SubTitle>{car.author}</SubTitle>
+                </View>
+
+                <View style={{ flexDirection: "row" }}>
+                  <SubTitle>R$ {car.price}</SubTitle>
+                </View>
+              </View>
             </View>
-          </View>
-        </View>
 
-        <Spacer margin="lx" />
+            <Spacer margin={"ms"} />
+
+            <OrContainer>
+              <OrLine></OrLine>
+              <OrLine></OrLine>
+            </OrContainer>
+
+            <Spacer margin={"mx"} />
+          </>
+        ))}
 
         <SubTitle style={{ fontSize: 16 }}> Resumo da compra</SubTitle>
 
@@ -81,7 +117,7 @@ function ConcludePurchase({ navigation }) {
             style={{ flexDirection: "row", justifyContent: "space-between" }}
           >
             <SubTitle>Produto</SubTitle>
-            <SubTitle>R$ 15,80</SubTitle>
+            <SubTitle>R$ {prcTotal}</SubTitle>
           </View>
           <View
             style={{ flexDirection: "row", justifyContent: "space-between" }}
@@ -101,7 +137,9 @@ function ConcludePurchase({ navigation }) {
 
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <Title style={{ fontSize: 18, fontWeight: "700" }}>Total</Title>
-          <Title style={{ fontSize: 18, fontWeight: "700" }}>R$ 27,80</Title>
+          <Title style={{ fontSize: 18, fontWeight: "700" }}>
+            R$ {parseFloat((+prcTotal + 12).toString()).toFixed(2)}
+          </Title>
         </View>
 
         <Spacer margin="xx" />
@@ -112,7 +150,8 @@ function ConcludePurchase({ navigation }) {
         <Spacer margin="ms" />
 
         <SubTitle>
-          Rua Fulano de Tal 123A, Bairro Fulaninho Cidade, UF - 00000-000
+          {address.logradouro} {address.numero}, {address.bairro},{" "}
+          {address.estado} - {address.cep}. Complemento: {address.complemento}
         </SubTitle>
 
         <Spacer margin="xs" />
