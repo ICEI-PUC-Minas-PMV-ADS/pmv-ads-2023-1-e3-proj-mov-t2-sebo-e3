@@ -31,6 +31,16 @@ Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá red
 > - Quando as senhas informadas nos campos "Senha" e "Confirme a senha" não foram iguais, apareceu uma mensagem dizendo "As senhas fornecidas não são iguais".
 > - Quando as senhas foram escritas corretamente, a senha foi alterada no banco de dados, mostrando a mensagem "Senha alterada com sucesso!"
 
+### CT 5 - Área do Administrador
+O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque.
+
+>**Resultado**
+> - Ao informar seu email, ele foi verificado e possibilitou que o administrador pudesse gerenciar o sebo, cadastrando livro, alterando itens do estoque e visualizando as informações dos livros cadastrados.
+> - Quando a senha do administrador informada nos campos "Login" e "Senha" não foram iguais, aparece uma mensagem dizendo "As senhas fornecidas não são iguais".
+> - Quando todos os campos foram preenchidos, aparece a mensagem, cadastro efetuado com sucesso.
+> - Quando os campos ficam incompletos, aparece a mensagem, Favor preencher todos os campos.
+> - Quando o cadastro é preenchido corretamente, aparece na página de estoque automaticamente.
+
 
 ## Conclusão
 O grupo conseguiu desenvolver as funções iniciais do aplicativo, tendo como ponto de destaque a parte visual das telas. Para as próximas iterações, os erros encontrados no registro de teste, serão resolvidos fazendo com que o funcionalidades e seu fluxo de navegação funcione normalmente como o esperado. Também será feito um teste geral com todas as telas que foram planejadas para o sistema.
