@@ -1,7 +1,7 @@
-import axios from "axios"
-import { IAddress, IUser } from "../ui/interfaces";
+import axios, { Axios, AxiosResponse } from "axios"
+import { IAddress, IBooks, IUser } from "../ui/interfaces";
 
-const apiBase = axios.create({
+export const apiBase = axios.create({
     // baseURL: " http:// 192.168.0.104:3000/"
     baseURL: " http://192.168.1.8:3000/"
     // baseURL: " http://192.168.1.2:3000/"
@@ -35,7 +35,7 @@ export const postUsers = async (data: IUser) => {
 
 export const createAddress = async (data: IAddress) => {
     try {
-        const response = await apiBase.post(`addresses`, data);
+        const response = await apiBase.post(`address`, data);
         
         if(response.status >= 200 || response.status < 300){
             return "success post";
@@ -66,5 +66,19 @@ export const postLogin = async (data: IUser) => {
         }
     } catch (error) {
         return "failed request";
+    }
+}
+
+
+export const postBooks = async (data: IBooks) => {
+    try {
+        const response = await apiBase.post(`books`, data);
+        
+        if(response.status >= 200 || response.status < 300){
+            return true;
+        }
+    } catch (error) {
+        alert(error);
+        return false;
     }
 }

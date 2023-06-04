@@ -4,9 +4,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import AppRoutes from "./src/routes/app.routes";
 import theme from "./src/ui/style/theme";
 import * as Font from "expo-font";
+import BookContext, { BookProvider } from "./src/context/bookContext";
 
 let customFonts = {
-  'Mulish': require("./src/assets/fonts/Mulish-Regular.ttf"),
+  Mulish: require("./src/assets/fonts/Mulish-Regular.ttf"),
 };
 
 export default class App extends React.Component {
@@ -30,9 +31,11 @@ export default class App extends React.Component {
 
     return (
       <ThemeProvider theme={theme}>
-        <NavigationContainer>
-          <AppRoutes />
-        </NavigationContainer>
+        <BookProvider>
+          <NavigationContainer>
+            <AppRoutes />
+          </NavigationContainer>
+        </BookProvider>
       </ThemeProvider>
     );
   }
