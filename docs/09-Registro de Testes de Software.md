@@ -31,7 +31,7 @@ Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá red
 > - Quando as senhas informadas nos campos "Senha" e "Confirme a senha" não foram iguais, apareceu uma mensagem dizendo "As senhas fornecidas não são iguais".
 > - Quando as senhas foram escritas corretamente, a senha foi alterada no banco de dados, mostrando a mensagem "Senha alterada com sucesso!"
 
-### CT 6 - Área do Administrador
+### CT 5 - Área do Administrador
 O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque.
 
 >**Resultado**
