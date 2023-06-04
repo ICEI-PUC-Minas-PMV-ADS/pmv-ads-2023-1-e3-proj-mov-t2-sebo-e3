@@ -1,5 +1,5 @@
-import React from "react";
-import { Image, View } from "react-native";
+import React, { useEffect, useState } from "react";
+import { Image, ScrollView, TouchableOpacity, View, Text } from "react-native";
 import ButtonPrimary from "../../components/Forms/ButtonPrimary";
 import ButtonSecundary from "../../components/Forms/ButtonSecundary";
 import Spacer from "../../components/Spacer";
@@ -8,51 +8,91 @@ import { OrContainer, OrLine, SubTitle, Tab, Title } from "./style";
 import Icon from "@expo/vector-icons/Ionicons";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 import { SafeAreaView, StatusBar } from "react-native";
+import { useBookContext } from "../../context/bookContext";
+import { IBooks } from "../../ui/interfaces";
 
 function Cart({ navigation }) {
+  const { cart, setCart } = useBookContext();
+  const [prcTotal, setPrcTotal] = useState("");
+
+  function ProductTotal() {
+    let prc: number = 0;
+    for (let i = 0; i < cart.length; i++) {
+      prc = prc + Number(cart[i].price.replace(",", ""));
+    }
+    setPrcTotal(parseFloat((prc / 100).toString()).toFixed(2));
+    return;
+  }
+
+  function remove(id) {
+    const newCart = cart.filter((item) => item.id !== id);
+    setCart(newCart);
+  }
+
+  useEffect(() => {
+    ProductTotal();
+  }, []);
+
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
-        <View style={{ flexDirection: "row" }}>
-          <Image
-            style={{ width: 120, height: 150 }}
-            source={require("../../assets/Capa.png")}
-          />
-
-          <View style={{ marginTop: 10 }}>
-            <Title>Trono de Vidro - Vol 1</Title>
-
-            <SubTitle>Sarah J. Maas</SubTitle>
-            <Spacer margin="xx" />
-
-            <View style={{ flexDirection: "row" }}>
-              <Title>R$ 15,80</Title>
-              <Icon
-                style={{ paddingHorizontal: 95 }}
-                name="trash"
-                size={25}
-                color="#767676"
+        {cart.length > 0 ? (
+          cart.map((car: IBooks) => (
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                gap: 32,
+                marginBottom: 24,
+              }}
+              key={car.id + Math.random()}
+            >
+              <Image
+                style={{ width: 88, height: 92 }}
+                resizeMode="contain"
+                source={{ uri: car.image }}
               />
 
-              <Spacer margin="xx" />
-            </View>
-          </View>
-        </View>
+              <View style={{ justifyContent: "space-between" }}>
+                <View>
+                  <Title style={{ fontWeight: "400" }}>{car.title}</Title>
+                  <SubTitle>{car.author}</SubTitle>
+                </View>
 
-        <Spacer margin="xx" />
+                <View style={{ flexDirection: "row"}}>
+                  <SubTitle>R$ {car.price}</SubTitle>
+                  <TouchableOpacity onPress={() => remove(car.id)}>
+                    <Icon
+                      style={{ paddingHorizontal: 95 }}
+                      name="trash"
+                      size={25}
+                      color="#767676"
+                    />
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          ))
+        ) : (
+          <Text style={{ textAlign: "center", marginVertical:32 }}>Carrinho Vazio :( </Text>
+        )}
+
+        <Spacer margin="xs" />
 
         <OrContainer>
           <OrLine></OrLine>
           <OrLine></OrLine>
         </OrContainer>
 
-        <Title> {"\n"} Resumo da compra</Title>
+        <Spacer margin="xs" />
 
-        <Spacer margin="xx" />
+        <Title>Resumo da compra</Title>
+
+        <Spacer margin="xs" />
 
         <Tab>
           <SubTitle>Produto</SubTitle>
-          <SubTitle>R$ 15,80</SubTitle>
+          <SubTitle>R$ {prcTotal}</SubTitle>
         </Tab>
 
         <Tab>
@@ -65,24 +105,26 @@ function Cart({ navigation }) {
           <SubTitle>R$ 00,00</SubTitle>
         </Tab>
 
-        <Spacer margin="xx" />
+        <Spacer margin="xs" />
 
         <Tab>
           <SubTitle>Total</SubTitle>
-          <SubTitle>R$ 27,80</SubTitle>
+          <SubTitle>
+            R$ {parseFloat((+prcTotal + 12).toString()).toFixed(2)}
+          </SubTitle>
         </Tab>
 
         <Spacer margin="xx" />
 
         <ButtonPrimary
           title="Comprar"
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("Endereço")}
         />
         <Spacer margin={"mx"} />
 
         <ButtonSecundary
           title="Continuar comprando"
-          onPress={() => navigation.navigate("")}
+          onPress={() => navigation.navigate("Home")}
         />
         <Spacer margin={"mx"} />
       </ViewContainer>

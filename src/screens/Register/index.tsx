@@ -8,14 +8,29 @@ import { getUsers, postUsers } from "../../services/api";
 import { Form, SubTitle } from "./style";
 import { IUser } from "../../ui/interfaces";
 import { checkEmail, checkName, checkPass } from "../../utils/validators";
+import { TouchableOpacity, Text } from "react-native";
 
 function Register({ navigation }) {
   const [confirmPass, setConfirmPass] = useState<string>();
+  const [option, setOption] = useState<boolean>(false);
   const [user, setUser] = useState<IUser>({
     id: 0,
     name: "",
     email: "",
     password: "",
+    fullName: "",
+    cpf: "",
+    dateOfBirth: "",
+    address: {
+      logradouro: "",
+      numero: "",
+      complemento: "",
+      bairro: "",
+      cidade: "",
+      estado: "",
+      cep: ""
+    },
+    sale: option,
   });
 
   async function createUser() {
@@ -68,7 +83,6 @@ function Register({ navigation }) {
           }
         />
         <Spacer margin="xx" />
-
         <Label title="E-mail" />
         <Input
           placeholder="E-mail"
@@ -79,7 +93,6 @@ function Register({ navigation }) {
           }
         />
         <Spacer margin="xx" />
-
         <Label title="Senha" />
         <Input
           placeholder="Senha"
@@ -90,11 +103,21 @@ function Register({ navigation }) {
           }
         />
         <Spacer margin="xx" />
-
         <Label title="Confirme a senha" />
         <Input placeholder="Confirme a senha" onChangeText={setConfirmPass} />
-        <Spacer margin="xx" />
-
+        <Spacer margin="ls" />
+        <Text>Deseja se cadastrar como vendedor?</Text>
+        <Spacer margin="ls" />
+        <TouchableOpacity
+          style={{
+            backgroundColor: option ? "#7a4183" : "transparent",
+            borderWidth: 1,
+            width: 20,
+            height: 20,
+          }}
+          onPress={() => setOption(!option)}
+        ></TouchableOpacity>
+        <Spacer margin="xs" />
         <SubTitle>
           Sua senha deve conter: {"\n"} {"\n"}- Crie uma senha com no mínimo 8
           caracteres {"\n"}- Adicione letra minúsculas {"\n"}- Adicione pelo
@@ -102,7 +125,6 @@ function Register({ navigation }) {
           especial
         </SubTitle>
         <Spacer margin="xx" />
-
         <ButtonPrimary title="Cadastrar" onPress={submitForm} />
       </Form>
       <Spacer margin={"xx"} />

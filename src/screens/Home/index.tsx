@@ -17,72 +17,67 @@ import Label from "../../components/Forms/Label";
 import theme from "../../ui/style/theme";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 import { ExpandingDot } from "react-native-animated-pagination-dots";
+import { useBookContext } from "../../context/bookContext";
+import { IBooks } from "../../ui/interfaces";
 
 const dimensions = Dimensions.get("window");
 const imageWidth = dimensions.width;
 
-const DATA = [
-  {
-    id: "0",
-    title: "É assim que aca.",
-    autor: "Collen Hoover",
-    price: "12,50",
-  },
-  {
-    id: "1",
-    title: "É assim que aca.",
-    autor: "Collen Hoover",
-    price: "14,50",
-  },
-  {
-    id: "2",
-    title: "É assim que aca.",
-    autor: "Collen Hoover",
-    price: "16,50",
-  },
-  {
-    id: "3",
-    title: "É assim que aca.",
-    autor: "Collen Hoover",
-    price: "18,50",
-  },
-];
-
 const BANNERS = [
   {
     id: "0",
-    image: require("../../assets/banner.png"),
+    image:
+      "https://polosaomateus.com.br/wp-content/uploads/2017/06/banner-livros.png",
   },
   {
     id: "1",
-    image: require("../../assets/banner.png"),
+    image:
+      "https://1.bp.blogspot.com/-JAhMatr-uKE/Wcm3tNE0-lI/AAAAAAABZJ4/hCqaB8xAGZ4BQp767miH3VdYk8FkX4yFQCLcBGAs/w1200-h630-p-k-no-nu/eu-amo-ler.png",
   },
 ];
 
 function Home({ navigation }) {
-  const Item = ({ title, autor, price }) => (
-    <Card>
+  const { mostWanted, tecnology, selfHelp, bookList, setBook } = useBookContext();
+
+  const handleCard = (book: IBooks) => {
+    setBook(book);
+    navigation.navigate("Livro")
+  }
+
+  const Item = ({card}) => (
+    <Card onPress={() => handleCard(card) }>
       <Image
         style={{ width: 87, height: 100, margin: "auto" }}
-        source={require("../../assets/Capa.png")}
+        source={card.image ? { uri: card.image } : require("../../assets/banner.png")}
+        resizeMode="contain"
       />
       <Main>
-        <BookText>{title}</BookText>
-        <BookText style={{ fontSize: 10 }}>{autor}</BookText>
-        <BookText style={{ fontSize: theme.fonts.obs }}>
-          R$
-          <BookText style={{ fontSize: theme.fonts.text }}>{price}</BookText>
-        </BookText>
+        <BookText numberOfLines={1}>{card.title}</BookText>
+          <BookText style={{ fontSize: 10 }}>{card.author}</BookText>
+          <BookText style={{ fontSize: theme.fonts.obs }}>
+            R$
+            <BookText style={{ fontSize: theme.fonts.text }}>{card.price}</BookText>
+          </BookText>
       </Main>
     </Card>
   );
 
   const ItemImages = ({ image }) => (
-    <Image resizeMode="stretch" style={{ marginHorizontal: 20}} source={image} />
+    <Image
+      resizeMode="stretch"
+      style={{
+        width: 296,
+        height: 148,
+        marginHorizontal: 20,
+        borderRadius: 16,
+      }}
+      source={{ uri: image }}
+    />
   );
+
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
-  return (
+  return bookList && bookList.length ? (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
         <View style={{ alignItems: "center" }}>
@@ -125,36 +120,74 @@ function Home({ navigation }) {
 
         <Spacer margin={"mx"} />
 
-        <BookText style={{ marginBottom: 16, color: theme.colors.text_dark }}>
+        <BookText
+          style={{
+            marginBottom: 16,
+            color: theme.colors.text_dark,
+            fontWeight: "700",
+          }}
+        >
           Livros mais pedidos
         </BookText>
         <FlatList
-          data={DATA}
+          data={mostWanted}
           renderItem={({ item }) => (
-            <Item title={item.title} autor={item.autor} price={item.price} />
+            <Item
+              card={item}
+            />
           )}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.id.toString()}
           horizontal
         />
 
         <Spacer margin={"mx"} />
 
-        <BookText style={{ marginBottom: 16, color: theme.colors.text_dark }}>
+        <BookText
+          style={{
+            marginBottom: 16,
+            color: theme.colors.text_dark,
+            fontWeight: "700",
+          }}
+        >
           Sobre Tecnologia
         </BookText>
         <FlatList
-          data={DATA}
+          data={tecnology}
           renderItem={({ item }) => (
-            <Item title={item.title} autor={item.autor} price={item.price} />
+            <Item
+              card={item}
+            />
           )}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.id.toString()}
+          horizontal
+        />
+
+        <Spacer margin={"mx"} />
+
+        <BookText
+          style={{
+            marginBottom: 16,
+            color: theme.colors.text_dark,
+            fontWeight: "700",
+          }}
+        >
+          Sobre Auto Ajuda
+        </BookText>
+        <FlatList
+          data={selfHelp}
+          renderItem={({ item }) => (
+            <Item
+              card={item}
+            />
+          )}
+          keyExtractor={(item) => item.id.toString()}
           horizontal
         />
         <Spacer margin={"mx"} />
       </ViewContainer>
       <ButtonNavBar navigation={navigation} />
     </SafeAreaView>
-  );
+  ) : null;
 }
 
 export default Home;

@@ -15,6 +15,8 @@ import {
   Profile,
   RedefinePassword,
   Register,
+  Pedidos,
+  Busca,
 } from "../screens";
 import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
@@ -26,7 +28,7 @@ const Stack = createNativeStackNavigator();
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Estoque">
+    <Stack.Navigator initialRouteName="Login">
       <Stack.Screen
         name="Inicial"
         component={Initial}
@@ -51,6 +53,36 @@ function AppRoutes() {
           headerTitleAlign: "center",
           headerTitle(props) {
            return <Page>Cadastre-se</Page>
+          }
+        }}
+      />
+      <Stack.Screen
+        name="Redefinir Senha"
+        component={RedefinePassword}
+        options={{
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Redefinir Senha</Page>
+          }
+        }}
+      />
+      <Stack.Screen
+        name="Busca"
+        component={Busca}
+        options={{
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Buscar</Page>
+          }
+        }}
+      />
+      <Stack.Screen
+        name="Pedidos"
+        component={Pedidos}
+        options={{
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Meus Pedidos</Page>
           }
         }}
       />
@@ -115,16 +147,6 @@ function AppRoutes() {
         }}
       />
       <Stack.Screen
-        name="Redefinir Senha"
-        component={RedefinePassword}
-        options={{
-          headerTitleAlign: "center",
-          headerTitle(props) {
-           return <Page>Redefinir Senha</Page>
-          }
-        }}
-      />
-      <Stack.Screen
         name="Informacoes Pessoais"
         component={InformationPeople}
         options={{
@@ -145,7 +167,10 @@ function AppRoutes() {
         name="Endereço"
         component={Address}
         options={{
-          headerShown: false,
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Home</Page>
+          }
         }}
       />
       <Stack.Screen

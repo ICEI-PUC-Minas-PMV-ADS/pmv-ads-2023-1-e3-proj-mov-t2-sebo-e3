@@ -1,7 +1,7 @@
-import axios from "axios"
-import { IAddress, IUser } from "../ui/interfaces";
+import axios, { Axios, AxiosResponse } from "axios"
+import { IAddress, IBooks, IUser } from "../ui/interfaces";
 
-const apiBase = axios.create({
+export const apiBase = axios.create({
     // baseURL: " http:// 192.168.0.104:3000/"
     baseURL: " http://192.168.1.8:3000/"
     // baseURL: " http://192.168.1.2:3000/"
@@ -20,22 +20,21 @@ export const getUsers = async () => {
     }
 }
 
-export const postUsers = async (data: IUser) => {
+export const deleteUsers = async (id: number) => {
     try {
-        const response = await apiBase.post(`users`, data);
+        const response = await apiBase.delete(`users/${id}`);
         
         if(response.status >= 200 || response.status < 300){
-            return "success post";
+            return "success delete";
         }
     } catch (error) {
         return "failed request";
     }
 }
 
-
-export const createAddress = async (data: IAddress) => {
+export const postUsers = async (data: IUser) => {
     try {
-        const response = await apiBase.post(`addresses`, data);
+        const response = await apiBase.post(`users`, data);
         
         if(response.status >= 200 || response.status < 300){
             return "success post";
@@ -63,6 +62,56 @@ export const postLogin = async (data: IUser) => {
         
         if(response.status >= 200 || response.status < 300){
             return "success post";
+        }
+    } catch (error) {
+        return "failed request";
+    }
+}
+
+export const getBooks = async () => {
+    try {
+        const response = await apiBase.get(`books`);
+        
+        if(response.status === 200){
+            return response.data;
+        }
+    } catch (error) {
+        console.error(error);
+        return [];
+    }
+}
+
+export const postBooks = async (data: IBooks) => {
+    try {
+        const response = await apiBase.post(`books`, data);
+        
+        if(response.status >= 200 || response.status < 300){
+            return true;
+        }
+    } catch (error) {
+        alert(error);
+        return false;
+    }
+}
+
+export const putBooks = async (id: number, data: {}) => {
+    try {
+        const response = await apiBase.patch(`books/${id}`, data);
+        
+        if(response.status >= 200){
+            return "success patch";
+        }
+    } catch (error) {
+        return "failed request";
+    }
+}
+
+export const deleteBooks = async (id: number) => {
+    try {
+        const response = await apiBase.delete(`books/${id}`);
+        
+        if(response.status >= 200){
+            return "success delete";
         }
     } catch (error) {
         return "failed request";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Image,
   View,
@@ -32,20 +32,44 @@ import Input from "../../components/Forms/Input";
 
 //Icons
 import Icon from "@expo/vector-icons/Ionicons";
-
-const data = [
-  { title: "livro1", qtd: "4", id: "01" },
-  { title: "livro2", qtd: "6", id: "02" },
-  { title: "livro2", qtd: "6", id: "03" },
-  { title: "livro1", qtd: "4", id: "04" },
-  { title: "livro2", qtd: "6", id: "05" },
-  { title: "livro2", qtd: "6", id: "06" },
-];
+import { getBooks } from "../../services/api";
+import { IBooks } from "../../ui/interfaces";
+import { useUserContext } from "../../context/userContext";
+import { useBookContext } from "../../context/bookContext";
 
 function Estoque({ navigation }) {
+  const { user } = useUserContext();
+  const { setBook } = useBookContext();
+  const [ data, setData ] = useState([]);
+
+  const books = async () => {
+    const response = await getBooks();
+    if(response.length > 0) {
+      const value = response.filter((book: IBooks) => book.userId === user.id)
+      setData(value);
+      return;
+    }
+
+    return []
+  }
+
+  const handleBook = (type: boolean, book: IBooks) => {
+    setBook(book);
+    if(type){
+      return navigation.navigate("Editar Livro");
+    }
+
+    return navigation.navigate("EditProduto2");
+  }
+
   function checkIndexIsEven(n) {
     return n % 2 == 0;
   }
+
+  useEffect(() => {
+    books()
+  }, [])
+
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
@@ -55,26 +79,6 @@ function Estoque({ navigation }) {
         />
 
         <Spacer margin={"xs"} />
-
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            position: "relative",
-            marginBottom: 16,
-          }}
-        >
-          <Input placeholder="Buscar livro"></Input>
-          <Icon
-            onPress={() => console.log("IMPLEMENTAR BUSCA")}
-            name="ios-search"
-            size={25}
-            padding={10}
-            color="#404040"
-            position={"absolute"}
-            right={0}
-          />
-        </View>
 
         <View
           style={{
@@ -90,8 +94,12 @@ function Estoque({ navigation }) {
             Título
           </Text>
         </View>
-        <View style={{ marginBottom: 16 }}>
-          {data.map((item, index) => (
+        <View style={{ marginBottom: 16, 
+            borderBottomLeftRadius: 8,
+            borderBottomRightRadius: 8}}>
+          {
+          data.length ?
+          data.map((item, index) => (
             <List
               style={{
                 backgroundColor: checkIndexIsEven(index)
@@ -100,18 +108,18 @@ function Estoque({ navigation }) {
               }}
               key={index}
             >
-              <Text style={{ fontFamily: "Mulish" }}>{item.title}</Text>
-              <ListButton onPress={() => navigation.navigate("Livro")}>
+              <Text style={{ width:"40%", fontFamily: "Mulish" }}>{item.title}</Text>
+              <ListButton onPress={() => handleBook(true, item)}>
                 <Text style={{ fontFamily: "Mulish" }}>Detalhes</Text>
               </ListButton>
-              <ListButton>
+              <ListButton onPress={() => handleBook(false, item)}>
                 <Image source={require("../../assets/pencil-outline.png")} />
               </ListButton>
             </List>
-          ))}
+          )) : <Text>Estoque Vazio</Text>}
         </View>
       </ViewContainer>
-      <ButtonNavBarEdit navigate={navigation} />
+      <ButtonNavBarEdit navigation={navigation} />
     </SafeAreaView>
   );
 }

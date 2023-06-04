@@ -6,36 +6,50 @@ import Spacer from "../../components/Spacer";
 import { ViewContainer } from "../../ui/style/style";
 import { OrContainer, OrLine, SubTitle, Title } from "./style";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
+import { useBookContext } from "../../context/bookContext";
 
 function ProductPage({ navigation }) {
-  function navPages() {
-    navigation.navigate("Perfil");
-  }
+  const { book, setCart, cart } = useBookContext();
+
+  const addCart = () => {
+    setCart(prev => [...prev, book]);
+    navigation.navigate("Carrinho");
+  };
 
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
         <View style={{ width: "100%", alignItems: "center" }}>
-          <Image source={require("../../assets/Capa.png")} />
+          <Image
+            style={{ width: 180, height: 228 }}
+            resizeMode="contain"
+            source={{ uri: book.image }}
+          />
         </View>
+        <Spacer margin="xx" />
 
-        <Title style={{fontSize: 18}} >Trono de Vidro - Vol 1</Title>
+        <Title style={{ fontSize: 18 }}>{book.title}</Title>
 
-        <Spacer margin="ms" />
-        <Spacer margin="ms" />
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+          }}
+        >
+          <SubTitle>{book.author}</SubTitle>
 
-        <View style={{ flexDirection: "row", alignItems: "baseline", justifyContent: "space-between" }}>
-          <SubTitle>Sarah J. Maas</SubTitle>
-          
-          <Text style={{fontSize:16}}>R$<Title> 15,80</Title></Text>
+          <Text style={{ fontSize: 16 }}>
+            R$<Title> {book.price}</Title>
+          </Text>
         </View>
 
         <Spacer margin="xx" />
 
-        <Title style={{fontSize: 18}}>Detalhes do produto</Title>
-        
+        <Title style={{ fontSize: 18 }}>Detalhes do produto</Title>
+
         <Spacer margin="ms" />
-        
+
         <OrContainer>
           <OrLine></OrLine>
           <OrLine></OrLine>
@@ -43,16 +57,13 @@ function ProductPage({ navigation }) {
 
         <Spacer margin="xs" />
 
-        <SubTitle>Autor(a): Sarah J. Maas</SubTitle>
-        <SubTitle>Editora: Galera</SubTitle>
-        <SubTitle>Quantidade de páginas: 392</SubTitle>
-        <SubTitle>Estado de conservação: Bom</SubTitle>
+        <SubTitle>Autor(a): {book.author}</SubTitle>
+        <SubTitle>Editora: {book.editor}</SubTitle>
+        <SubTitle>Quantidade de páginas: {book.pages}</SubTitle>
+        <SubTitle>Estado de conservação: {book.conservation}</SubTitle>
         <Spacer margin="xx" />
 
-        <ButtonPrimary
-          title="Adicionar ao carrinho"
-          onPress={() => navigation.navigate("Login")}
-        />
+        <ButtonPrimary title="Adicionar ao carrinho" onPress={addCart} />
         <Spacer margin={"mx"} />
 
         <ButtonSecundary
@@ -61,7 +72,7 @@ function ProductPage({ navigation }) {
         />
         <Spacer margin={"mx"} />
       </ViewContainer>
-      <ButtonNavBar navigate={navPages} />
+      <ButtonNavBar navigation={navigation} />
     </SafeAreaView>
   );
 }

@@ -7,23 +7,43 @@ import { ViewContainer } from "../../ui/style/style";
 import { OrContainer, OrLine, SubTitle, Title } from "./style";
 import ButtonNavBar from "../../components/Forms/ButtonNavBar";
 import ButtonNavBarEdit from "../../components/Forms/ButtonNavBarEdit";
+import { useBookContext } from "../../context/bookContext";
+import { deleteBooks } from "../../services/api";
 
 function EditProduct({ navigation }) {
+  const { book } = useBookContext();
+
+  const removeBook = async() => {
+    const response = await deleteBooks(book.id);
+    
+    if(response === "success delete"){
+      alert("Livro deletado com sucesso!");
+      return navigation.reset({
+        index: 0,
+        routes: [{ name: 'Estoque' }],
+      });
+    }
+
+    alert("Erro ao tentar deletar livro!");
+
+  }
+
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
         <View style={{ width: "100%", alignItems: "center" }}>
-          <Image source={require("../../assets/Capa.png")} />
+          <Image source={{ uri: book.image}} style={{ width: 200, height: 250}} />
         </View>
+        <Spacer margin="xs" />
 
-        <Title>Trono de Vidro - Vol 1</Title>
+        <Title>{book.title}</Title>
 
         <Spacer margin="ms" />
         <Spacer margin="ms" />
 
         <View style={{ flexDirection: "row" }}>
           <SubTitle>Valor: </SubTitle>
-          <SubTitle>R$15,80</SubTitle>
+          <SubTitle>R$ {book.price}</SubTitle>
         </View>
 
         <Spacer margin="lx" />
@@ -36,29 +56,29 @@ function EditProduct({ navigation }) {
         </OrContainer>
 
         <SubTitle>
-          {"\n"}Autor(a): Sarah J. Maas {"\n"}Editora: Galera
-          {"\n"}Quantidade de páginas: 392 {"\n"}Estado de conservação: Bom
+          {"\n"}Autor(a): {book.author} {"\n"}Editora: {book.editor}
+          {"\n"}Quantidade de páginas: {book.pages} {"\n"}Estado de conservação: {book.conservation}
         </SubTitle>
         <Spacer margin="xx" />
 
         <View style={{ flexDirection: "column" }}>
           <ButtonPrimary
             title="Editar"
-            onPress={() => navigation.navigate("Login")}
+            onPress={() => navigation.navigate("EditProduto2")}
           />
 
           <Spacer margin={"lx"} />
 
           <ButtonSecundary
             title="Excluir"
-            onPress={() => console.log("IMPLEMENTAR EXCLUSAO")}
+            onPress={removeBook}
           />
         </View>
 
         <Spacer margin={"mx"} />
         <Spacer margin={"mx"} />
       </ViewContainer>
-      <ButtonNavBarEdit navigate={navigation} />
+      <ButtonNavBarEdit navigation={navigation} />
     </SafeAreaView>
   );
 }
