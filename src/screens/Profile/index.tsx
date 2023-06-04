@@ -46,7 +46,7 @@ function Profile({ navigation }) {
         <Text>{"\n\n\n"}</Text>
         <ButtonIcon
           title="Meus Pedidos"
-          onPress={() => navigation.navigate("")}
+          onPress={() => navigation.navigate("Pedidos")}
         />
 
         <Form>

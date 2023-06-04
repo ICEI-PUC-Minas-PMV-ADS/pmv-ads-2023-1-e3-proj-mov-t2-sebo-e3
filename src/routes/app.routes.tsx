@@ -15,6 +15,8 @@ import {
   Profile,
   RedefinePassword,
   Register,
+  Pedidos,
+  Busca,
 } from "../screens";
 import ButtonReturnLeft from "../components/Forms/ButtonReturnLeft";
 import ButtonNavBar from "../components/Forms/ButtonNavBar";
@@ -26,7 +28,27 @@ const Stack = createNativeStackNavigator();
 
 function AppRoutes() {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Inicial">
+      <Stack.Screen
+        name="Busca"
+        component={Busca}
+        options={{
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Buscar</Page>
+          }
+        }}
+      />
+      <Stack.Screen
+        name="Pedidos"
+        component={Pedidos}
+        options={{
+          headerTitleAlign: "center",
+          headerTitle(props) {
+           return <Page>Meus Pedidos</Page>
+          }
+        }}
+      />
       <Stack.Screen
         name="Inicial"
         component={Initial}
