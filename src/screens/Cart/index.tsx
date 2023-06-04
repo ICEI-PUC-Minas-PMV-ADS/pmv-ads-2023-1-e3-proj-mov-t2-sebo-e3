@@ -59,8 +59,8 @@ function Cart({ navigation }) {
                   <SubTitle>{car.author}</SubTitle>
                 </View>
 
-                <View style={{ flexDirection: "row" }}>
-                  <Title>R$ {car.price}</Title>
+                <View style={{ flexDirection: "row"}}>
+                  <SubTitle>R$ {car.price}</SubTitle>
                   <TouchableOpacity onPress={() => remove(car.id)}>
                     <Icon
                       style={{ paddingHorizontal: 95 }}
@@ -118,7 +118,7 @@ function Cart({ navigation }) {
 
         <ButtonPrimary
           title="Comprar"
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("Endereço")}
         />
         <Spacer margin={"mx"} />
 

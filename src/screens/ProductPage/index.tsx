@@ -72,7 +72,7 @@ function ProductPage({ navigation }) {
         />
         <Spacer margin={"mx"} />
       </ViewContainer>
-      <ButtonNavBar navigate={navigation} />
+      <ButtonNavBar navigation={navigation} />
     </SafeAreaView>
   );
 }

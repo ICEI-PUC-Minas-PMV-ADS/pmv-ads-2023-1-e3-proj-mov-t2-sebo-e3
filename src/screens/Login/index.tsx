@@ -17,11 +17,13 @@ import {
   Conect,
   EnterLogin,
 } from "./style";
-import { getUsers, postLogin } from "../../services/api";
+import { getUsers } from "../../services/api";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "react-native";
+import { useUserContext } from "../../context/userContext";
 
 function Login({ navigation }) {
+  const { setUser } = useUserContext();
   const [login, setLogin] = useState({
     email: "",
     password: "",
@@ -32,11 +34,20 @@ function Login({ navigation }) {
 
     for (let i = 0; i < users.length; i++) {
       if (
-        users[i].email === login.email &&
+        users[i].email == login.email &&
         users[i].password === login.password
       ) {
-        const response = await postLogin(users[i]);
-        return navigation.navigate("Perfil")
+        setUser(users[i]);
+        users[i].sale ?
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Estoque' }],
+        })
+        : navigation.reset({
+          index: 0,
+          routes: [{ name: 'Home' }],
+        });
+        return;
       }
     }
 

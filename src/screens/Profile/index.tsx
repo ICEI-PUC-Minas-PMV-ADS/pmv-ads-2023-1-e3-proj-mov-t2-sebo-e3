@@ -24,26 +24,38 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 //Icons
 import Icon from "@expo/vector-icons/Ionicons";
-
+import { useUserContext } from "../../context/userContext";
+import { deleteUsers } from "../../services/api";
 
 function Profile({ navigation }) {
+  const {user} = useUserContext()
   
-  function navPages() {
-    navigation.navigate("Perfil")
+  async function removeUser() {
+    const response = await deleteUsers(user.id);
+
+    if(response === "success delete"){
+      alert("Usuário deletado com sucesso!");
+      return navigation.reset({
+        index: 0,
+        routes: [{ name: "Inicial" }],
+      })
+    }
+
+    alert("Ocorreu um erro ao tentar deletar seu usuário.")
   }
 
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
-      <Spacer margin="ms" />
+        <Spacer margin="xx" />
 
         <Header>
           <Text>{"\n"}</Text>
           <Icon name="person" size={100} color="#7a4183" />
-          <Text>{"Usuário"}</Text>
+          <Text>{user.name}</Text>
         </Header>
 
-        <Text>{"\n\n\n"}</Text>
+        <Spacer margin="xx" />
         <ButtonIcon
           title="Meus Pedidos"
           onPress={() => navigation.navigate("Pedidos")}
@@ -60,15 +72,9 @@ function Profile({ navigation }) {
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate("TelaDeDestino")}
+            onPress={removeUser}
           >
             <Text>Deletar conta</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => navigation.navigate("EditProduto2")}
-          >
-            <Text>Cadastrar livros</Text>
           </TouchableOpacity>
 
           <Spacer margin="xx" />
@@ -83,13 +89,18 @@ function Profile({ navigation }) {
           >
             <ButtonSecundary
               title="Sair"
-              onPress={() => navigation.navigate("Inicial")}
+              onPress={() =>
+                navigation.reset({
+                  index: 0,
+                  routes: [{ name: "Inicial" }],
+                })
+              }
               style={{ marginRight: 5 }}
             />
           </View>
         </Form>
       </ViewContainer>
-      <ButtonNavBar navigation={navigation}/>
+      <ButtonNavBar navigation={navigation} />
     </SafeAreaView>
   );
 }

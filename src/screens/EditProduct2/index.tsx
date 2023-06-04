@@ -19,32 +19,42 @@ import {
   TextInput,
   SafeAreaView,
 } from "react-native";
-import { postBooks } from "../../services/api";
+import { putBooks } from "../../services/api";
+import { useUserContext } from "../../context/userContext";
+import { useBookContext } from "../../context/bookContext";
 
 function EditProduct2({ navigation }) {
-  const [titulo, setTitulo] = useState("");
-  const [preco, setPreco] = useState("");
-  const [autor, setAutor] = useState("");
-  const [editora, setEditora] = useState("");
-  const [paginas, setPaginas] = useState("");
-  const [conservacao, setConservacao] = useState("");
+  const { user } = useUserContext();
+  const { book } = useBookContext();
+  const [titulo, setTitulo] = useState(book.title);
+  const [preco, setPreco] = useState(book.price);
+  const [autor, setAutor] = useState(book.author);
+  const [editora, setEditora] = useState(book.editor);
+  const [paginas, setPaginas] = useState(book.pages);
+  const [conservacao, setConservacao] = useState(book.conservation);
+  const [imagem, setImagem] = useState(book.image);
+  const [categoria, setCategoria] = useState(book.category);
 
   const saveData = async () => {
-    const response = await postBooks({
-      userId: 0,
-      title: "",
-      price: "",
-      author: "",
-      editor: "",
-      pages: "",
-      conservation: "",
-      category: "",
-      image: "",
-      id: 0,
+    const response = await putBooks(book.id, {
+      userId: user.id,
+      title: titulo,
+      price: preco,
+      author: autor,
+      editor: editora,
+      pages: paginas,
+      conservation: conservacao,
+      category: categoria,
+      image: imagem,
+      id: book.id,
     });
 
     if (response) {
-      alert("Livro cadastrado com sucesso!");
+      alert("Livro atualizado com sucesso!");
+      return navigation.reset({
+        index: 0,
+        routes: [{ name: 'Estoque' }],
+      });
     }
   };
 
@@ -52,8 +62,9 @@ function EditProduct2({ navigation }) {
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
         <View style={{ width: "100%", alignItems: "center" }}>
-          <Image source={require("../../assets/Capa.png")} />
+          <Image source={{uri: book.image}} style={{ width: 150, height:200}} />
         </View>
+        <Spacer margin={"xs"} />
 
         <Label title="Título do Livro" />
         <Spacer margin={"xs"} />
@@ -105,6 +116,16 @@ function EditProduct2({ navigation }) {
           onChangeText={setConservacao}
         />
 
+        <Spacer margin={"xs"} />
+
+        <Label title="URL de imagem" />
+        <Spacer margin={"xs"} />
+        <Input
+          defaultValue="Bom"
+          value={imagem}
+          onChangeText={setImagem}
+        />
+
         <Spacer margin={"mx"} />
 
         <View style={{ flexDirection: "column" }}>
@@ -120,7 +141,7 @@ function EditProduct2({ navigation }) {
           <Spacer margin={"mx"} />
         </View>
       </ViewContainer>
-      <ButtonNavBarEdit navigate={navigation} />
+      <ButtonNavBarEdit navigation={navigation} />
     </SafeAreaView>
   );
 }

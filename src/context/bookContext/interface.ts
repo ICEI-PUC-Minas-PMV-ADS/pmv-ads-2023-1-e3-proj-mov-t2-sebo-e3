@@ -13,6 +13,8 @@ export interface IBookContext {
   setBook: React.Dispatch<React.SetStateAction<IBooks>>;
   cart: any[];
   setCart: React.Dispatch<React.SetStateAction<any[]>>;
+  sale: any[];
+  setSale: React.Dispatch<React.SetStateAction<any[]>>;
 }
 
 export interface IProvider {
