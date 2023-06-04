@@ -12,6 +12,8 @@ import Register from "./Register";
 import EditProduct from "./EditProduct";
 import EditProduct2 from "./EditProduct2";
 import Estoque from "./Estoque";
+import Pedidos from "./Pedidos";
+import Busca from "./Busca";
 
 export {
   Address,
@@ -28,4 +30,6 @@ export {
   Profile,
   RedefinePassword,
   Register,
+  Pedidos,
+  Busca,
 };
