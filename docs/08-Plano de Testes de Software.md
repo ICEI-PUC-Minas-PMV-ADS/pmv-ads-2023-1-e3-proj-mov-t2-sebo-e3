@@ -50,17 +50,8 @@
 
 ![image](https://user-images.githubusercontent.com/103009155/229203965-a85f67e6-4ac9-4d03-a326-2db757e03097.png)
 
-| **Caso de Teste** 	| **CT-06 – Usuário busca por livros** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-005 - Pesquisa de livros por título, autor ou categoria |
-| Objetivo do Teste 	| Verificar se existe o livro do qual o usuário está procurando. |
-| Passos 	| 1) Acessar o aplicativo “Sebo Digital” 2) Visualizar a página de Login, clicando em Fazer Login na página inicial 3) Inserir o e-mail e senha cadastrados 4) Ser redirecionado para a tela home onde contém os livros e campos de pesquisar/atalhos para fácil acesso do usuário 5) Tela de Busca e de Produto, usuário vai em Pesquisar para encontrar os livros disponíveis e detalhar sobre o mesmo |
-|Critério de Êxito | - O campo de pesquisar deve encontrar o que o usuário solicitar ao digitar no aplicativo e ao mesmo tempo conseguir clicar no livro para ver as informações. |
-|  	|  	|
 
-![image](https://user-images.githubusercontent.com/103009155/229204787-69def63b-4391-47c5-b17d-f82745e04642.png)
-
-| **Caso de Teste** 	| **CT-07 – Finalização da compra** 	|
+| **Caso de Teste** 	| **CT-06 – Finalização da compra** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002 - Entrega do produto e confirmação da compra |
 | Objetivo do Teste 	| Verificar se usuário ao preencher os dados possa confirmar as informações do detalhamento da compra realizada para ter o status de andamento do pedido |
