@@ -41,6 +41,15 @@ O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os i
 > - Quando os campos ficam incompletos, aparece a mensagem, Favor preencher todos os campos.
 > - Quando o cadastro é preenchido corretamente, aparece na página de estoque automaticamente.
 
+### CT 6 - Carrinho e compra
+Caso o usuário goste de algum dos livros do catálogo, ele poderá adicioná-lo ao seu carrinho e concluir a sua compra.
+
+>**Resultado**
+> - Ao apertar no botão "adicionar ao carrinho", o usuário é direcionado a pagina de carrinho, onde estará o livro escolhido.
+> - Quando o usuário apertar o ícone de lixeira que fica ao lado do livro, o livro é removido do carrinho.
+> - Quando o botão "comprar" é acionado, o usuário será direcionado a uma página onde ele preencherá o enredeço de entrega do pedido.
+> - Ao continuar, aparecerá a tela de finalizar compra onde estarão os dados de entrega, o livro selecionado e o código de barras para pagamento.
+> - Ao finalizar a compra aparecerá um modal confirmando que a compra foi feita.
 
 ## Conclusão
 O grupo conseguiu desenvolver as funções iniciais do aplicativo, tendo como ponto de destaque a parte visual das telas. Para as próximas iterações, os erros encontrados no registro de teste, serão resolvidos fazendo com que o funcionalidades e seu fluxo de navegação funcione normalmente como o esperado. Também será feito um teste geral com todas as telas que foram planejadas para o sistema.
