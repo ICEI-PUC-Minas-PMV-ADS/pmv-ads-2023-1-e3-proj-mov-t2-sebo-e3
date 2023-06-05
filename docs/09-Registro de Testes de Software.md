@@ -5,7 +5,13 @@
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
 ## Avaliação
+<a href="https://drive.google.com/file/d/1xYtouxB4riDlG3DdN1fRUW6vJokVU86m/view"> Clique aqui para assistir o Teste de Software completo</a>
+
+
 https://user-images.githubusercontent.com/89920953/236722370-6bec74f7-ded1-4cec-82ee-0aa2182ae59d.mp4
+
+
+
 
 ### CT 1 - Pré-login e Login
 O teste foi iniciado pela tela de login. Inicialmente o aplicativo apresenta uma tela de pré-login, onde o usuário tem a opção de fazer o login, caso tenha uma conta, e fazer seu cadastro, caso ainda não possua uma conta.
