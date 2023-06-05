@@ -31,6 +31,13 @@ Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá red
 > - Quando as senhas informadas nos campos "Senha" e "Confirme a senha" não foram iguais, apareceu uma mensagem dizendo "As senhas fornecidas não são iguais".
 > - Quando as senhas foram escritas corretamente, a senha foi alterada no banco de dados, mostrando a mensagem "Senha alterada com sucesso!"
 
+### CT 4 - Área do usuário
+O cliente poderá visualizar e editar suas informações pessoais e caso ele tenha realizado uma compra, poderá acompanhar seu pedido.
+
+>**Resultado**
+> - Na tela de "meus pedidos", o cliente consegue ver o livro que comprou e os status do seu pedido.
+> - Na tela de "informações pessoais", quando o usuário fizer uma edição em seus dados, aparecerá uma mensagem dizendo "Usuário alterado com sucesso! É necessário refazer o login para confirmar alterações.".
+
 ### CT 5 - Área do Administrador
 O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque.
 
