@@ -69,10 +69,7 @@ function ProductPage({ navigation }) {
         <ButtonSecundary
           title="Comprar agora"
           onPress={() =>
-            navigation.reset({
-              index: 0,
-              routes: [{ name: "Home" }],
-            })
+            navigation.navigate("Endereço")
           }
         />
         <Spacer margin={"mx"} />

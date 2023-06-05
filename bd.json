@@ -8,7 +8,16 @@
       "sale": true,
       "fullName": "Herbert Nordson S S",
       "cpf": "22255447833",
-      "dateOfBirth": "31/10/1993"
+      "dateOfBirth": "31/10/1993",
+      "address": {
+        "logradouro": "Rua Luiz Regis Pacheco ",
+        "numero": "1234",
+        "complemento": "",
+        "bairro": "Uruguai ",
+        "cidade": "Salvador ",
+        "estado": "BA",
+        "cep": "40445566"
+      }
     },
     {
       "id": 2,
@@ -21,6 +30,82 @@
       "name": "herbert vendedor",
       "email": "herbert@loja.com.br",
       "password": "Loja@15!",
+      "fullName": "",
+      "cpf": "",
+      "dateOfBirth": "",
+      "address": {
+        "logradouro": "",
+        "numero": "",
+        "complemento": "",
+        "bairro": "",
+        "cidade": "",
+        "estado": "",
+        "cep": ""
+      },
+      "sale": true
+    },
+    {
+      "id": 4,
+      "name": "Herbert Nordson",
+      "email": "herbert@puc.com",
+      "password": "Herbert@15!",
+      "fullName": "Herbert Nordson S S",
+      "cpf": "0034587655",
+      "dateOfBirth": "31/10/1993",
+      "address": {
+        "logradouro": "Rua Luiz Regis Pacheco ",
+        "numero": "318",
+        "complemento": "",
+        "bairro": "Uruguai ",
+        "cidade": "Salvador",
+        "estado": "BA",
+        "cep": "40450360"
+      },
+      "sale": false
+    },
+    {
+      "id": 5,
+      "name": "Herbert Vendedor",
+      "email": "herbert@loja.com",
+      "password": "Loja@22!",
+      "fullName": "",
+      "cpf": "",
+      "dateOfBirth": "",
+      "address": {
+        "logradouro": "",
+        "numero": "",
+        "complemento": "",
+        "bairro": "",
+        "cidade": "",
+        "estado": "",
+        "cep": ""
+      },
+      "sale": false
+    },
+    {
+      "id": 6,
+      "name": "Lojista",
+      "email": "lojista@puc.com",
+      "password": "Loja@22!",
+      "fullName": "",
+      "cpf": "",
+      "dateOfBirth": "",
+      "address": {
+        "logradouro": "",
+        "numero": "",
+        "complemento": "",
+        "bairro": "",
+        "cidade": "",
+        "estado": "",
+        "cep": ""
+      },
+      "sale": false
+    },
+    {
+      "id": 8,
+      "name": "Lojistaaa",
+      "email": "Louja@loja.com",
+      "password": "Lojaaa@44",
       "fullName": "",
       "cpf": "",
       "dateOfBirth": "",
@@ -112,7 +197,7 @@
     {
       "userId": 1,
       "title": "Café com Deus Pai",
-      "price": "53,45",
+      "price": "43,45",
       "author": "Júnior Rostirola",
       "editor": "Editora Vida",
       "pages": "424",
@@ -120,18 +205,6 @@
       "category": "Ficção Infantil Romance",
       "image": "https://m.media-amazon.com/images/I/31bTrkXN7ML._SY498_BO1,204,203,200_.jpg",
       "id": 8
-    },
-    {
-      "userId": 1,
-      "title": "A Biblioteca da Meia-Noite",
-      "price": "35,90",
-      "author": "Matt Haig",
-      "editor": "Bertrand Brasil",
-      "pages": "308",
-      "conservation": "Bom",
-      "category": "Romance",
-      "image": "https://m.media-amazon.com/images/I/51kAYMwbQIL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
-      "id": 9
     },
     {
       "userId": 2,

@@ -49,6 +49,7 @@ function Register({ navigation }) {
   }
 
   async function submitForm() {
+    user.sale = option;
     const response = await getUsers();
     if (response.length > 0) {
       for (let i = 0; i < response.length; i++) {
@@ -58,6 +59,7 @@ function Register({ navigation }) {
         }
       }
     }
+
 
     if (checkName(user.name)) {
       if (checkEmail(user.email)) {
