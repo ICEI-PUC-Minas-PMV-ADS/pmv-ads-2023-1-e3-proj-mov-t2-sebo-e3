@@ -123,7 +123,6 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando s
 |RF-004| Entrega do produto e confirmação da compra | ALTA | 
 |RF-005| Controle de estoque e vendas de livros | MÉDIA | 
 |RF-006| Geração de relatórios de vendas, estoque e clientes | MÉDIA | 
-|RF-007| Pesquisa de livros por título, autor ou categoria | ALTA | 
 |RF-008| O administrador do sistema poderá visualizar, alterar, excluir  e cadastrar os itens do estoque| ALTA | 
 |RF-009| O usuário cliente, poderá visualizar as compras realizadas após a finalização do pedido | MÉDIA | 
 |RF-010| O usuário poderá alterar os itens do carrinho de compra até a finalização do pedido | BAIXA | 
