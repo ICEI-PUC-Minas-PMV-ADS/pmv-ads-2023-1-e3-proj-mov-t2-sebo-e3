@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/89920953/236722370-6bec74f7-ded1-4cec-
 
 
 
-### CT 1 - Pré-login e Login
+### CT 1 - Login
 O teste foi iniciado pela tela de login. Inicialmente o aplicativo apresenta uma tela de pré-login, onde o usuário tem a opção de fazer o login, caso tenha uma conta, e fazer seu cadastro, caso ainda não possua uma conta.
 
 
