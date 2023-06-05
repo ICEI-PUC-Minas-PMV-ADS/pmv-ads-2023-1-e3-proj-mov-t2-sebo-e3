@@ -31,6 +31,16 @@ Caso o usuário tenha uma conta mas não se lembre da sua senha, ele poderá red
 > - Quando as senhas informadas nos campos "Senha" e "Confirme a senha" não foram iguais, apareceu uma mensagem dizendo "As senhas fornecidas não são iguais".
 > - Quando as senhas foram escritas corretamente, a senha foi alterada no banco de dados, mostrando a mensagem "Senha alterada com sucesso!"
 
+### CT 4 - Carrinho e compra
+Caso o usuário goste de algum dos livros do catálogo, ele poderá adicioná-lo ao seu carrinho e concluir a sua compra.
+
+>**Resultado**
+> - Ao apertar no botão "adicionar ao carrinho", o usuário é direcionado a pagina de carrinho, onde estará o livro escolhido.
+> - Quando o usuário apertar o ícone de lixeira que fica ao lado do livro, o livro é removido do carrinho.
+> - Quando o botão "comprar" é acionado, o usuário será direcionado a uma página onde ele preencherá o enredeço de entrega do pedido.
+> - Ao continuar, aparecerá a tela de finalizar compra onde estarão os dados de entrega, o livro selecionado e o código de barras para pagamento.
+> - Ao finalizar a compra aparecerá um modal confirmando que a compra foi feita.
+
 ### CT 5 - Área do Administrador
 O administrador do sistema poderá visualizar, alterar, excluir e cadastrar os itens do estoque.
 
