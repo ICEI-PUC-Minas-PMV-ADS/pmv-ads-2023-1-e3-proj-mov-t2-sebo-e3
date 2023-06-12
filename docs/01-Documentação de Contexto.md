@@ -19,11 +19,11 @@ Dessa forma, este projeto desenvolverá uma aplicação móvel que possibilite a
 
 ## Objetivos
 
-Criar uma aplicação móvel que permita que leitores comprem ou doem livros (novos ou usados) sem que precisem comparecer pessoalmente ao sebo, pela indisponibilidade de tempo ou proximidade.
+Criar uma aplicação móvel que permita que leitores comprem ou vendam livros (novos ou usados) sem que precisem comparecer pessoalmente ao sebo, pela indisponibilidade de tempo ou proximidade.
 
 Como objetivos específicos do projeto, podemos ressaltar:
-- Permitir que o leitor realize a compra e/ou a doação de livros (novos ou usados).
-- Permitir a busca individualizada dos livros de interesse do leitor por título, autor ou categoria.
+- Permitir que o leitor realize a compra e/ou a venda de livros (novos ou usados).
+
 
 
 ## Justificativa
