@@ -98,23 +98,7 @@ function Login({ navigation }) {
           <ButtonPrimary title="Entrar" onPress={loginUser} />
         </Form>
         <Spacer margin="xx" />
-
-        <OrContainer>
-          <OrLine></OrLine>
-          <OrTitle> ou </OrTitle>
-          <OrLine></OrLine>
-        </OrContainer>
-        <Spacer margin="xx" />
-
-        <EnterLogin>Entre com:</EnterLogin>
-        <Spacer margin="mx" />
-
-        <ConectContainer>
-          <Conect></Conect>
-          <Conect></Conect>
-          <Conect></Conect>
-        </ConectContainer>
-
+        
         <Spacer margin={"xx"} />
       </ViewContainer>
     </SafeAreaView>

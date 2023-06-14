@@ -53,6 +53,7 @@ function RedefinePassword({ navigation }) {
 
   return (
     <ViewContainer>
+      <Spacer margin="xx" />
       <SubTitle>
         Digite aqui o e-mail já cadastrado, caso não possua é necessário
         realizar o cadastro:
@@ -66,6 +67,7 @@ function RedefinePassword({ navigation }) {
           onChangeText={(ev) => setEmail(ev)}
           value={email}
         />
+        <Spacer margin="xx" />
         <Spacer margin="ms" />
         {loading ? (
           <ActivityIndicator size="large" color={theme.colors.primary} />

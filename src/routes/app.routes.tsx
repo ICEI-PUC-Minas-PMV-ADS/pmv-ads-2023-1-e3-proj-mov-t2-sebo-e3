@@ -169,7 +169,7 @@ function AppRoutes() {
         options={{
           headerTitleAlign: "center",
           headerTitle(props) {
-           return <Page>Home</Page>
+           return <Page>Endereço</Page>
           }
         }}
       />
