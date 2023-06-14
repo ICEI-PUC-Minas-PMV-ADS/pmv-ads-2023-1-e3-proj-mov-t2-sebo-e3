@@ -21,10 +21,6 @@ O Sebo Digital é uma aplicação na qual é possível comprar e vender livros u
 
 Mateus Curcino De Lima
 
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
-
 # Documentação
 
 <ol>
