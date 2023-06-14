@@ -8,4 +8,4 @@
 
 ## Vídeo
 
-[![Vídeol](https://sgapucminasbr.sharepoint.com/:v:/s/team_sga_2418_2023_1_8512102-Grupo2-20h00/Ean2NPVUx8RAno652LYLclABkITxKzoGnamZecxs1K29EQ?e=8ImCt7)
+https://sgapucminasbr.sharepoint.com/:v:/s/team_sga_2418_2023_1_8512102-Grupo2-20h00/Ean2NPVUx8RAno652LYLclABkITxKzoGnamZecxs1K29EQ?e=8ImCt7
