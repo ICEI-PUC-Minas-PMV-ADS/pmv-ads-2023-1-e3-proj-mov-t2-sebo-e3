@@ -8,9 +8,6 @@ Eixo 3 - Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Ne
 
 O Sebo Digital é uma aplicação na qual é possível comprar e vender livros usados. Ele combina a conveniência do comércio eletrônico com a diversidade de opções oferecidas por um sebo tradicional, proporcionando aos leitores a oportunidade de encontrar e adquirir itens que desejam de forma mais fácil, segura e com preços acessíveis. 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103083210/fb231636-c47a-4b53-845d-d0ae297925d7)
-
-
 ## Integrantes
 
 * Fabiana Alkmim
