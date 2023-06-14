@@ -6,6 +6,6 @@
 
 ## Conjunto de Slides (Estrutura)
 
-[![pptx.](/Sebo DIgital - apresentação.pptm)]
+[![pptx.](img/Sebo DIgital - apresentação.pptm)]
 
 ## Vídeo
