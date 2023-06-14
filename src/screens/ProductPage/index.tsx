@@ -16,6 +16,11 @@ function ProductPage({ navigation }) {
     navigation.navigate("Carrinho");
   };
 
+  const buyItem = () => {
+    setCart((prev) => [...prev, book]);
+    navigation.navigate("Endereço");
+  };
+
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: StatusBar.currentHeight }}>
       <ViewContainer>
@@ -68,9 +73,7 @@ function ProductPage({ navigation }) {
 
         <ButtonSecundary
           title="Comprar agora"
-          onPress={() =>
-            navigation.navigate("Endereço")
-          }
+          onPress={buyItem}
         />
         <Spacer margin={"mx"} />
       </ViewContainer>

@@ -53,13 +53,13 @@
       "cpf": "0034587655",
       "dateOfBirth": "31/10/1993",
       "address": {
-        "logradouro": "Rua Luiz Regis Pacheco ",
-        "numero": "318",
-        "complemento": "",
-        "bairro": "Uruguai ",
-        "cidade": "Salvador",
-        "estado": "BA",
-        "cep": "40450360"
+        "logradouro": "adawdwa",
+        "numero": "123",
+        "complemento": "4fsef",
+        "bairro": "sdfsdfs",
+        "cidade": "sdfsdfs",
+        "estado": "as",
+        "cep": "12345678"
       },
       "sale": false
     },
@@ -274,7 +274,7 @@
       "editor": "Pamini",
       "pages": "192",
       "conservation": "Ótimo",
-      "category": "",
+      "category": "Ficção Psicológicos",
       "image": "https://m.media-amazon.com/images/I/51olydUbI6L._SX346_BO1,204,203,200_.jpg",
       "id": 17
     }
