@@ -6,7 +6,6 @@
 
 ## Conjunto de Slides (Estrutura)
 
-[![pptx.](img/Sebo DIgital - apresentação.pptm)]
 [![ppt](/docs/img/Sebo DIgital - apresentação.pptm)]([https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t5-medicamento-facil/blob/main/docs/Apresenta%C3%A7%C3%A3o%20Medicamento%20F%C3%A1cil.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/raw/main/docs/img/Sebo%20DIgital%20-%20apresenta%C3%A7%C3%A3o.pptm))
 
 ## Vídeo
