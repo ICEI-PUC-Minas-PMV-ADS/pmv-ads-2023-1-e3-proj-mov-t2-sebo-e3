@@ -15,10 +15,6 @@ function Initial({ navigation }) {
 
       <Title>Boas-vindas ao Sebo!</Title>
       <Spacer margin={"mx"} />
-
-      <SubTitle>
-        Lorem ipsum dolor sit amet consectetur. Congue consequat
-      </SubTitle>
       <Spacer margin={"mx"} />
 
       <ButtonPrimary title="Fazer Login" onPress={() => navigation.navigate('Login')} />
