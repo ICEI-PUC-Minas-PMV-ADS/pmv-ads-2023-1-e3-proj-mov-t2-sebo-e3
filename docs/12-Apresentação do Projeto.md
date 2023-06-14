@@ -6,6 +6,6 @@
 
 ## Conjunto de Slides (Estrutura)
 
-[![ppt](/docs/sebodigitalapresentacao.pptm)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/main/docs/sebodigitalapresentacao.pptm)
+[![pptm](/docs/sebodigitalapresentacao.pptm)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/main/docs/sebodigitalapresentacao.pptm)
 
 ## Vídeo
