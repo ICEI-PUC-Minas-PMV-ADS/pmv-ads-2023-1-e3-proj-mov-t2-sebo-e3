@@ -6,7 +6,10 @@ Eixo 3 - Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Ne
 
 ![image](https://user-images.githubusercontent.com/103009155/227723919-ed7aa3f3-c8fd-4fb3-a6b9-cb1c8200ba48.png)
 
-Nem todo mundo possui um sebo perto de casa, ou não tem tempo para ir e procurar um item específico em meio a tantos outros, portanto, para fins de democratização ao acesso desses itens, este projeto prevê a criação de uma aplicação móvel, na qual o leitor poderá ter acesso a compra de livros sem que haja a necessidade do deslocamento até o sebo
+O Sebo Digital é uma aplicação na qual é possível comprar e vender livros usados. Ele combina a conveniência do comércio eletrônico com a diversidade de opções oferecidas por um sebo tradicional, proporcionando aos leitores a oportunidade de encontrar e adquirir itens que desejam de forma mais fácil, segura e com preços acessíveis. 
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/assets/103083210/fb231636-c47a-4b53-845d-d0ae297925d7)
+
 
 ## Integrantes
 
