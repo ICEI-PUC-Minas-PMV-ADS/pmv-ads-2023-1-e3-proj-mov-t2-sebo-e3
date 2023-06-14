@@ -4,7 +4,7 @@
 
 ## Apresentação
 
-[![Sebo Digital](/docs/sebodigitalapresentacao.pdf)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/main/docs/sebodigitalapresentacao.pdf)
+[![Sebo Digital](/docs/SDapresentacao.pdf)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t2-sebo-e3/blob/main/docs/SDapresentacao.pdf)
 
 ## Vídeo
 
